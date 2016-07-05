@@ -80,7 +80,7 @@ if ( empty( $doing_wp_cron ) ) {
 		$doing_wp_cron = $_GET[ 'doing_wp_cron' ];
 	}
 }
-
+// I am Kalra
 /*
  * The cron lock (a unix timestamp set when the cron was spawned),
  * must match $doing_wp_cron (the "key").
