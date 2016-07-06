@@ -501,3 +501,4 @@ add_image_size( 'why', 1467, 796,true);
 add_image_size( 'testimonial', 592, 693,true);
 add_image_size( 'about', 416, 416,true);
 add_image_size( 'add', 330, 475,true);
+add_image_size( 'locate', 1920, 467,true);

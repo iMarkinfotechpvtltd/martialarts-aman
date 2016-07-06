@@ -746,7 +746,6 @@ width:430px !important
 .school-reg-form form {
     margin: 57px auto;
     position: relative;
-    z-index: 9;
 }
 .school-reg-form form input {
     border: 1px solid #bcbcbc !important;
@@ -1059,6 +1058,50 @@ width:430px !important
 .last-kids::before {background-image: url("../images/last-form-kidspage.png"); background-size: cover; content: ""; height: 510px; left: 0;
     position: absolute; width: 223px; bottom: 30px;}
 /*============================================ Kids Page ============================================*/
+
+/*============================================ Location Page ============================================*/
+.location-form {
+  background-position: center center;
+  background-size: 100% auto;
+  padding: 175px 0 97px;
+}
+
+.loc-form-holder{background-color: rgba(0,0,0,.74); padding: 33px; text-align: center; border-radius: 5px;}
+.loc-form-head {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 28px;
+  text-transform: uppercase;
+}
+.loc-form-holder select{appearance:none; -o-appearance:none; -ms-appearance:none; -moz-appearance:none; -webkit-appearance:none; width: 568px; height: 68px; border:none; border-radius: 5px; font-size: 18px; color:#838383; padding: 0 25px;}
+.loc-btn{background-color: #e40014; height: 68px; margin-left: 36px; width:193px; font-weight: 600; font-size: 20px; color: #fff; border:2px solid #e40014;}
+.loc-btn:hover{background-color:#fff; color: #e40014;}
+
+.loc-content .img-holder{margin-left: 59px;}
+.loc-content p {
+  color: #010101;
+  font-size: 19px;
+  line-height: 45px;
+  margin-bottom: 26px;
+  margin-top: 11px;
+}
+
+
+
+/*============================= Location Inner Page =============================*/
+.loc-content-inner {
+  border: 8px solid #e8e8e8;
+}
+.inner-location {
+  display: block;
+  line-height: 65px !important;
+  margin-top: 11px !important;
+}
+/*============================= Location Inner Page =============================*/
+
+
+/*============================================ Location Page ============================================*/
 
 
 @media (min-width: 1500px) {
@@ -1543,5 +1586,35 @@ footer .copy-rgt ul li a {
 /*============================================ Kids Page ============================================*/    
     
     
+/*============================================ Location Page ============================================*/
+ .loc-form-holder select {
+  height: 48px;
+  padding: 0 15px;
+  width: 468px;
+}
+.loc-btn {
+  height: 48px;
+  margin-left: 16px;
+  width: 153px;
+}
+.loc-form-head {
+  font-size: 24px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+.location-form {
+    background-repeat: no-repeat;
+  padding: 100px 0 67px;
+}
+    
+.loc-content p{line-height: 36px;}
+
+/*============================= Location Inner Page =============================*/
+.inner-location {
+  line-height: 45px !important;
+}
+/*============================= Location Inner Page =============================*/
+    
+/*============================================ Location Page ============================================*/    
     
 }
