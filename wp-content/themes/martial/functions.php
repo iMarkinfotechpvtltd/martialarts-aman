@@ -493,6 +493,77 @@ function my_custom_post_success() {
 }  
  add_action( 'init', 'my_custom_post_success' );
 
+ 
+ 
+/*********************************************************************************/
+
+
+
+$labels = array(
+		'name'              => _x( 'Kid Martial Art category', 'Kid Martial Art category' ),
+		'singular_name'     => _x( 'Kid Martial Art category', 'Kid Martial Art category' ),
+		'search_items'      => __( 'Search Kid Martial Art category' ),
+		'all_items'         => __( 'All Kid Martial Art category' ),
+		'parent_item'       => __( 'Parent Kid Martial Art category' ),
+		'parent_item_colon' => __( 'Parent Kid Martial Art category:' ),
+		'edit_item'         => __( 'Edit Kid Martial Art category' ),
+		'update_item'       => __( 'Update Kid Martial Art category' ),
+		'add_new_item'      => __( 'Add New Kid Martial Art category' ),
+		'new_item_name'     => __( 'New Kid Martial Art category' ),
+		'menu_name'         => __( 'Kid Martial Art category' ),
+	);
+
+	$args = array(
+		'hierarchical'      => true,
+		'labels'            => $labels,
+		'show_ui'           => true,
+		'show_admin_column' => true,
+		'query_var'         => true,
+		'rewrite'           => array( 'slug' => 'martial_category' ),
+	);
+
+	register_taxonomy( 'martial_category', array( 'martial_category' ), $args );
+
+function codex_martial() {
+  $labels = array(
+    'name' => 'Kid Martial Art',
+    'singular_name' => 'Kid Martial Art',
+    'add_new' => 'Add Kid Martial Art',
+    'add_new_item' => 'Add New Kid Martial Art',
+    'edit_item' => 'Edit Kid Martial Art',
+    'new_item' => 'New Kid Martial Art',
+    'all_items' => 'All Kid Martial Art',
+    'view_item' => 'View Kid Martial Art',
+    'search_items' => 'Search Kid Martial Art',
+    'not_found' =>  'No Kid Martial Art found',
+    'not_found_in_trash' => 'No Kid Martial Art found in Trash', 
+    'parent_item_colon' => '',
+    'menu_name' => 'Kid Martial Art'
+  );
+
+  $args = array(
+    'labels' => $labels,
+    'public' => true,
+    'publicly_queryable' => true,
+    'show_ui' => true, 
+    'show_in_menu' => true, 
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'martials' ), 
+    'capability_type' => 'post',
+    'has_archive' => true, 
+    'hierarchical' => false,
+    'menu_position' => 10,
+	'taxonomies' => array('martial_category'),
+    'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )
+  ); 
+
+  register_post_type( 'martials', $args );
+}
+add_action( 'init', 'codex_martial' );
+
+
+
+
 //ADD IMAGE SIZE
 
 add_image_size( 'home', 700, 571,true);
@@ -502,3 +573,7 @@ add_image_size( 'testimonial', 592, 693,true);
 add_image_size( 'about', 416, 416,true);
 add_image_size( 'add', 330, 475,true);
 add_image_size( 'locate', 1920, 467,true);
+add_image_size( 'kids-inner', 829, 783,true);
+add_image_size( 'confidence', 584, 556,true);
+add_image_size( 'disp', 496, 662,true);
+add_image_size( 'more', 487, 514,true);

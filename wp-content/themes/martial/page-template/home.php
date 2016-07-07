@@ -40,7 +40,7 @@
 					$thumb = wp_get_attachment_image_src($image_id, 'kid' );
 					?>	
                     <img src="<?php echo $thumb['0'];?>" alt="Kid's Martial Arts" />
-                    <a href="#"> Click Here</a>
+                    <a href="<?php echo get_permalink(46);?>/?uid=1"> Click Here</a>
                 </div>
             </div>
             
@@ -52,7 +52,7 @@
 					$thumb = wp_get_attachment_image_src($image_id, 'kid' );
 					?>	
                     <img src="<?php echo $thumb['0'];?>" alt="After School Program" />
-                    <a href="#"> Click Here</a>
+                    <a href="<?php echo get_permalink(46);?>/?uid=2"> Click Here</a>
                 </div>
             </div>
             </div>
@@ -66,7 +66,7 @@
 					$thumb = wp_get_attachment_image_src($image_id, 'kid' );
 					?>	
                     <img src="<?php echo $thumb['0'];?>" alt="Summer Camp" />
-                    <a href="#"> Click Here</a>
+                    <a href="<?php echo get_permalink(46);?>/?uid=3"> Click Here</a>
                 </div>
             </div>
             
@@ -78,7 +78,7 @@
 					$thumb = wp_get_attachment_image_src($image_id, 'kid' );
 					?>	
                     <img src="<?php echo $thumb['0'];?>" alt="Adult Martial Arts" />
-                    <a href="#"> Click Here</a>
+                    <a href="<?php echo get_permalink(46);?>/?uid=4"> Click Here</a>
                 </div>
             </div>
             
@@ -98,7 +98,7 @@
 					$thumb = wp_get_attachment_image_src($image_id, 'why' );
 				?>	
                 <img src="<?php echo $thumb['0'];?>" alt="Why Us" class="img-responsive" />
-                <a href="#">Learn More<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                <a href="<?php echo get_permalink(23);?>">Learn More<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                 
                 </div>
         </div>
@@ -124,13 +124,17 @@
             </div>
             <div class="news-main col-lg-5 col-md-5 col-sm-6 col-xs-6">
                 <h2>News</h2>
-                <ul>
-                <li><a href="">57th Mountain Kim Tournaments
-                    March 7, 2016</a></li>
-                <li><a href="">57th Mountain Kim Championship (3-5-16)
-                    February 4, 2016</a></li>
-                <li><a href="">Black Belt Test is on 7-11-15 (3:30 PM)
-                    June 15, 2015</a></li>
+				<ul>
+					<?php 
+								$args = array('post_type' => 'post','posts_per_page'=>3,'order' => 'DESC');
+								$loop = new WP_Query( $args );
+								while ( $loop->have_posts() ) : $loop->the_post();
+					?>
+                <li><a href="<?php the_permalink();?>"><?php the_title();?></a></li>
+					<?php 
+						endwhile;
+						wp_reset_query();
+					?>
                 </ul>
             </div>
             
