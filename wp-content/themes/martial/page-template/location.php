@@ -5,7 +5,7 @@
  ?>
  <?php  get_header(); 
  $location_id=$_GET['uid'];
- $location_id;
+ if($location_id==1 || $location_id==2 || $location_id==3 || $location_id==4){
  ?>
  		<?php
 		while ( have_posts() ) : the_post();
@@ -32,8 +32,38 @@
 																				
 								?>
                             <option value="<?php echo $term_id; ?>"><?php print_r($slug);?></option>
-							<?php }
-										}							?>
+							<?php 
+									}
+									}
+										else if($location_id==2){
+												$args = array( 'taxonomy' => 'school_category','hide_empty'=>0 );
+									$terms = get_terms('school_category', $args);
+									  
+									foreach ($terms as $term) 
+									{
+										$slug=$term->name;
+										$term_id=$term->term_id;
+																				
+								?>
+                            <option value="<?php echo $term_id; ?>"><?php print_r($slug);?></option>
+											
+										<?php	
+										}
+										}
+										else if($location_id==3){
+												$args = array( 'taxonomy' => 'camp_category','hide_empty'=>0 );
+									$terms = get_terms('camp_category', $args);
+									  
+									foreach ($terms as $term) 
+									{
+										$slug=$term->name;
+										$term_id=$term->term_id;
+							?>
+							<option value="<?php echo $term_id; ?>"><?php print_r($slug);?></option>
+							<?php	
+								}
+								}
+							?>
                         </select>
                     </div>
 					<input type="hidden" class="id-inner" value="<?php echo $location_id;?>">              
@@ -51,44 +81,87 @@
         </div>
     </div>
 </section>
-  
 <div class="location-inner">  
 <section class="best-decision loc-content">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        
-        </div>
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="img-holder col-lg-6 col-md-6 col-sm-6 col-xs-6"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/afterschool-img01afterschool-img02.jpg" alt="" class="img-responsive" /></div>
-				<div class=" col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                <?php echo content('200');?>
-            </div>
-			</div>
-			<style>
-			.result {
-    position: absolute !important;
-    text-align: center !important;
-    left: 0 !important;
-    right: 0 !important;
-    color: #f00 !important;
-    margin-top: 3px !important;
-    font-size: 18px !important;
-    font-weight: bold !important;
-}
-			</style>
-            
-        </div>
+	<?php
+		if($location_id==1){
+			$args = array( 'taxonomy' => 'martial_category','hide_empty'=>0 );
+            $terms = get_terms('martial_category', $args);
+              
+            foreach ($terms as $term) 
+            {
+				$slug=$term->slug;
+				$args = array('post_type' => 'martials','posts_per_page' =>1,'martial_category'=>$slug);
+				$loop = new WP_Query( $args );
+				while ( $loop->have_posts() ) : $loop->the_post();
+	?>
+	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">	
+                <a href="<?php the_permalink(); ?>"><h2 class="gen-heading"><?php echo  $term->name; ?></h2></a>
+                <p class="inner-location"><?php echo $term->description;  ?></p>
+				<a href="<?php the_permalink(); ?>">View Location</a>
+            </div>		
+  <?php
+  endwhile;
+  wp_reset_query();
+			}
+  }
+  else if($location_id==2){ 
+	$args = array( 'taxonomy' => 'school_category','hide_empty'=>0 );
+            $terms = get_terms('school_category', $args);
+              
+            foreach ($terms as $term) 
+            {
+				$slug=$term->slug;
+				$args = array('post_type' => 'schools','posts_per_page' =>1,'school_category'=>$slug);
+				$loop = new WP_Query( $args );
+				while ( $loop->have_posts() ) : $loop->the_post();
+  ?>
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">	
+                <a href="<?php the_permalink(); ?>"><h2 class="gen-heading"><?php echo  $term->name; ?></h2></a>
+                <p class="inner-location"><?php echo $term->description;  ?></p>
+				<a href="<?php the_permalink(); ?>">View Location</a>
+            </div>		
+  <?php
+   endwhile;
+  wp_reset_query();
+  }
+  }
+  else if($location_id==3){
+	  $args = array( 'taxonomy' => 'camp_category','hide_empty'=>0 );
+            $terms = get_terms('camp_category', $args);
+              
+            foreach ($terms as $term) 
+            {
+				$slug=$term->slug;
+				$args = array('post_type' => 'camp','posts_per_page' =>1,'camp_category'=>$slug);
+				$loop = new WP_Query( $args );
+				while ( $loop->have_posts() ) : $loop->the_post();
+	  ?>
+	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">	
+                <a href="<?php the_permalink(); ?>"><h2 class="gen-heading"><?php echo  $term->name; ?></h2></a>
+                <p class="inner-location"><?php echo $term->description;  ?></p>
+				<a href="<?php the_permalink(); ?>">View Location</a>
+            </div>	
+  
+  <?php
+   endwhile;
+  wp_reset_query();
+  }
+  }
+  else{echo'dddddddddddddd';}
+  ?>
+	</div>
     </div>
 </section>
-</div>
+
 </div>
 <?php 
 endwhile;
 wp_reset_query();
 ?>
-
+ <?php } ?>
 <script>
 
 jQuery(document).ready(function(){

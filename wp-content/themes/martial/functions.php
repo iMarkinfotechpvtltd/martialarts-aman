@@ -495,7 +495,7 @@ function my_custom_post_success() {
 
  
  
-/*********************************************************************************/
+/*************************************KId's Martial Arts********************************************/
 
 
 
@@ -562,7 +562,139 @@ function codex_martial() {
 add_action( 'init', 'codex_martial' );
 
 
+ 
+/***************************************After School Program******************************************/
 
+
+
+$labels = array(
+		'name'              => _x( 'After School Program category', 'After School Program category' ),
+		'singular_name'     => _x( 'After School Program category', 'After School Program category' ),
+		'search_items'      => __( 'Search After School Program category' ),
+		'all_items'         => __( 'All After School Program category' ),
+		'parent_item'       => __( 'Parent After School Program category' ),
+		'parent_item_colon' => __( 'Parent After School Program category:' ),
+		'edit_item'         => __( 'Edit After School Program category' ),
+		'update_item'       => __( 'Update After School Program category' ),
+		'add_new_item'      => __( 'Add New After School Program category' ),
+		'new_item_name'     => __( 'New After School Program category' ),
+		'menu_name'         => __( 'After School Program category' ),
+	);
+
+	$args = array(
+		'hierarchical'      => true,
+		'labels'            => $labels,
+		'show_ui'           => true,
+		'show_admin_column' => true,
+		'query_var'         => true,
+		'rewrite'           => array( 'slug' => 'school_category' ),
+	);
+
+	register_taxonomy( 'school_category', array( 'school_category' ), $args );
+
+function codex_schools() {
+  $labels = array(
+    'name' => 'After School Program',
+    'singular_name' => 'After School Program',
+    'add_new' => 'Add After School Program',
+    'add_new_item' => 'Add New After School Program',
+    'edit_item' => 'Edit After School Program',
+    'new_item' => 'New After School Program',
+    'all_items' => 'All After School Program',
+    'view_item' => 'View After School Program',
+    'search_items' => 'Search After School Program',
+    'not_found' =>  'No After School Program found',
+    'not_found_in_trash' => 'No After School Program found in Trash', 
+    'parent_item_colon' => '',
+    'menu_name' => 'After School Program'
+  );
+
+  $args = array(
+    'labels' => $labels,
+    'public' => true,
+    'publicly_queryable' => true,
+    'show_ui' => true, 
+    'show_in_menu' => true, 
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'schools' ), 
+    'capability_type' => 'post',
+    'has_archive' => true, 
+    'hierarchical' => false,
+    'menu_position' => 10,
+	'taxonomies' => array('school_category'),
+    'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )
+  ); 
+
+  register_post_type( 'schools', $args );
+}
+add_action( 'init', 'codex_schools' );
+
+
+/***************************************Summer Camp******************************************/
+
+
+
+$labels = array(
+		'name'              => _x( 'Summer Camp category', 'Summer Camp category' ),
+		'singular_name'     => _x( 'Summer Camp category', 'Summer Camp category' ),
+		'search_items'      => __( 'Search Summer Camp category' ),
+		'all_items'         => __( 'All Summer Camp category' ),
+		'parent_item'       => __( 'Parent Summer Camp category' ),
+		'parent_item_colon' => __( 'Parent Summer Camp category:' ),
+		'edit_item'         => __( 'Edit Summer Camp category' ),
+		'update_item'       => __( 'Update Summer Camp category' ),
+		'add_new_item'      => __( 'Add New Summer Camp category' ),
+		'new_item_name'     => __( 'New Summer Camp category' ),
+		'menu_name'         => __( 'Summer Camp category' ),
+	);
+
+	$args = array(
+		'hierarchical'      => true,
+		'labels'            => $labels,
+		'show_ui'           => true,
+		'show_admin_column' => true,
+		'query_var'         => true,
+		'rewrite'           => array( 'slug' => 'camp_category' ),
+	);
+
+	register_taxonomy( 'camp_category', array( 'camp_category' ), $args );
+
+function codex_camp() {
+  $labels = array(
+    'name' => 'Summer Camp',
+    'singular_name' => 'Summer Camp',
+    'add_new' => 'Add Summer Camp',
+    'add_new_item' => 'Add New Summer Camp',
+    'edit_item' => 'Edit Summer Camp',
+    'new_item' => 'New Summer Camp',
+    'all_items' => 'All Summer Camp',
+    'view_item' => 'View Summer Camp',
+    'search_items' => 'Search Summer Camp',
+    'not_found' =>  'No Summer Camp found',
+    'not_found_in_trash' => 'No Summer Camp found in Trash', 
+    'parent_item_colon' => '',
+    'menu_name' => 'Summer Camp'
+  );
+
+  $args = array(
+    'labels' => $labels,
+    'public' => true,
+    'publicly_queryable' => true,
+    'show_ui' => true, 
+    'show_in_menu' => true, 
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'camp' ), 
+    'capability_type' => 'post',
+    'has_archive' => true, 
+    'hierarchical' => false,
+    'menu_position' => 10,
+	'taxonomies' => array('camp_category'),
+    'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )
+  ); 
+
+  register_post_type( 'camp', $args );
+}
+add_action( 'init', 'codex_camp' );
 
 //ADD IMAGE SIZE
 
@@ -577,3 +709,10 @@ add_image_size( 'kids-inner', 829, 783,true);
 add_image_size( 'confidence', 584, 556,true);
 add_image_size( 'disp', 496, 662,true);
 add_image_size( 'more', 487, 514,true);
+add_image_size( 'school', 583, 415,true);
+add_image_size( 'always', 673, 830,true);
+add_image_size( 'happy', 380, 515,true);
+add_image_size( 'reliable', 69, 38,true);
+add_image_size( 'power', 53, 61,true);
+add_image_size( 'games', 72, 52,true);
+add_image_size( 'caring', 30, 50,true);

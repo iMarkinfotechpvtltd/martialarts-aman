@@ -37,17 +37,35 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a href="index.html" class="navbar-brand"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/logo.png" alt="logo" /></a>
+                        <a href="<?php echo site_url();?>" class="navbar-brand"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/logo.png" alt="logo" /></a>
                     </div>
                     <div class="navbar-collapse collapse" id="navbar">
 
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="active"><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="#">Programs</a></li>
-                            <li><a href="#">Success Stories</a></li>
-                            <li><a href="#">News</a></li>
-                            <li><a href="#">Location</a></li>
+                            <?php
+
+		$defaults = array(
+		'theme_location'  => '',
+		'menu'            => 'header',
+		'container'       => '',
+		'container_class' => '',
+		'container_id'    => '',
+		'menu_class'      => 'menu',
+		'menu_id'         => '',
+		'echo'            => true,
+		'fallback_cb'     => 'wp_page_menu',
+		'before'          => '',
+		'after'           => '',
+		'link_before'     => '',
+		'link_after'      => '',
+		'items_wrap'      => '%3$s',
+		'depth'           => 0,
+		'walker'          => ''
+		);
+
+		wp_nav_menu( $defaults );
+
+		?> 
                             <li><form class="form-inline menu-search"><div class="form-group">
                         <input type="text" placeholder="" class="form-control"><button><i class="fa fa-search" aria-hidden="true"></i>
 </button>
