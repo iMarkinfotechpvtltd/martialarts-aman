@@ -8,132 +8,96 @@
     <div class="container">
     <div class="row">
         <div class="all-post col-lg-9 col-md-9 col-sm-12 col-xs-12">
-        <div class="about-post n-post odd">
-            <h2>LATEST NEWS</h2>
+		<h2>LATEST NEWS</h2>
+		<?php 
+			$i=1;
+			$args = array('post_type' => 'post','posts_per_page'=>-1,'order' => 'DESC');
+			$loop = new WP_Query( $args );
+			while ( $loop->have_posts() ) : $loop->the_post();
+			if($i%2==0){
+		?>
+			 <div class="about-post even">
             <div class="a-post-content">
-            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/news01.jpg" class="img-responsive" alt="About Us image" />
-            <span class="news-p-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+            <?php the_post_thumbnail('news'); ?>
+            <span class="news-p-intro"><?php the_title();?></span>
                 <span class="news-post-info">
                     <ul>
-                    <li><i class="fa fa-calendar" aria-hidden="true"></i>June 28, 2016</li>
-                    <li>Posted By: Rachel</li>
+                    <li><i class="fa fa-calendar" aria-hidden="true"></i><?php the_time('M d, Y');?></li>
+                    <li>Posted By: <?php the_author(); ?></li>
                     </ul>
                 </span>
             
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione. <a href="">Read More</a></p>
+               <?php echo content('150');?><a href="<?php the_permalink(); ?>">Read More</a>
             </div>
             
         </div>
         
-        <div class="about-post even">
+			<?php } else{ ?>
+			<div class="about-post odd">
             <div class="a-post-content">
-            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/news02.jpg" class="img-responsive" alt="About Us image" />
-            <span class="news-p-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+            <?php the_post_thumbnail('news');?>
+            <span class="news-p-intro"><?php the_title(); ?></span>
                 <span class="news-post-info">
                     <ul>
-                    <li><i class="fa fa-calendar" aria-hidden="true"></i>June 28, 2016</li>
-                    <li>Posted By: Rachel</li>
+                    <li><i class="fa fa-calendar" aria-hidden="true"></i><?php the_time('M d, Y');?></li>
+                    <li>Posted By: <?php the_author(); ?></li>
                     </ul>
                 </span>
             
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione. <a href="">Read More</a></p>
+                <?php echo content('150'); ?><a href="<?php the_permalink(); ?>">Read More</a></p>
             </div>
             
         </div>
+        <?php 
+			}
+			$i++;
+			endwhile;
+			wp_reset_query();
+		?>
+         
         
-         <div class="about-post odd">
-            <div class="a-post-content">
-            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/news03.jpg" class="img-responsive" alt="About Us image" />
-            <span class="news-p-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-                <span class="news-post-info">
-                    <ul>
-                    <li><i class="fa fa-calendar" aria-hidden="true"></i>June 28, 2016</li>
-                    <li>Posted By: Rachel</li>
-                    </ul>
-                </span>
-            
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione. <a href="">Read More</a></p>
-                
-            </p>
-            </div>
-            
-        </div>
-        
-        <div class="about-post even">
-            <div class="a-post-content">
-            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/news04.jpg" class="img-responsive" alt="About Us image" />
-            <span class="news-p-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-                <span class="news-post-info">
-                    <ul>
-                    <li><i class="fa fa-calendar" aria-hidden="true"></i>June 28, 2016</li>
-                    <li>Posted By: Rachel</li>
-                    </ul>
-                </span>
-            
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione. <a href="">Read More</a></p>
-            </div>
-            
-        </div>
-        
-         <div class="about-post odd">
-            <div class="a-post-content">
-            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/news05.jpg" class="img-responsive" alt="About Us image" />
-            <span class="news-p-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-                <span class="news-post-info">
-                    <ul>
-                    <li><i class="fa fa-calendar" aria-hidden="true"></i>June 28, 2016</li>
-                    <li>Posted By: Rachel</li>
-                    </ul>
-                </span>
-            
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione. <a href="">Read More</a></p>
-            </div>
-            
-        </div>
-        
-        
-        <div class="about-post even">
-            <div class="a-post-content">
-            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/news03.jpg" class="img-responsive" alt="About Us image" />
-            <span class="news-p-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-                <span class="news-post-info">
-                    <ul>
-                    <li><i class="fa fa-calendar" aria-hidden="true"></i>June 28, 2016</li>
-                    <li>Posted By: Rachel</li>
-                    </ul>
-                </span>
-            
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione. <a href="">Read More</a></p>
-            </div>
-            
-        </div>
-        
-        
-            
-        </div>
+       
+       </div>
         
         <div class="about-sidebar col-lg-3 col-md-3 col-sm-12 col-xs-12">
             <div class="about-red-box">
-                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/block-img1.png" alt="Kid's Martial Arts" />
-                <div class="about-side-hov"><a href="#"> Click Here</a></div>
+			<h2><?php the_field('advertisement1_title',102); ?></h2>
+			<?php 						
+					$image_id=get_post_meta(102,"advertisement1_image",true);	
+					$thumb = wp_get_attachment_image_src($image_id, 'add' );
+				?>	
+                    <img src="<?php echo $thumb['0'];?>" alt="Kid's Martial Arts" />
+                <div class="about-side-hov"><a href="<?php the_field('advertisement1_link',102); ?>"> Click Here</a></div>
             </div>
             
             <div class="about-red-box">
-                    <h2>After School Program</h2>
-                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/block-img2.png" alt="After School Program" />
-                    <div class="about-side-hov"><a href="#"> Click Here</a></div>
+                    <h2><?php the_field('advertisement2_title',102); ?></h2>
+					<?php 						
+					$image_id=get_post_meta(102,"advertisement2_image",true);	
+					$thumb = wp_get_attachment_image_src($image_id, 'add' );
+				?>	
+                    <img src="<?php echo $thumb['0'];?>" alt="After School Program" />
+                    <div class="about-side-hov"><a href="<?php the_field('advertisement2_link',102); ?>"> Click Here</a></div>
             </div>
             
             <div class="about-red-box">
-                    <h2>Summer Camp</h2>
-                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/block-img3.png" alt="Summer Camp" />
-                    <div class="about-side-hov"><a href="#"> Click Here</a></div>
+                    <h2><?php the_field('advertisement3_title',102); ?></h2>
+					<?php 						
+					$image_id=get_post_meta(102,"advertisement3_image",true);	
+					$thumb = wp_get_attachment_image_src($image_id, 'add' );
+				?>	
+                    <img src="<?php echo $thumb['0'];?>" alt="Summer Camp" />
+                    <div class="about-side-hov"><a href="<?php the_field('advertisement3_link',102); ?>"> Click Here</a></div>
             </div>
             
             <div class="about-red-box">
-                    <h2>Adult Martial Arts</h2>
+                    <h2><?php the_field('advertisement4_title',102); ?></h2>
+					<?php 						
+					$image_id=get_post_meta(102,"advertisement4_image",true);	
+					$thumb = wp_get_attachment_image_src($image_id, 'add' );
+					?>	
                     <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/block-img4.png" alt="Adult Martial Arts" />
-                    <div class="about-side-hov"><a href="#"> Click Here</a></div>
+                    <div class="about-side-hov"><a href="<?php the_field('advertisement4_link',102); ?>"> Click Here</a></div>
             </div>
             
             
@@ -145,28 +109,37 @@
                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  <?php 
+				$i=0;
+			$args = array('post_type' => 'success','posts_per_page'=>5,'order' => 'DESC');
+			$loop = new WP_Query( $args );
+			while ( $loop->have_posts() ) : $loop->the_post();
+	?>
+    <li data-target="#carousel-example-generic" data-slide-to="<?php echo $i;?>" class="<?php if($i==0){echo'active';}else{} ?>"></li>
+ <?php 
+ $i++;
+	endwhile;
+	wp_reset_query();
+	?>
   </ol>
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <p>“I have just read your website in much more detail, and simply must say that I admire your program so much that I wish all institutions with children’s activities were like yours.  The scope of your after-school program itself is breathtaking and I truly envy all of the parents of children involved with classes at your dojangs.”
-          <span>Peter S.</span>
-        </p>
+  <?php 
+				$i=0;
+			$args = array('post_type' => 'success','posts_per_page'=>5,'order' => 'DESC');
+			$loop = new WP_Query( $args );
+			while ( $loop->have_posts() ) : $loop->the_post();
+	?>
+     <div class="item <?php if($i==0){echo'active';}else{} ?>">
+      <?php echo content('100');?>
+	  <span><?php the_field('name',$post->ID); ?></span>
     </div>
-    <div class="item">
-      <p>“I have just read your website in much more detail, and simply must say that I admire your program so much that I wish all institutions with children’s activities were like yours.  The scope of your after-school program itself is breathtaking and I truly envy all of the parents of children involved with classes at your dojangs.”
-          <span>Peter S.</span>
-        </p>
-      </div>
-    <div class="item active">
-      <p>“I have just read your website in much more detail, and simply must say that I admire your program so much that I wish all institutions with children’s activities were like yours.  The scope of your after-school program itself is breathtaking and I truly envy all of the parents of children involved with classes at your dojangs.”
-          <span>Peter S.</span>
-        </p>
-    </div>
+ <?php 
+ $i++;
+	endwhile;
+	wp_reset_query();
+	?>
     
   </div>
 
@@ -189,20 +162,19 @@
                 <h2 class="widget-rgtside-title">Recent News</h2>
                 <div class="about-widget-body">
                 <ul class="news-post">
+				<?php 
+						$args = array('post_type' => 'post','posts_per_page'=>6,'order' => 'DESC');
+						$loop = new WP_Query( $args );
+						while ( $loop->have_posts() ) : $loop->the_post();
+				?>
                     <li>
-                    <a href="">57th MOUNTAIN KIM TOURNAMENTS
-                    <span> <i class="fa fa-calendar" aria-hidden="true"></i> MARCH 7, 2016</span></a>
+                    <a href="<?php the_permalink();?>"><?php the_title();?>
+                    <span> <i class="fa fa-calendar" aria-hidden="true"></i><?php the_time('M d, Y'); ?></span></a>
                     </li>
-                    
-                    <li>
-                    <a href="">57th MOUNTAIN KIM CHAMPIONSHIP (3-5-16)
-                    <span> <i class="fa fa-calendar" aria-hidden="true"></i> FEBRUARY 4, 2016</span></a>
-                    </li>
-                    
-                    <li>
-                    <a href="">BLACK BELT TEST IS ON 7-11-15 (3:30 PM)
-                    <span> <i class="fa fa-calendar" aria-hidden="true"></i> JUNE 15, 2015</span></a>
-                    </li>
+                 <?php 
+						endwhile;
+						wp_reset_query();
+				?> 
                 </ul>
                 </div>
             </div>

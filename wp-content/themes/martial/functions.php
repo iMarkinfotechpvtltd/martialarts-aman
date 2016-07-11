@@ -500,17 +500,17 @@ function my_custom_post_success() {
 
 
 $labels = array(
-		'name'              => _x( 'Kid Martial Art category', 'Kid Martial Art category' ),
-		'singular_name'     => _x( 'Kid Martial Art category', 'Kid Martial Art category' ),
-		'search_items'      => __( 'Search Kid Martial Art category' ),
-		'all_items'         => __( 'All Kid Martial Art category' ),
-		'parent_item'       => __( 'Parent Kid Martial Art category' ),
-		'parent_item_colon' => __( 'Parent Kid Martial Art category:' ),
-		'edit_item'         => __( 'Edit Kid Martial Art category' ),
-		'update_item'       => __( 'Update Kid Martial Art category' ),
-		'add_new_item'      => __( 'Add New Kid Martial Art category' ),
-		'new_item_name'     => __( 'New Kid Martial Art category' ),
-		'menu_name'         => __( 'Kid Martial Art category' ),
+		'name'              => _x( 'Kid Martial Art Location', 'Kid Martial Art Location' ),
+		'singular_name'     => _x( 'Kid Martial Art Location', 'Kid Martial Art Location' ),
+		'search_items'      => __( 'Search Kid Martial Art Location' ),
+		'all_items'         => __( 'All Kid Martial Art Location' ),
+		'parent_item'       => __( 'Parent Kid Martial Art Location' ),
+		'parent_item_colon' => __( 'Parent Kid Martial Art Location' ),
+		'edit_item'         => __( 'Edit Kid Martial Art Location' ),
+		'update_item'       => __( 'Update Kid Martial Art Location' ),
+		'add_new_item'      => __( 'Add New Kid Martial Art Location' ),
+		'new_item_name'     => __( 'New Kid Martial Art Location' ),
+		'menu_name'         => __( 'Kid Martial Art Location' ),
 	);
 
 	$args = array(
@@ -568,17 +568,17 @@ add_action( 'init', 'codex_martial' );
 
 
 $labels = array(
-		'name'              => _x( 'After School Program category', 'After School Program category' ),
-		'singular_name'     => _x( 'After School Program category', 'After School Program category' ),
-		'search_items'      => __( 'Search After School Program category' ),
-		'all_items'         => __( 'All After School Program category' ),
-		'parent_item'       => __( 'Parent After School Program category' ),
-		'parent_item_colon' => __( 'Parent After School Program category:' ),
-		'edit_item'         => __( 'Edit After School Program category' ),
-		'update_item'       => __( 'Update After School Program category' ),
-		'add_new_item'      => __( 'Add New After School Program category' ),
-		'new_item_name'     => __( 'New After School Program category' ),
-		'menu_name'         => __( 'After School Program category' ),
+		'name'              => _x( 'After School Program Location', 'After School Program Location' ),
+		'singular_name'     => _x( 'After School Program Location', 'After School Program Location' ),
+		'search_items'      => __( 'Search After School Program Location' ),
+		'all_items'         => __( 'All After School Program Location' ),
+		'parent_item'       => __( 'Parent After School Program Location' ),
+		'parent_item_colon' => __( 'Parent After School Program Location:' ),
+		'edit_item'         => __( 'Edit After School Program Location' ),
+		'update_item'       => __( 'Update After School Program Location' ),
+		'add_new_item'      => __( 'Add New After School Program Location' ),
+		'new_item_name'     => __( 'New After School Program Location' ),
+		'menu_name'         => __( 'After School Program Location' ),
 	);
 
 	$args = array(
@@ -635,17 +635,17 @@ add_action( 'init', 'codex_schools' );
 
 
 $labels = array(
-		'name'              => _x( 'Summer Camp category', 'Summer Camp category' ),
-		'singular_name'     => _x( 'Summer Camp category', 'Summer Camp category' ),
-		'search_items'      => __( 'Search Summer Camp category' ),
-		'all_items'         => __( 'All Summer Camp category' ),
-		'parent_item'       => __( 'Parent Summer Camp category' ),
-		'parent_item_colon' => __( 'Parent Summer Camp category:' ),
-		'edit_item'         => __( 'Edit Summer Camp category' ),
-		'update_item'       => __( 'Update Summer Camp category' ),
-		'add_new_item'      => __( 'Add New Summer Camp category' ),
-		'new_item_name'     => __( 'New Summer Camp category' ),
-		'menu_name'         => __( 'Summer Camp category' ),
+		'name'              => _x( 'Summer Camp Location', 'Summer Camp Location' ),
+		'singular_name'     => _x( 'Summer Camp Location', 'Summer Camp Location' ),
+		'search_items'      => __( 'Search Summer Camp Location' ),
+		'all_items'         => __( 'All Summer Camp Location' ),
+		'parent_item'       => __( 'Parent Summer Camp Location' ),
+		'parent_item_colon' => __( 'Parent Summer Camp Location:' ),
+		'edit_item'         => __( 'Edit Summer Camp Location' ),
+		'update_item'       => __( 'Update Summer Camp Location' ),
+		'add_new_item'      => __( 'Add New Summer Camp Location' ),
+		'new_item_name'     => __( 'New Summer Camp Location' ),
+		'menu_name'         => __( 'Summer Camp Location' ),
 	);
 
 	$args = array(
@@ -696,6 +696,75 @@ function codex_camp() {
 }
 add_action( 'init', 'codex_camp' );
 
+
+/***************************************Adult Martial Arts******************************************/
+
+
+
+$labels = array(
+		'name'              => _x( 'Adult Martial Arts Location', 'Adult Martial Arts Location' ),
+		'singular_name'     => _x( 'Adult Martial Arts Location', 'Adult Martial Arts Location' ),
+		'search_items'      => __( 'Search Adult Martial Arts Location' ),
+		'all_items'         => __( 'All Adult Martial Arts Location' ),
+		'parent_item'       => __( 'Parent Adult Martial Arts Location' ),
+		'parent_item_colon' => __( 'Parent Adult Martial Arts Location:' ),
+		'edit_item'         => __( 'Edit Adult Martial Arts Location' ),
+		'update_item'       => __( 'Update Adult Martial Arts Location' ),
+		'add_new_item'      => __( 'Add New Adult Martial Arts Location' ),
+		'new_item_name'     => __( 'New Adult Martial Arts Location' ),
+		'menu_name'         => __( 'Adult Martial Arts Location' ),
+	);
+
+	$args = array(
+		'hierarchical'      => true,
+		'labels'            => $labels,
+		'show_ui'           => true,
+		'show_admin_column' => true,
+		'query_var'         => true,
+		'rewrite'           => array( 'slug' => 'adult_category' ),
+	);
+
+	register_taxonomy( 'adult_category', array( 'adult_category' ), $args );
+
+function codex_adult() {
+  $labels = array(
+    'name' => 'Adult Martial Arts',
+    'singular_name' => 'Adult Martial Arts',
+    'add_new' => 'Add Adult Martial Arts',
+    'add_new_item' => 'Add New Adult Martial Arts',
+    'edit_item' => 'Edit Adult Martial Arts',
+    'new_item' => 'New Adult Martial Arts',
+    'all_items' => 'All Adult Martial Arts',
+    'view_item' => 'View Adult Martial Arts',
+    'search_items' => 'Search Adult Martial Arts',
+    'not_found' =>  'No Adult Martial Arts found',
+    'not_found_in_trash' => 'No Adult Martial Arts found in Trash', 
+    'parent_item_colon' => '',
+	'menu_name' => 'Adult Martial Arts'
+  );
+
+  $args = array(
+    'labels' => $labels,
+    'public' => true,
+    'publicly_queryable' => true,
+    'show_ui' => true, 
+    'show_in_menu' => true, 
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'adult' ), 
+    'capability_type' => 'post',
+    'has_archive' => true, 
+    'hierarchical' => false,
+    'menu_position' => 10,
+	'taxonomies' => array('adult_category'),
+    'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )
+  ); 
+
+  register_post_type( 'adult', $args );
+}
+add_action( 'init', 'codex_adult' );
+
+
+
 //ADD IMAGE SIZE
 
 add_image_size( 'home', 700, 571,true);
@@ -716,3 +785,10 @@ add_image_size( 'reliable', 69, 38,true);
 add_image_size( 'power', 53, 61,true);
 add_image_size( 'games', 72, 52,true);
 add_image_size( 'caring', 30, 50,true);
+add_image_size( 'news', 340, 340,true);
+add_image_size( 'adult', 555, 489,true);
+add_image_size( 'train', 473, 434,true);
+add_image_size( 'self', 387, 580,true);
+add_image_size( 'mental', 278, 417,true);
+add_image_size( 'new', 375, 391,true);
+add_image_size( 'proff', 278, 278,true);

@@ -149,8 +149,17 @@
             
         </div>
     </section>
-    
-    <section class="find">
+     
+    <section class="find ready">
+    <div class="container">
+        <form role="form" class="form-inline">
+            <div class="form-group"><label>Are You Ready?</label></div>
+            <div class="form-group"><a href="#">Get Started</a></div>
+        </form>
+        
+    </div>
+    </section>
+    <!--<section class="find">
     <div class="container">
         <form role="form" class="form-inline">
             <div class="form-group"><label>Find A Location Near You</label></div>
@@ -158,5 +167,5 @@
         </form>
         
     </div>
-    </section>
+    </section>-->
 <?php get_footer();?>

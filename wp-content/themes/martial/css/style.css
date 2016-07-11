@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,400italic,600,700,800,900);
+F@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,400italic,600,700,800,900);
 
 body{
 	font-family: 'Raleway', sans-serif;
@@ -1102,6 +1102,93 @@ width:430px !important
 
 
 /*============================================ Location Page ============================================*/
+
+/*============================================ News Page ============================================*/
+.news-p-intro{font-size: 20px; font-weight: 500; line-height: 36px;}
+.news-post-info > ul li {
+  border-left: 1px solid;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 15px;
+  list-style-type: none;
+  padding: 0 10px;
+}
+.news-post-info li i {
+  margin-right: 5px;
+}
+.news-post-info li:first-child {
+  border: medium none;
+  padding-left: 0;
+}
+
+.n-post .a-post-content p a{ color:#ed1c24}
+
+/*============================================ News Page ============================================*/
+
+
+
+/*============================================ Adult Page ============================================*/
+.contrast-bg{background-color: #f7f7f7;}
+.adult-testimonials {padding-top: 55px; display: inline-block; width: 100%;}
+.testimonials-adult {border-bottom: 1px solid #dfdfdf; padding: 53px 0; text-align: center;}
+.testimonials-adult.last {border-bottom: 0;}
+.testimonials-adult p {color: #010101; font-size: 19px; line-height: 46px; font-style: italic; margin-bottom: 15px;}
+.testimonials-adult h2 {margin-bottom: 44px;}
+.adult-name {color: #e40014; font-size: 19px; font-weight: 600;}
+.adult-p-sections {padding: 116px 0 44px; position: relative; display: inline-block; width: 100%;}
+.pos {position: absolute; z-index: 9;}
+.adult-p-sections .gen-heading {line-height: 74px;}
+.adult-p-sections h4 {font-size: 30px; margin: 30px 0 22px;}
+.adult-p-sections p {font-size: 19px; line-height: 32px; margin-bottom: 21px;}
+
+.wht-u-get {left: -180px; top: -193px;}
+.wht-u-get img {
+  width: 140%;
+}
+
+
+.pos.slf-defense {
+  left: -225px;
+  max-width: 387px;
+  top: -177px;
+}
+
+
+/*============================================ Adult Page ============================================*/
+
+
+/*============================================ News Inner Page ============================================*/
+.about-post.inner-news-content {
+  background-color: transparent;
+}
+.inner-news-content .a-post-content img {
+  float: left;
+}
+
+
+
+
+/* 11 july Changes*/
+
+.about-post.inner-news-content {
+ background-color: transparent;
+}
+.inner-news-content .a-post-content img {
+ float: left;
+}
+.result {
+ color: #f00;
+ left: 0;
+ padding: 5px;
+ position: absolute;
+ right: 0;
+ font-weight:600;
+ font-size:15px;
+}
+/*============================================ News Inner Page ============================================*/
+
+
+
 
 
 @media (min-width: 1500px) {

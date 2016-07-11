@@ -15,14 +15,30 @@
     <div class="row">
         <div class="col-lg-offset-1 col-lg-10 col-md-offset-1 col-md-10 col-sm-12 col-xs-12">
         <ul>
-            <li><a href="">About</a</li>
-            <li><a href="">Programs</a</li>
-            <li><a href="">Success Stories</a</li>
-            <li><a href="">Locations</a</li>
-            <li><a href="">Blog</a</li>
-            <li><a href="">Birthday</a</li>
-            <li><a href="">Web Special</a</li>     
-            <li><a href="">Appointment</a></li>
+           <?php
+
+		$defaults = array(
+		'theme_location'  => '',
+		'menu'            => 'header',
+		'container'       => '',
+		'container_class' => '',
+		'container_id'    => '',
+		'menu_class'      => 'menu',
+		'menu_id'         => '',
+		'echo'            => true,
+		'fallback_cb'     => 'wp_page_menu',
+		'before'          => '',
+		'after'           => '',
+		'link_before'     => '',
+		'link_after'      => '',
+		'items_wrap'      => '%3$s',
+		'depth'           => 0,
+		'walker'          => ''
+		);
+
+		wp_nav_menu( $defaults );
+
+		?> 
             
             </ul>
         </div>
@@ -33,19 +49,19 @@
         <div class="container">
         <div class="row">
         <div class="col-lg-4">
-            <p>Copyright © 2016 - Mountain Kim Martial Arts - All Rights Reserved</p>
+            <p>Copyright © <?php echo date('Y ');?> - Mountain Kim Martial Arts - All Rights Reserved</p>
         </div>
         <div class="col-lg-4">
             <div class="foot-logo">
-        <a href="#"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/footer-logo.png" /></a>
+        <a href="<?php echo site_url();?>"><img src="<?php echo get_option_tree('logo_footer');?>" /></a>
             </div>
         </div>
         <div class="col-lg-offset-1 col-lg-3">
         <ul>
-            <li><a href=""><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
-            <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-            <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-            <li><a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            <li><a href="<?php echo get_option_tree('pinterest_url');?>"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+            <li><a href="<?php echo get_option_tree('facebook_url');?>"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="<?php echo get_option_tree('twitter_url');?>"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="<?php echo get_option_tree('you_tube_url');?>"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
         </ul>
         </div>
         </div>
@@ -57,6 +73,7 @@
 <?php wp_footer(); ?>
            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/bootstrap.min.js"></script>
+	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/main.js"></script>
        <script type="text/javascript">
 jQuery(function() {
   jQuery('a.animated').click(function() {

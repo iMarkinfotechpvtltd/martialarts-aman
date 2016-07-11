@@ -63,6 +63,19 @@
 							<?php	
 								}
 								}
+							else if($location_id==4){
+												$args = array( 'taxonomy' => 'adult_category','hide_empty'=>0 );
+									$terms = get_terms('adult_category', $args);
+									  
+									foreach ($terms as $term) 
+									{
+										$slug=$term->name;
+										$term_id=$term->term_id;
+							?>
+							<option value="<?php echo $term_id; ?>"><?php print_r($slug);?></option>
+							<?php	
+								}
+								}
 							?>
                         </select>
                     </div>
@@ -150,7 +163,28 @@
   wp_reset_query();
   }
   }
-  else{echo'dddddddddddddd';}
+  else if($location_id==4){
+	  $args = array( 'taxonomy' => 'adult_category','hide_empty'=>0 );
+            $terms = get_terms('adult_category', $args);
+              
+            foreach ($terms as $term) 
+            {
+				$slug=$term->slug;
+				$args = array('post_type' => 'adult','posts_per_page' =>1,'adult_category'=>$slug);
+				$loop = new WP_Query( $args );
+				while ( $loop->have_posts() ) : $loop->the_post();
+	  ?>
+	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">	
+                <a href="<?php the_permalink(); ?>"><h2 class="gen-heading"><?php echo  $term->name; ?></h2></a>
+                <p class="inner-location"><?php echo $term->description;  ?></p>
+				<a href="<?php the_permalink(); ?>">View Location</a>
+            </div>	
+  
+  <?php
+   endwhile;
+  wp_reset_query();
+  }
+  }
   ?>
 	</div>
     </div>
@@ -161,6 +195,14 @@
 endwhile;
 wp_reset_query();
 ?>
+ <?php }else{ ?>
+ <section>
+         <div class="container">
+             <div style="width:100%; padding:20px 0; text-align:center;">
+              <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/404-page.jpg" alt="404" />
+             </div>
+         </div>
+    </section>
  <?php } ?>
 <script>
 

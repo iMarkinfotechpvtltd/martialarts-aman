@@ -37,7 +37,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a href="<?php echo site_url();?>" class="navbar-brand"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/logo.png" alt="logo" /></a>
+                        <a href="<?php echo site_url();?>" class="navbar-brand"><img src="<?php echo get_option_tree('logo');?>" alt="logo" /></a>
                     </div>
                     <div class="navbar-collapse collapse" id="navbar">
 
@@ -66,10 +66,14 @@
 		wp_nav_menu( $defaults );
 
 		?> 
-                            <li><form class="form-inline menu-search"><div class="form-group">
-                        <input type="text" placeholder="" class="form-control"><button><i class="fa fa-search" aria-hidden="true"></i>
-</button>
-                    </div></form></li>
+                            <li>
+							 <form role="search" method="get" id="searchform" class="search-form form-inline menu-search" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+                    
+                        <input type="text" class="form-control" placeholder="Search" name="s" id="s" value="<?php echo get_search_query(); ?>">
+							<button><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </form>
+							
+					</li>
                         </ul>
 
                     </div>

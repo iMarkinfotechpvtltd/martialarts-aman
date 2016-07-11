@@ -185,20 +185,19 @@
                 <h2 class="widget-rgtside-title">Recent News</h2>
                 <div class="about-widget-body">
                 <ul class="news-post">
-                    <li>
-                    <a href="">57th MOUNTAIN KIM TOURNAMENTS
-                    <span> <i class="fa fa-calendar" aria-hidden="true"></i> MARCH 7, 2016</span></a>
+				<?php 
+						$args = array('post_type' => 'post','posts_per_page'=>6,'order' => 'DESC');
+						$loop = new WP_Query( $args );
+						while ( $loop->have_posts() ) : $loop->the_post();
+				?>
+                   <li>
+                    <a href="<?php the_permalink();?>"><?php the_title();?>
+                    <span> <i class="fa fa-calendar" aria-hidden="true"></i><?php the_time('M d, Y'); ?></span></a>
                     </li>
-                    
-                    <li>
-                    <a href="">57th MOUNTAIN KIM CHAMPIONSHIP (3-5-16)
-                    <span> <i class="fa fa-calendar" aria-hidden="true"></i> FEBRUARY 4, 2016</span></a>
-                    </li>
-                    
-                    <li>
-                    <a href="">BLACK BELT TEST IS ON 7-11-15 (3:30 PM)
-                    <span> <i class="fa fa-calendar" aria-hidden="true"></i> JUNE 15, 2015</span></a>
-                    </li>
+                   <?php 
+						endwhile;
+						wp_reset_query();
+				?> 
                 </ul>
                 </div>
             </div>
