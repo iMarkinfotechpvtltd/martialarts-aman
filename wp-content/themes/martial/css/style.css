@@ -556,8 +556,12 @@ footer .copy-rgt ul li:hover{
 .party p{color: #010101; font-size: 19px; margin-top: 25px; line-height: 36px;}
 
 .people-views{padding: 118px 0; text-align: center; position: relative;}
-.people-views:before{ background-image: url("../images/people-views-before.png"); bottom: 10px; content: ""; height: 690px; left: 0; position: absolute; width: 222px;}
-.people-views:after{ background-image: url("../images/people-views-after.png"); content: ""; height: 780px; right: 0; position: absolute; width: 235px; top:-20px;}
+
+.kid-b-b4 {bottom: 10px; left: 0; position: absolute;}
+.kid-b-aftr {position: absolute; right: 0; top: -20px;}
+
+
+/*.people-views:after{ background-image: url("../images/people-views-after.png"); content: ""; height: 780px; right: 0; position: absolute; width: 235px; top:-20px;}*/
 .people-views h2 {margin-bottom: 47px;}
 .people-views p{color: #010101; font-size: 19px; line-height: 45px; font-style: italic; padding:0 10px; position: relative; z-index: 2;}
 .people-views p::before {color: #b1b1b1; content: ""; font-family: fontawesome; font-size: 25px; margin-right: 5px; z-index: 1;  position: relative;}

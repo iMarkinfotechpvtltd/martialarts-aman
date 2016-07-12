@@ -792,3 +792,6 @@ add_image_size( 'self', 387, 580,true);
 add_image_size( 'mental', 278, 417,true);
 add_image_size( 'new', 375, 391,true);
 add_image_size( 'proff', 278, 278,true);
+add_image_size( 'party', 458, 305,true);
+add_image_size( 'left', 223, 693,true);
+add_image_size( 'right', 228, 789,true);
