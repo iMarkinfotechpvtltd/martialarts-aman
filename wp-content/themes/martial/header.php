@@ -20,7 +20,9 @@
 	<?php wp_head(); ?>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/main.css">
     <link rel="stylesheet" type="text/css" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/style.css">
+   
 </head>
 
 <body>
@@ -69,7 +71,7 @@
                             <li>
 							 <form role="search" method="get" id="searchform" class="search-form form-inline menu-search" action="<?php echo esc_url( home_url( '/' ) ); ?>">
                     
-                        <input type="text" class="form-control" placeholder="Search" name="s" id="s" value="<?php echo get_search_query(); ?>">
+                        <input type="text" class="form-control" name="s" id="s" value="<?php echo get_search_query(); ?>">
 							<button><i class="fa fa-search" aria-hidden="true"></i></button>
                     </form>
 							

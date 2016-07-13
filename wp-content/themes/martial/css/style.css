@@ -1,8 +1,11 @@
-F@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,400italic,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,400italic,600,700,800,900);
 
-body{
+*{
 	font-family: 'Raleway', sans-serif;
 	}
+body:before, body:after {
+   content: none !important;
+}
 a, a:hover, a:focus{text-decoration:none; outline:none;}
 a, button{
     -webkit-transition: all .3s ease-in-out;
@@ -41,13 +44,13 @@ h1, h2, h3, h4, h5, h6, p{ padding:0; margin:0;}
     right: -6px;
     top: 0;
 }
-.nav .menu-search input {
+/*.nav .menu-search input {
     border: 0 none;
     border-bottom: 1px solid transparent;
     background-image: url(../images/menu-srch.png);
     background-position: right center;
     background-repeat: no-repeat;
-    background-size: 19px auto;
+    background-size: auto 19px;
     width: 30px;
     box-shadow: none;
     cursor: pointer;
@@ -57,10 +60,47 @@ h1, h2, h3, h4, h5, h6, p{ padding:0; margin:0;}
      -webkit-transition: all .3s ease-in-out;
  -moz-transition: all .3s ease-in-out; -o-transition: all .3s ease-in-out; transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out;  
     cursor: pointer;
+    max-width: inherit;
+    background-color: transparent;
+}*/
+.nav .menu-search input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background-color: transparent;
+  background-image: url("../images/menu-srch.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 19px auto;
+  border-color: -moz-use-text-color -moz-use-text-color transparent;
+  border-image: none;
+  border-style: none none solid;
+  border-width: 0 0 1px;
+  box-shadow: none;
+  cursor: pointer;
+  height: 40px;
+  max-width: inherit;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.3s ease-in-out 0s;
+  width: 30px;
+    max-width: inherit;
 }
-.nav.navbar-nav.navbar-right > li:last-child {
+
+/*.nav.navbar-nav.navbar-right > li:last-child {
     padding-left: 40px;
+}*/
+
+.nav.navbar-nav.navbar-right > li:last-child {
+    position: absolute;
+    right: 0;
+    top: 0;
 }
+.nav.navbar-nav.navbar-right li:nth-last-child(2) a{margin-right: 0; padding-right: 0;}
+
 
 .nav .menu-search input:focus {
     background-image: none;
@@ -69,7 +109,7 @@ h1, h2, h3, h4, h5, h6, p{ padding:0; margin:0;}
     box-shadow: none;
     cursor: text;
     outline: 0 none;
-    width: 180px;
+    width: 180px !important;
 }
 .nav .menu-search input + button { font-size: 20px; font-weight: 400; color:#7D7C7B;}
 .nav .menu-search input:focus + button {
@@ -77,6 +117,24 @@ h1, h2, h3, h4, h5, h6, p{ padding:0; margin:0;}
     border: 0 none;
     display: block;
 }
+
+
+
+/*NEW*/
+.nav .menu-search input:focus + button {
+  background-color: transparent;
+  border: 0 none;
+  display: block;
+  font-size: 21px;
+  margin-left: 0;
+  margin-right: 19px;
+  position: absolute;
+  right: 0 !important;
+  top: 2px;
+    padding: 0;
+}
+
+
 
 
 .banner {
@@ -520,6 +578,7 @@ footer .copy-rgt ul li:hover{
 .copy-rgt p {
     margin-top: 20px;
     margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
 }
 
 
@@ -557,8 +616,8 @@ footer .copy-rgt ul li:hover{
 
 .people-views{padding: 118px 0; text-align: center; position: relative;}
 
-.kid-b-b4 {bottom: 10px; left: 0; position: absolute;}
-.kid-b-aftr {position: absolute; right: 0; top: -20px;}
+.kid-b-b4 {bottom: 10px; left: 0; position: absolute; padding: 0 !important;}
+.kid-b-aftr {position: absolute; right: 0; top: -20px; padding: 0 !important;}
 
 
 /*.people-views:after{ background-image: url("../images/people-views-after.png"); content: ""; height: 780px; right: 0; position: absolute; width: 235px; top:-20px;}*/
@@ -639,6 +698,7 @@ footer .copy-rgt ul li:hover{
 .about-post.odd .a-post-content img {float: left;}
 .about-post.even .a-post-content img {float: right;}
 .about-post .a-post-content p .p-intro{color: #010101; font-size: 20px; display: block;}
+.about-post .a-post-content p strong{color: #010101; font-size: 20px; display: block;}
 .about-post .a-post-content p {color: #000; font-size: 17px; line-height: 36px; padding: 0 20px;}
 
 .abt-page-form{padding: 75px 0 50px; }
@@ -678,8 +738,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e0210', end
 .news-post li a span{font-size:15px; font-weight: 400; display: block; margin-top: 5px;}
 .news-post li a span i{margin:0 5px;}
 .carousel-control.left, .carousel-control.right{ display: none;}
-.about-widget-body .item p {color: #010101; font-size: 18px; font-style: italic; padding: 30px 20px; text-align: center; line-height: 40px;}
-.about-widget-body .item p span{ display: block; margin-bottom:10px; font-weight: 700;}
+.about-widget-body .item p {color: #010101; font-size: 18px; font-style: italic; padding: 30px 20px 0px; text-align: center; line-height: 40px;}
+.about-widget-body .item p + span{ display: block; margin:0 auto 30px auto; font-weight: 700; text-align: center;}
 .carousel-indicators li {background-color: #ed1c24; opacity: .22; border-color:#ed1c24; width: 7px; height: 7px; }
 .carousel-indicators .active {background-color: #ed1c24; opacity:1; width: 9px; height: 9px;}
 .carousel-indicators{ bottom: -4px;}
@@ -692,11 +752,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e0210', end
 .abt-page-form form .btn{ font-size: 20px; font-weight: 700; max-width: 459px; padding: 20px; width: 100%; background-color: #ed1c24; color: #fff; display: inline-block; border: 2px solid #ed1c24;}
 .form-group-btn{ display: inline-block; width: 100%;}
 .form-group-btn .btn:hover{ background-color: #fff; border-color: #ed1c24; color: #ed1c24; }
+.form-group-btn .btn:focus{ outline: none; }
 .abt-location a{
 width:430px !important
 }
 
 
+.wpcf7-not-valid {border: 1px solid #f00 !important;}
+.wpcf7-not-valid-tip {display: none !important;}
+div.wpcf7-response-output {position: absolute; left: 15px; right: 15px;}
+div.wpcf7 img.ajax-loader {border: none; vertical-align: middle; margin-left: 4px; position: absolute; left: 0; right: 0; margin: auto; bottom: 62px;}
 
 
 /*============================================ About Page ============================================*/
@@ -1105,6 +1170,10 @@ width:430px !important
 /*============================= Location Inner Page =============================*/
 
 
+
+.srch-result {margin: 10px auto;}
+.srch-result a {background-color: #ed1c24; color: #fff; height: 68px; margin-left: 36px; width: 193px; font-weight: 600; font-size: 20px; border: 2px solid #ed1c24;}
+.srch-result .small-heading{display: inline-block; line-height: 40px; background:transparent; color: #ed1c24; margin: 0; padding: 0; border:0; font-size: 36px; font-weight: 900; width: auto;}
 /*============================================ Location Page ============================================*/
 
 /*============================================ News Page ============================================*/
@@ -1221,6 +1290,7 @@ width:430px !important
 
 .nav .menu-search input {
     background-size: 20px auto;
+    border-bottom-color: transparent;
 }
 .nav .menu-search input:focus + button {
     background-color: transparent;
@@ -1228,7 +1298,7 @@ width:430px !important
     display: block;
     position: absolute;
     right: -6px;
-    top: 1px;
+    top: 3px;
 }
 .nav .menu-search input:focus + button img{
     width:20px;
@@ -1503,6 +1573,8 @@ footer .copy-rgt ul li a {
     padding: 8px;
     width: 266px;
 }
+    
+.kid-b-b4 , .kid-b-aftr {max-width: 200px; padding: 0 !important;}
 /*============================================ Kids B'day Page ============================================*/
     
 /*============================================ About Page ============================================*/    
@@ -1520,6 +1592,11 @@ footer .copy-rgt ul li a {
 .abt-page-form form .btn{max-width:359px; padding:15px;}
 
 .about-post .a-post-content p .p-intro{ font-size: 18px;}
+.about-post .a-post-content p strong{ font-size: 18px;}
+    
+.abt-page-form form input {height: 59px;}
+.divide-half-r textarea {height: 208px !important;}
+    
 /*============================================ About Page ============================================*/   
     
     

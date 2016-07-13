@@ -185,32 +185,8 @@
     
     <div class="row">
         <div class="abt-page-form col-lg-offset-1 col-lg-10 col-md-offset-1 col-md-10 col-sm-12 col-xs-12">
-            <h1>How Can You Reach Us?</h1>
-            <p>For specific a location, visit our “Locations” page and contact that school directly.<br>
-For generic inquiries please fill contact form.</p>
-        <form>
-             <form role="form">
-                 <div class="divide-half-l">
-                     <div class="form-group">
-                         <input type="text" class="form-control" placeholder="Name*">
-                     </div>
-                     <div class="form-group">
-                         <input type="email" class="form-control" placeholder="Email*">
-                     </div>
-                     <div class="form-group">
-                         <input type="text" class="form-control" placeholder="Phone*">
-                     </div>
-                 </div>
-                 <div class="divide-half-r">
-                     <div class="form-group">
-                         <textarea class="form-control" placeholder="Comments*"></textarea>
-                     </div>
-                 </div>
-                     <div class="form-group-btn">
-                         <button type="submit" class="btn">Submit</button>
-                     </div>
-</form>
-        </form>        
+           <?php the_field('how_can_you_reach_us',23); ?>
+        <?php echo do_shortcode('[contact-form-7 id="45" title="Contact form 1"]');?>        
         </div>
     </div>
     

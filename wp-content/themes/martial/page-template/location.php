@@ -95,7 +95,6 @@
     </div>
 </section>
 <div class="location-inner">  
-<section class="best-decision loc-content">
     <div class="container">
         <div class="row">
 	<?php
@@ -110,8 +109,8 @@
 				$loop = new WP_Query( $args );
 				while ( $loop->have_posts() ) : $loop->the_post();
 	?>
-	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">	
-                <a href="<?php the_permalink(); ?>"><h2 class="gen-heading"><?php echo  $term->name; ?></h2></a>
+	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 srch-result">	
+                <h2><a href="<?php the_permalink(); ?>" class="small-heading"><?php echo  $term->name; ?></a></h2>
                 <p class="inner-location"><?php echo $term->description;  ?></p>
 				<a href="<?php the_permalink(); ?>">View Location</a>
             </div>		
@@ -131,8 +130,8 @@
 				$loop = new WP_Query( $args );
 				while ( $loop->have_posts() ) : $loop->the_post();
   ?>
-		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">	
-                <a href="<?php the_permalink(); ?>"><h2 class="gen-heading"><?php echo  $term->name; ?></h2></a>
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 srch-result">	
+                <h2><a href="<?php the_permalink(); ?>" class="small-heading"><?php echo  $term->name; ?></a></h2>
                 <p class="inner-location"><?php echo $term->description;  ?></p>
 				<a href="<?php the_permalink(); ?>">View Location</a>
             </div>		
@@ -152,8 +151,8 @@
 				$loop = new WP_Query( $args );
 				while ( $loop->have_posts() ) : $loop->the_post();
 	  ?>
-	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">	
-                <a href="<?php the_permalink(); ?>"><h2 class="gen-heading"><?php echo  $term->name; ?></h2></a>
+	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 srch-result">	
+                <h2><a href="<?php the_permalink(); ?>" class="small-heading"><?php echo  $term->name; ?></a></h2>
                 <p class="inner-location"><?php echo $term->description;  ?></p>
 				<a href="<?php the_permalink(); ?>">View Location</a>
             </div>	
@@ -174,8 +173,8 @@
 				$loop = new WP_Query( $args );
 				while ( $loop->have_posts() ) : $loop->the_post();
 	  ?>
-	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">	
-                <a href="<?php the_permalink(); ?>"><h2 class="gen-heading"><?php echo  $term->name; ?></h2></a>
+	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 srch-result">	
+                <h2><a href="<?php the_permalink(); ?>" class="small-heading"><?php echo  $term->name; ?></a></h2>
                 <p class="inner-location"><?php echo $term->description;  ?></p>
 				<a href="<?php the_permalink(); ?>">View Location</a>
             </div>	
@@ -188,7 +187,6 @@
   ?>
 	</div>
     </div>
-</section>
 
 </div>
 <?php 

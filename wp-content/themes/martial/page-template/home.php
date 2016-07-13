@@ -142,7 +142,29 @@
             
             <div class="row">
             <div class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-sm-12 col-xs-12 video-slider">
-                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/video-img.jpg" class="img-responsive" />
+                <!--img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/video-img.jpg" class="img-responsive" /-->
+                
+                
+                <!--========================= Video Slider =========================-->
+                
+                <div id="wrapper_bu"> <!-- BEGIN CAROUSEL -->
+				   <div id="bu1" class="holder_bu_center"> <!-- SLIDE ITEM --> 
+						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/video-img.jpg" style=" display: inline-block;">							  
+				   </div>
+																
+					<div id="bu2"> <!-- SLIDE ITEM --> 
+						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/video-img.jpg" style=" display: inline-block;">							  
+                    </div>
+                    
+                 
+				<style>
+                    #wrapper_bu {height: 100%; position: relative; width: 100%;}
+                </style>												
+
+				</div>
+                
+                <!--========================= Video Slider =========================-->
+                
                 <a href="">See All Success Stories <i aria-hidden="true" class="fa fa-long-arrow-right"></i></a>
                 </div>
             </div>
