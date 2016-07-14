@@ -14,7 +14,7 @@
     <div class="container">
     <div class="row">
         <div class="col-lg-offset-1 col-lg-10 col-md-offset-1 col-md-10 col-sm-12 col-xs-12">
-        <ul>
+        <ul class="custom">
            <?php
 
 		$defaults = array(
@@ -72,8 +72,11 @@
 	
 <?php wp_footer(); ?>
            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		   <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/main.js"></script>
+<script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5lightbox.js"></script>
     <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/bootstrap.min.js"></script>
-	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/main.js"></script>
+	
+	
        <script type="text/javascript">
 jQuery(function() {
   jQuery('a.animated').click(function() {
@@ -149,5 +152,22 @@ jQuery(function() {
     });
   });
 		</script>	
+<script>
+
+jQuery(document).ready(function(){
+
+	jQuery(".custom>li").each(function(){
+
+		jQuery(this).click(function(){
+		var abc= jQuery(this).attr("class");
+		jQuery("."+abc).addClass("cust");
+		jQuery().removeClass(".custom>li.current-menu-item");
+		});
+
+	});
+
+});
+
+</script>
 </body>
 </html>

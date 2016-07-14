@@ -3,6 +3,8 @@
 *{
 	font-family: 'Raleway', sans-serif;
 	}
+a:focus, a:hover {
+    color: inherit;}
 body:before, body:after {
    content: none !important;
 }
@@ -26,7 +28,7 @@ h1, h2, h3, h4, h5, h6, p{ padding:0; margin:0;}
  -moz-transition: all .3s ease-in-out; -o-transition: all .3s ease-in-out; transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out;
  margin: 0 15px;}
 
-.nav > li > a:focus, .nav > li > a:hover{ background-color: transparent; color: #e40014;}
+.nav > li > a:focus, .nav > li > a:hover, .nav .current-menu-item a{ background-color: transparent; color: #e40014;}
 .navbar-header {
     height: 220px;
 }
@@ -409,7 +411,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e0210', end
     text-transform: uppercase;
 }
 .news-main ul li a:hover {
-    color:#9a000e;
+    color:#222;/*9a000e*/
 }
 
 .video-slider a {
@@ -525,6 +527,7 @@ footer ul li a{
     color: #6d6d6d;
     font-size: 20px;
 }
+footer ul .current-menu-item a{ color: #e40014;}
 .copy-rgt {
     background-color: #0d0d0d;
     bottom: 0;
@@ -698,7 +701,7 @@ footer .copy-rgt ul li:hover{
 .about-post.odd .a-post-content img {float: left;}
 .about-post.even .a-post-content img {float: right;}
 .about-post .a-post-content p .p-intro{color: #010101; font-size: 20px; display: block;}
-.about-post .a-post-content p strong{color: #010101; font-size: 20px; display: block;}
+.about-post .a-post-content p strong{color: #010101; font-size: 20px; display: block; font-weight: 500;}
 .about-post .a-post-content p {color: #000; font-size: 17px; line-height: 36px; padding: 0 20px;}
 
 .abt-page-form{padding: 75px 0 50px; }
@@ -1170,10 +1173,10 @@ div.wpcf7 img.ajax-loader {border: none; vertical-align: middle; margin-left: 4p
 /*============================= Location Inner Page =============================*/
 
 
-
-.srch-result {margin: 10px auto;}
-.srch-result a {background-color: #ed1c24; color: #fff; height: 68px; margin-left: 36px; width: 193px; font-weight: 600; font-size: 20px; border: 2px solid #ed1c24;}
-.srch-result .small-heading{display: inline-block; line-height: 40px; background:transparent; color: #ed1c24; margin: 0; padding: 0; border:0; font-size: 36px; font-weight: 900; width: auto;}
+.location-inner{padding: 40px 0;}
+.srch-result {margin: 10px auto 20px;}
+.srch-result a {background-color: #ed1c24; color: #fff; margin: 10px 0; width: 193px; font-weight: 600; font-size: 18px; border: 2px solid #ed1c24; padding: 10px 20px; display: inline-block; text-align: center;}
+.srch-result .small-heading{display: inline-block; line-height: 40px; background:transparent; color: #ed1c24; margin: 0; padding: 0; border:0; font-size: 36px; font-weight: 900; width: auto; text-align: left;}
 /*============================================ Location Page ============================================*/
 
 /*============================================ News Page ============================================*/
@@ -1195,6 +1198,13 @@ div.wpcf7 img.ajax-loader {border: none; vertical-align: middle; margin-left: 4p
 }
 
 .n-post .a-post-content p a{ color:#ed1c24}
+
+.even .news-p-intro {
+  display: block;
+  padding-left: 15px;
+}
+.news-post-info{}
+
 
 /*============================================ News Page ============================================*/
 
@@ -1259,6 +1269,72 @@ div.wpcf7 img.ajax-loader {border: none; vertical-align: middle; margin-left: 4p
  font-size:15px;
 }
 /*============================================ News Inner Page ============================================*/
+
+
+/*================= Home Page Slider =================*/
+#wrapper_bu {
+   height: 481px;
+   position: relative;
+   width: 100%;
+   top:0;
+   background-color: #e40014;
+}
+.holder_bu_center {
+   background-color: transparent;
+   height: auto;
+   left: 0;
+   position: absolute;
+   top: 0;
+   transition: width 1s ease 0s, height 1s ease 0s, top 1s ease 0s, left 1s ease 0s;
+   width: 90%;
+   z-index: 9;
+}
+
+.holder_bu_awayR1 {
+   background-color: transparent;
+   height: auto;
+   left: 80%;
+   position: absolute;
+   top: 73%;
+   transition: width 1s ease 0s, height 1s ease 0s, top 1s ease 0s, left 1s ease 0s;
+   width: 40%;
+}
+
+
+.holder_bu_center a{position: relative; text-align: center;}
+.holder_bu_center .abc a:after {
+    content: "\f01d";
+    font-family: fontawesome;
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-size: 80px;
+    top: 50%;
+    bottom: 0;
+    margin: auto !important;
+    transform: translateY(-45px);
+    -o-transform: translateY(-45px);
+    -ms-transform: translateY(-45px);
+    -moz-transform: translateY(-45px);
+    -webkit-transform: translateY(-45px);
+    color: #e40014;
+}
+
+.holder_bu_center a img {
+    max-width: inherit;
+    width: 100%;
+}
+.abc a {
+    border: medium none !important;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.holder_bu_awayR1 .abc a {
+    pointer-events: none;
+}
+/*================= Home Page Slider =================*/
+
 
 
 
@@ -1492,6 +1568,55 @@ footer .copy-rgt ul li a {
     height: 30px;
     width: 30px;
 }
+    
+    
+/*================= Home Page Slider =================*/
+#wrapper_bu {
+  background-color: #e40014;
+  height: 338px;
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+.holder_bu_center {
+  background-color: transparent;
+  height: auto;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: width 1s ease 0s, height 1s ease 0s, top 1s ease 0s, left 1s ease 0s;
+  width: 70%;
+  width: 600px;
+  z-index: 9;
+}
+.holder_bu_awayR1 {
+  background-color: transparent;
+  height: auto;
+  left: 70%;
+  position: absolute;
+  top: 62%;
+  transition: width 1s ease 0s, height 1s ease 0s, top 1s ease 0s, left 1s ease 0s;
+  width: 40%;
+}
+.holder_bu_center a img {
+    max-width: inherit;
+    width: 100%;
+}
+.abc a {
+    border: medium none !important;
+    background-color: transparent;
+    display: block;
+    margin: 0;
+    padding: 0;
+    max-height: 338px;
+    overflow: hidden;
+}
+.holder_bu_awayR1 .abc a {
+    pointer-events: none;
+}
+.holder_bu_awayR1 img, .holder_bu_center img { user-select: none; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; -o-user-select: none;}
+/*================= Home Page Slider =================*/
+    
 
 /*============================================ Home Page ============================================*/
     
@@ -1777,6 +1902,38 @@ footer .copy-rgt ul li a {
     
 .loc-content p{line-height: 36px;}
 
+    
+
+.srch-result {
+    margin: 10px auto 20px;
+    background-color: #fafafa;
+    padding: 15px;
+}
+.srch-result .small-heading {
+    display: inline-block;
+    line-height: 32px;
+    background: transparent;
+    color: #ed1c24;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 24px;
+    font-weight: 900;
+    width: auto;
+    text-align: left;
+}
+.srch-result a {
+    background-color: #ed1c24;
+    color: #fff;
+    margin: 10px 0;
+    width: 163px;
+    font-weight: 600;
+    font-size: 15px;
+    border: 2px solid #ed1c24;
+    padding: 6px 20px;
+    display: inline-block;
+    text-align: center;
+}
 /*============================= Location Inner Page =============================*/
 .inner-location {
   line-height: 45px !important;

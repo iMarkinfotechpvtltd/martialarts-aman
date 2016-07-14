@@ -33,4 +33,11 @@ while ( have_posts() ) : the_post();
 <?php
 endwhile;
 ?>
+		<script>
+
+jQuery(document).ready(function(){
+jQuery(".menu-item-104").addClass("current-menu-item");
+});
+
+</script>
 <?php get_footer(); ?>

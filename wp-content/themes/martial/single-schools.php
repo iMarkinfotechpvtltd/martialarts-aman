@@ -78,7 +78,7 @@ if($cat=="centreville"){
 </div>
 <div class="af-element form-group">
 <div class="af-textWrap"><input type="text"  placeholder="Phone" id="awf_field-84211609" class="text" name="custom Phone" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="502" /></div>
-<div class="af-clear"></div></div><div class="af-element buttonContainer">
+<div class="af-clear"></div></div><div class="af-element buttonContainer form-group">
 <button type="submit" name="submit" id="af-submit-image-1130412055"  class="btn" alt="Submit Form" src=" " tabindex="503">Submit</button>
 <div class="af-clear"></div>
 </div>
@@ -143,7 +143,7 @@ if($cat=="centreville"){
 </div>
 <div class="af-element form-group">
 <div class="af-textWrap"><input type="text" id="awf_field-84211962" placeholder="Phone" class="text" name="custom Phone" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="502" /></div>
-<div class="af-clear"></div></div><div class="af-element buttonContainer">
+<div class="af-clear"></div></div><div class="af-element buttonContainer form-group">
 <button name="submit" id="af-submit-image-79124330" type="submit" class="btn"alt="Submit Form" src=" " tabindex="503">Submit</button>
 <div class="af-clear"></div>
 </div>
@@ -180,7 +180,7 @@ if($cat=="centreville"){
     })();
     -->
 </script>
-<?php }else if($cat=="frederickburg-plank"){?>
+<?php }else if($cat=="fredericksburg-5725-plank-rd"){?>
 
    
 <form method="post" class="af-form-wrapper form-inline" role="form" accept-charset="UTF-8" action="https://www.aweber.com/scripts/addlead.pl"  >
@@ -209,7 +209,7 @@ if($cat=="centreville"){
 </div>
 <div class="af-element form-group">
 <div class="af-textWrap"><input type="text" id="awf_field-84211305" placeholder="Phone" class="text" name="custom Phone" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="502" /></div>
-<div class="af-clear"></div></div><div class="af-element buttonContainer">
+<div class="af-clear"></div></div><div class="af-element buttonContainer form-group">
 <button  name="submit" id="af-submit-image-1570880355" type="submit" class="btn" alt="Submit Form" src=" " tabindex="503" >Submit</button>
 <div class="af-clear"></div>
 </div>
@@ -247,7 +247,7 @@ if($cat=="centreville"){
     -->
 </script>
 
-<?php } else if($cat=="frederickburg"){ ?>
+<?php } else if($cat=="fredericksburg-celebrate-virginia-parkway"){ ?>
   
 <form method="post" class="af-form-wrapper form-inline" accept-charset="UTF-8" action="https://www.aweber.com/scripts/addlead.pl" target="_blank" >
 <div style="display: none;">
@@ -275,7 +275,7 @@ if($cat=="centreville"){
 </div>
 <div class="af-element form-group">
 <div class="af-textWrap"><input type="text" id="awf_field-84182184"  placeholder="Phone" class="text form-control" name="custom Phone" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="502" /></div>
-<div class="af-clear"></div></div><div class="af-element buttonContainer">
+<div class="af-clear"></div></div><div class="af-element buttonContainer form-group">
  <button name="submit" id="af-submit-image-685129758" type="submit" class="btn" alt="Submit Form" tabindex="503" >Submit</button>
 <div class="af-clear"></div>
 </div>
@@ -340,7 +340,7 @@ if($cat=="centreville"){
 </div>
 <div class="af-element form-group">
 <div class="af-textWrap"><input type="text" id="awf_field-84212095" placeholder="Phone" class="text" name="custom Phone" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="502" /></div>
-<div class="af-clear"></div></div><div class="af-element buttonContainer">
+<div class="af-clear"></div></div><div class="af-element buttonContainer form-group">
 <button name="submit" id="af-submit-image-215374590" type="submit" class="btn" alt="Submit Form" tabindex="503" >Submit</button>
 <div class="af-clear"></div>
 </div>
@@ -405,7 +405,7 @@ if($cat=="centreville"){
 </div>
 <div class="af-element form-group">
 <div class="af-textWrap"><input type="text" placeholder="Phone" id="awf_field-84211749" class="text" name="custom Phone" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="502" /></div>
-<div class="af-clear"></div></div><div class="af-element buttonContainer">
+<div class="af-clear"></div></div><div class="af-element buttonContainer form-group">
 <button name="submit" id="af-submit-image-932867534" type="submit" class="btn" alt="Submit Form" tabindex="503" >Submit</button>
 <div class="af-clear"></div>
 </div>
@@ -444,20 +444,7 @@ if($cat=="centreville"){
 </script>
 
 <?php } else if($cat=="stafford"){?>
-<!--<form class="form-inline" >
-                    <div class="form-group">
-    <input type="text" class="form-control" placeholder="Name">
-                    </div>
-                    
-                    <div class="form-group">
-    <input type="email" class="form-control" placeholder="Email">
-                    </div>
-                    
-                    <div class="form-group">
-    <input type="phone" class="form-control" placeholder="Phone">
-                    </div>
-  <button type="submit" class="btn">Submit</button>
-</form>-->
+
 <form method="post" class="af-form-wrapper form-inline" accept-charset="UTF-8" action="https://www.aweber.com/scripts/addlead.pl"  >
 <div style="display: none;">
 <input type="hidden" name="meta_web_form_id" value="566080935" />
@@ -484,7 +471,7 @@ if($cat=="centreville"){
 </div>
 <div class="af-element form-group">
 <div class="af-textWrap"><input type="text"  placeholder="Phone" id="awf_field-84212228" class="text form-control" name="custom Phone" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="502" /></div>
-<div class="af-clear"></div></div><div class="af-element buttonContainer">
+<div class="af-clear"></div></div><div class="af-element buttonContainer form-group">
   <button name="submit" id="af-submit-image-566080935" type="submit" class="btn" alt="Submit Form" tabindex="503" >Submit</button>
 <div class="af-clear"></div>
 </div>
@@ -548,7 +535,7 @@ if($cat=="centreville"){
 </div>
 <div class="af-element form-group">
 <div class="af-textWrap"><input type="text" id="awf_field-84211448" placeholder="Phone" class="text form-control" name="custom Phone" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="502" /></div>
-<div class="af-clear"></div></div><div class="af-element buttonContainer">
+<div class="af-clear"></div></div><div class="af-element buttonContainer form-group">
 <button name="submit" id="af-submit-image-1418545164" type="submit" class="btn" tabindex="503">Submit</button>
 <div class="af-clear"></div>
 </div>
@@ -749,20 +736,7 @@ if($cat=="centreville"){
             <div class="col-lg-12">
                 <h2 class="gen-heading">Get Our After School Prices, Schedule, &
 Registration Info</h2>
-                <!--<form class="form-inline" role="form">
-                    <div class="form-group">
-    <input type="text" class="form-control" placeholder="Name">
-                    </div>
-                    
-                    <div class="form-group">
-    <input type="email" class="form-control" placeholder="Email">
-                    </div>
-                    
-                    <div class="form-group">
-    <input type="phone" class="form-control" placeholder="Phone">
-                    </div>
-  <button type="submit" class="btn">Submit</button>
-</form>-->
+  
 <?php
 $category_detail=get_the_terms($post->ID, 'school_category');	
 $cat= $category_detail[0]->slug;
@@ -795,7 +769,7 @@ if($cat=="centreville"){
 </div>
 <div class="af-element form-group">
 <div class="af-textWrap"><input type="text"  placeholder="Phone" id="awf_field-84211609" class="text" name="custom Phone" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="502" /></div>
-<div class="af-clear"></div></div><div class="af-element buttonContainer">
+<div class="af-clear"></div></div><div class="af-element buttonContainer form-group">
 <button type="submit" name="submit" id="af-submit-image-1130412055"  class="btn" alt="Submit Form" src=" " tabindex="503">Submit</button>
 <div class="af-clear"></div>
 </div>
@@ -860,7 +834,7 @@ if($cat=="centreville"){
 </div>
 <div class="af-element form-group">
 <div class="af-textWrap"><input type="text" id="awf_field-84211962" placeholder="Phone" class="text" name="custom Phone" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="502" /></div>
-<div class="af-clear"></div></div><div class="af-element buttonContainer">
+<div class="af-clear"></div></div><div class="af-element buttonContainer form-group">
 <button name="submit" id="af-submit-image-79124330" type="submit" class="btn"alt="Submit Form" src=" " tabindex="503">Submit</button>
 <div class="af-clear"></div>
 </div>
@@ -897,7 +871,7 @@ if($cat=="centreville"){
     })();
     -->
 </script>
-<?php }else if($cat=="frederickburg-plank"){?>
+<?php }else if($cat=="fredericksburg-5725-plank-rd"){?>
 
    
 <form method="post" class="af-form-wrapper form-inline" role="form" accept-charset="UTF-8" action="https://www.aweber.com/scripts/addlead.pl"  >
@@ -926,7 +900,7 @@ if($cat=="centreville"){
 </div>
 <div class="af-element form-group">
 <div class="af-textWrap"><input type="text" id="awf_field-84211305" placeholder="Phone" class="text" name="custom Phone" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="502" /></div>
-<div class="af-clear"></div></div><div class="af-element buttonContainer">
+<div class="af-clear"></div></div><div class="af-element buttonContainer form-group">
 <button  name="submit" id="af-submit-image-1570880355" type="submit" class="btn" alt="Submit Form" src=" " tabindex="503" >Submit</button>
 <div class="af-clear"></div>
 </div>
@@ -964,7 +938,7 @@ if($cat=="centreville"){
     -->
 </script>
 
-<?php } else if($cat=="frederickburg"){ ?>
+<?php } else if($cat=="fredericksburg-celebrate-virginia-parkway"){ ?>
   
 <form method="post" class="af-form-wrapper form-inline" accept-charset="UTF-8" action="https://www.aweber.com/scripts/addlead.pl" target="_blank" >
 <div style="display: none;">
@@ -992,7 +966,7 @@ if($cat=="centreville"){
 </div>
 <div class="af-element form-group">
 <div class="af-textWrap"><input type="text" id="awf_field-84182184"  placeholder="Phone" class="text form-control" name="custom Phone" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="502" /></div>
-<div class="af-clear"></div></div><div class="af-element buttonContainer">
+<div class="af-clear"></div></div><div class="af-element buttonContainer form-group">
  <button name="submit" id="af-submit-image-685129758" type="submit" class="btn" alt="Submit Form" tabindex="503" >Submit</button>
 <div class="af-clear"></div>
 </div>
@@ -1057,7 +1031,7 @@ if($cat=="centreville"){
 </div>
 <div class="af-element form-group">
 <div class="af-textWrap"><input type="text" id="awf_field-84212095" placeholder="Phone" class="text" name="custom Phone" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="502" /></div>
-<div class="af-clear"></div></div><div class="af-element buttonContainer">
+<div class="af-clear"></div></div><div class="af-element buttonContainer form-group">
 <button name="submit" id="af-submit-image-215374590" type="submit" class="btn" alt="Submit Form" tabindex="503" >Submit</button>
 <div class="af-clear"></div>
 </div>
@@ -1122,7 +1096,7 @@ if($cat=="centreville"){
 </div>
 <div class="af-element form-group">
 <div class="af-textWrap"><input type="text" placeholder="Phone" id="awf_field-84211749" class="text" name="custom Phone" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="502" /></div>
-<div class="af-clear"></div></div><div class="af-element buttonContainer">
+<div class="af-clear"></div></div><div class="af-element buttonContainer form-group">
 <button name="submit" id="af-submit-image-932867534" type="submit" class="btn" alt="Submit Form" tabindex="503" >Submit</button>
 <div class="af-clear"></div>
 </div>
@@ -1161,20 +1135,7 @@ if($cat=="centreville"){
 </script>
 
 <?php } else if($cat=="stafford"){?>
-<!--<form class="form-inline" >
-                    <div class="form-group">
-    <input type="text" class="form-control" placeholder="Name">
-                    </div>
-                    
-                    <div class="form-group">
-    <input type="email" class="form-control" placeholder="Email">
-                    </div>
-                    
-                    <div class="form-group">
-    <input type="phone" class="form-control" placeholder="Phone">
-                    </div>
-  <button type="submit" class="btn">Submit</button>
-</form>-->
+
 <form method="post" class="af-form-wrapper form-inline" accept-charset="UTF-8" action="https://www.aweber.com/scripts/addlead.pl"  >
 <div style="display: none;">
 <input type="hidden" name="meta_web_form_id" value="566080935" />
@@ -1201,7 +1162,7 @@ if($cat=="centreville"){
 </div>
 <div class="af-element form-group">
 <div class="af-textWrap"><input type="text"  placeholder="Phone" id="awf_field-84212228" class="text form-control" name="custom Phone" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="502" /></div>
-<div class="af-clear"></div></div><div class="af-element buttonContainer">
+<div class="af-clear"></div></div><div class="af-element buttonContainer form-group">
   <button name="submit" id="af-submit-image-566080935" type="submit" class="btn" alt="Submit Form" tabindex="503" >Submit</button>
 <div class="af-clear"></div>
 </div>
@@ -1265,7 +1226,7 @@ if($cat=="centreville"){
 </div>
 <div class="af-element form-group">
 <div class="af-textWrap"><input type="text" id="awf_field-84211448" placeholder="Phone" class="text form-control" name="custom Phone" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="502" /></div>
-<div class="af-clear"></div></div><div class="af-element buttonContainer">
+<div class="af-clear"></div></div><div class="af-element buttonContainer form-group">
 <button name="submit" id="af-submit-image-1418545164" type="submit" class="btn" tabindex="503">Submit</button>
 <div class="af-clear"></div>
 </div>
@@ -1303,9 +1264,12 @@ if($cat=="centreville"){
 	-->
 </script>
 <?php } ?> 
+			<?php
+				$category_detail=get_the_terms($post->ID, 'school_category');
+			?>
                 <ul class="c-info-frm">
-                <li><span><i class="fa fa-home" aria-hidden="true"></i>Address:</span>210 Dominion Road,  NE Vienna, VA 22180</li>
-                <li><span><i class="fa fa-phone" aria-hidden="true"></i>Phone:</span>(703) 255-0202</li>
+                <li><span><i class="fa fa-home" aria-hidden="true"></i>Address:</span><?php the_field('address',$category_detail[0]);?></li>
+                <li><span><i class="fa fa-phone" aria-hidden="true"></i>Phone:</span><?php the_field('phone',$category_detail[0]);?></li>
             </ul>
             
             </div> 

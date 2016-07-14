@@ -5,7 +5,7 @@ var Conclave=(function(){
 			this.addCN();this.clickReg();
 		},
 		addCN:function(){
-			var buarr=["holder_bu_awayL2","holder_bu_awayL1","holder_bu_center"];
+			var buarr=["holder_bu_center","holder_bu_awayR1"];
 			for(var i=1;i<=buarr.length;++i){
 				jQuery("#bu"+i).removeClass().addClass(buarr[i-1]+" holder_bu");
 			}

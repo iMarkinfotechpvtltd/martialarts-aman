@@ -67,7 +67,7 @@ if($cat=="centreville"){
 </div>
 <div class="af-element form-group">
 <div class="af-textWrap"><input type="text"  placeholder="Phone" id="awf_field-84211609" class="text" name="custom Phone" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="502" /></div>
-<div class="af-clear"></div></div><div class="af-element buttonContainer">
+<div class="af-clear"></div></div><div class="af-element buttonContainer form-group">
 <button type="submit" name="submit" id="af-submit-image-1130412055"  class="btn" alt="Submit Form" src=" " tabindex="503">Submit</button>
 <div class="af-clear"></div>
 </div>
@@ -132,7 +132,7 @@ if($cat=="centreville"){
 </div>
 <div class="af-element form-group">
 <div class="af-textWrap"><input type="text" id="awf_field-84211962" placeholder="Phone" class="text" name="custom Phone" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="502" /></div>
-<div class="af-clear"></div></div><div class="af-element buttonContainer">
+<div class="af-clear"></div></div><div class="af-element buttonContainer form-group">
 <button name="submit" id="af-submit-image-79124330" type="submit" class="btn"alt="Submit Form" src=" " tabindex="503">Submit</button>
 <div class="af-clear"></div>
 </div>
@@ -198,7 +198,7 @@ if($cat=="centreville"){
 </div>
 <div class="af-element form-group">
 <div class="af-textWrap"><input type="text" id="awf_field-84211305" placeholder="Phone" class="text" name="custom Phone" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="502" /></div>
-<div class="af-clear"></div></div><div class="af-element buttonContainer">
+<div class="af-clear"></div></div><div class="af-element buttonContainer form-group">
 <button  name="submit" id="af-submit-image-1570880355" type="submit" class="btn" alt="Submit Form" src=" " tabindex="503" >Submit</button>
 <div class="af-clear"></div>
 </div>
@@ -264,7 +264,7 @@ if($cat=="centreville"){
 </div>
 <div class="af-element form-group">
 <div class="af-textWrap"><input type="text" id="awf_field-84182184"  placeholder="Phone" class="text form-control" name="custom Phone" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="502" /></div>
-<div class="af-clear"></div></div><div class="af-element buttonContainer">
+<div class="af-clear"></div></div><div class="af-element buttonContainer form-group">
  <button name="submit" id="af-submit-image-685129758" type="submit" class="btn" alt="Submit Form" tabindex="503" >Submit</button>
 <div class="af-clear"></div>
 </div>
@@ -329,7 +329,7 @@ if($cat=="centreville"){
 </div>
 <div class="af-element form-group">
 <div class="af-textWrap"><input type="text" id="awf_field-84212095" placeholder="Phone" class="text" name="custom Phone" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="502" /></div>
-<div class="af-clear"></div></div><div class="af-element buttonContainer">
+<div class="af-clear"></div></div><div class="af-element buttonContainer form-group">
 <button name="submit" id="af-submit-image-215374590" type="submit" class="btn" alt="Submit Form" tabindex="503" >Submit</button>
 <div class="af-clear"></div>
 </div>
@@ -394,7 +394,7 @@ if($cat=="centreville"){
 </div>
 <div class="af-element form-group">
 <div class="af-textWrap"><input type="text" placeholder="Phone" id="awf_field-84211749" class="text" name="custom Phone" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="502" /></div>
-<div class="af-clear"></div></div><div class="af-element buttonContainer">
+<div class="af-clear"></div></div><div class="af-element buttonContainer form-group">
 <button name="submit" id="af-submit-image-932867534" type="submit" class="btn" alt="Submit Form" tabindex="503" >Submit</button>
 <div class="af-clear"></div>
 </div>
@@ -473,7 +473,7 @@ if($cat=="centreville"){
 </div>
 <div class="af-element form-group">
 <div class="af-textWrap"><input type="text"  placeholder="Phone" id="awf_field-84212228" class="text form-control" name="custom Phone" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="502" /></div>
-<div class="af-clear"></div></div><div class="af-element buttonContainer">
+<div class="af-clear"></div></div><div class="af-element buttonContainer form-group">
   <button name="submit" id="af-submit-image-566080935" type="submit" class="btn" alt="Submit Form" tabindex="503" >Submit</button>
 <div class="af-clear"></div>
 </div>
@@ -537,7 +537,7 @@ if($cat=="centreville"){
 </div>
 <div class="af-element form-group">
 <div class="af-textWrap"><input type="text" id="awf_field-84211448" placeholder="Phone" class="text form-control" name="custom Phone" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="502" /></div>
-<div class="af-clear"></div></div><div class="af-element buttonContainer">
+<div class="af-clear"></div></div><div class="af-element buttonContainer form-group">
 <button name="submit" id="af-submit-image-1418545164" type="submit" class="btn" tabindex="503">Submit</button>
 <div class="af-clear"></div>
 </div>
@@ -768,7 +768,7 @@ if($cat=="centreville"){
 </div>
 <div class="af-element form-group">
 <div class="af-textWrap"><input type="text"  placeholder="Phone" id="awf_field-84211609" class="text" name="custom Phone" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="502" /></div>
-<div class="af-clear"></div></div><div class="af-element buttonContainer">
+<div class="af-clear"></div></div><div class="af-element buttonContainer form-group">
 <button type="submit" name="submit" id="af-submit-image-1130412055"  class="btn" alt="Submit Form" src=" " tabindex="503">Submit</button>
 <div class="af-clear"></div>
 </div>
@@ -833,7 +833,7 @@ if($cat=="centreville"){
 </div>
 <div class="af-element form-group">
 <div class="af-textWrap"><input type="text" id="awf_field-84211962" placeholder="Phone" class="text" name="custom Phone" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="502" /></div>
-<div class="af-clear"></div></div><div class="af-element buttonContainer">
+<div class="af-clear"></div></div><div class="af-element buttonContainer form-group">
 <button name="submit" id="af-submit-image-79124330" type="submit" class="btn"alt="Submit Form" src=" " tabindex="503">Submit</button>
 <div class="af-clear"></div>
 </div>
@@ -899,7 +899,7 @@ if($cat=="centreville"){
 </div>
 <div class="af-element form-group">
 <div class="af-textWrap"><input type="text" id="awf_field-84211305" placeholder="Phone" class="text" name="custom Phone" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="502" /></div>
-<div class="af-clear"></div></div><div class="af-element buttonContainer">
+<div class="af-clear"></div></div><div class="af-element buttonContainer form-group">
 <button  name="submit" id="af-submit-image-1570880355" type="submit" class="btn" alt="Submit Form" src=" " tabindex="503" >Submit</button>
 <div class="af-clear"></div>
 </div>
@@ -965,7 +965,7 @@ if($cat=="centreville"){
 </div>
 <div class="af-element form-group">
 <div class="af-textWrap"><input type="text" id="awf_field-84182184"  placeholder="Phone" class="text form-control" name="custom Phone" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="502" /></div>
-<div class="af-clear"></div></div><div class="af-element buttonContainer">
+<div class="af-clear"></div></div><div class="af-element buttonContainer form-group">
  <button name="submit" id="af-submit-image-685129758" type="submit" class="btn" alt="Submit Form" tabindex="503" >Submit</button>
 <div class="af-clear"></div>
 </div>
@@ -1030,7 +1030,7 @@ if($cat=="centreville"){
 </div>
 <div class="af-element form-group">
 <div class="af-textWrap"><input type="text" id="awf_field-84212095" placeholder="Phone" class="text" name="custom Phone" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="502" /></div>
-<div class="af-clear"></div></div><div class="af-element buttonContainer">
+<div class="af-clear"></div></div><div class="af-element buttonContainer form-group">
 <button name="submit" id="af-submit-image-215374590" type="submit" class="btn" alt="Submit Form" tabindex="503" >Submit</button>
 <div class="af-clear"></div>
 </div>
@@ -1095,7 +1095,7 @@ if($cat=="centreville"){
 </div>
 <div class="af-element form-group">
 <div class="af-textWrap"><input type="text" placeholder="Phone" id="awf_field-84211749" class="text" name="custom Phone" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="502" /></div>
-<div class="af-clear"></div></div><div class="af-element buttonContainer">
+<div class="af-clear"></div></div><div class="af-element buttonContainer form-group">
 <button name="submit" id="af-submit-image-932867534" type="submit" class="btn" alt="Submit Form" tabindex="503" >Submit</button>
 <div class="af-clear"></div>
 </div>
@@ -1174,7 +1174,7 @@ if($cat=="centreville"){
 </div>
 <div class="af-element form-group">
 <div class="af-textWrap"><input type="text"  placeholder="Phone" id="awf_field-84212228" class="text form-control" name="custom Phone" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="502" /></div>
-<div class="af-clear"></div></div><div class="af-element buttonContainer">
+<div class="af-clear"></div></div><div class="af-element buttonContainer form-group">
   <button name="submit" id="af-submit-image-566080935" type="submit" class="btn" alt="Submit Form" tabindex="503" >Submit</button>
 <div class="af-clear"></div>
 </div>
@@ -1238,7 +1238,7 @@ if($cat=="centreville"){
 </div>
 <div class="af-element form-group">
 <div class="af-textWrap"><input type="text" id="awf_field-84211448" placeholder="Phone" class="text form-control" name="custom Phone" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="502" /></div>
-<div class="af-clear"></div></div><div class="af-element buttonContainer">
+<div class="af-clear"></div></div><div class="af-element buttonContainer form-group">
 <button name="submit" id="af-submit-image-1418545164" type="submit" class="btn" tabindex="503">Submit</button>
 <div class="af-clear"></div>
 </div>
@@ -1276,10 +1276,12 @@ if($cat=="centreville"){
 	-->
 </script>
 <?php } ?> 
-                
+                 <?php
+					$category_detail=get_the_terms($post->ID, 'martial_category');	
+				?>
                 <ul class="c-info-frm">
-                <li><span><i class="fa fa-home" aria-hidden="true"></i>Address:</span>210 Dominion Road,  NE Vienna, VA 22180</li>
-                <li><span><i class="fa fa-phone" aria-hidden="true"></i>Phone:</span>(703) 255-0202</li>
+                <li><span><i class="fa fa-home" aria-hidden="true"></i>Address:</span><?php the_field('address',$category_detail[0]); ?></li>
+                <li><span><i class="fa fa-phone" aria-hidden="true"></i>Phone:</span><?php the_field('phone_number',$category_detail[0]); ?></li>
             </ul>
             
             </div> 

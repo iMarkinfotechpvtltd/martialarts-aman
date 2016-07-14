@@ -109,11 +109,13 @@
 				$loop = new WP_Query( $args );
 				while ( $loop->have_posts() ) : $loop->the_post();
 	?>
-	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 srch-result">	
+	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">	
+	<div class="srch-result">
                 <h2><a href="<?php the_permalink(); ?>" class="small-heading"><?php echo  $term->name; ?></a></h2>
-                <p class="inner-location"><?php echo $term->description;  ?></p>
+                <?php the_field('address',$term); ?>
+				<p>Phone : <?php the_field('phone_number',$term); ?></p>
 				<a href="<?php the_permalink(); ?>">View Location</a>
-            </div>		
+            </div></div>		
   <?php
   endwhile;
   wp_reset_query();
@@ -130,11 +132,14 @@
 				$loop = new WP_Query( $args );
 				while ( $loop->have_posts() ) : $loop->the_post();
   ?>
-		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 srch-result">	
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">	
+		<div class="srch-result">
                 <h2><a href="<?php the_permalink(); ?>" class="small-heading"><?php echo  $term->name; ?></a></h2>
-                <p class="inner-location"><?php echo $term->description;  ?></p>
+                <?php the_field('address',$term); ?>
+				<p>Phone : <?php the_field('phone',$term); ?></p>
 				<a href="<?php the_permalink(); ?>">View Location</a>
-            </div>		
+            </div>
+			</div>
   <?php
    endwhile;
   wp_reset_query();
@@ -151,11 +156,14 @@
 				$loop = new WP_Query( $args );
 				while ( $loop->have_posts() ) : $loop->the_post();
 	  ?>
-	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 srch-result">	
+	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">	
+	<div class="srch-result">
                 <h2><a href="<?php the_permalink(); ?>" class="small-heading"><?php echo  $term->name; ?></a></h2>
-                <p class="inner-location"><?php echo $term->description;  ?></p>
+               <?php the_field('address',$term); ?>
+				<p>Phone : <?php the_field('phone',$term); ?></p>
 				<a href="<?php the_permalink(); ?>">View Location</a>
-            </div>	
+            </div>
+			</div>
   
   <?php
    endwhile;
@@ -173,11 +181,14 @@
 				$loop = new WP_Query( $args );
 				while ( $loop->have_posts() ) : $loop->the_post();
 	  ?>
-	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 srch-result">	
+	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">	
+	<div class="srch-result">
                 <h2><a href="<?php the_permalink(); ?>" class="small-heading"><?php echo  $term->name; ?></a></h2>
-                <p class="inner-location"><?php echo $term->description;  ?></p>
+               <?php the_field('address',$term); ?>
+				<p>Phone : <?php the_field('phone',$term); ?></p>
 				<a href="<?php the_permalink(); ?>">View Location</a>
             </div>	
+			</div>
   
   <?php
    endwhile;
@@ -251,6 +262,13 @@ jQuery(document).ready(function(){
 
 
 
+});
+
+</script>
+	<script>
+
+jQuery(document).ready(function(){
+jQuery("#menu-item-109").addClass("current-menu-item");
 });
 
 </script>

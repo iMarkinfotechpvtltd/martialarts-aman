@@ -139,7 +139,8 @@
             </div>
             
             </div>
-            
+			
+			
             <div class="row">
             <div class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-sm-12 col-xs-12 video-slider">
                 <!--img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/video-img.jpg" class="img-responsive" /-->
@@ -149,18 +150,108 @@
                 
                 <div id="wrapper_bu"> <!-- BEGIN CAROUSEL -->
 				   <div id="bu1" class="holder_bu_center"> <!-- SLIDE ITEM --> 
-						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/video-img.jpg" style=" display: inline-block;">							  
+					<div class="abc">
+								<?php
+
+                
+                $link = get_field('video1_link',6);
+
+              if (strpos($link, 'youtube') > 0) 
+              {
+                 
+                $video_id = explode("?v=", $link); // For videos like http://www.youtube.com/watch?v=...
+                if (empty($video_id[1])){ $video_id = explode("/v/", $link); }// For videos like http://www.youtube.com/watch/v/..
+
+                $video_id = explode("&", $video_id[1]); // Deleting any other params
+                $video_id = $video_id[0];
+                //https://www.googleapis.com/youtube/v3/videos?id=7lCDEYXw3mM&key=YOUR_API_KEY&part=snippet,contentDetails,statistics,status
+                $api = "https://www.googleapis.com/youtube/v3/videos?id=".$video_id."&key=AIzaSyDS3-2p4XKps18w9ulX6oVJACIUv-0xydY%20&part=snippet,contentDetails,statistics,status";
+                $json_output = file_get_contents($api);
+                $json = json_decode($json_output, true);
+
+                $thumbnail;
+                $items = $json['items'];
+                foreach ($items as $val) {
+					         $title = $val['snippet']['title'];
+                  $thumbnail = $val['snippet']['thumbnails']['medium']['url'];
+                  }
+              }
+
+              elseif (strpos($link, 'vimeo') > 0) {
+              
+                $video_id = explode(".com/", $link); // For videos like http://www.youtube.com/watch?v=...
+                
+                if (empty($video_id[1])){ $video_id = explode("/v/", $link); }// For videos like http://www.youtube.com/watch/v/..
+
+                $video_id = explode("&", $video_id[1]); // Deleting any other params
+                $video_id = $video_id[0];
+
+                $api = "http://vimeo.com/api/v2/video/".$video_id.".json";
+                $hash = json_decode(file_get_contents($api));
+
+                //$hash = json_decode(file_get_contents("http://vimeo.com/api/v2/video/113057859.json"));
+                $title = $hash[0]->title;
+                $thumbnail = $hash[0]->thumbnail_large;
+                   
+              }
+                ?>
+				<a class="html5lightbox" href="<?php echo the_field('video1_link',6); ?>">
+				<img src="<?php echo $thumbnail; ?>" style=" display: inline-block;">
+				</a>
+				</div>				
 				   </div>
 																
 					<div id="bu2"> <!-- SLIDE ITEM --> 
-						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/video-img.jpg" style=" display: inline-block;">							  
-                    </div>
-                    
-                 
-				<style>
-                    #wrapper_bu {height: 100%; position: relative; width: 100%;}
-                </style>												
+							<div class="abc">	
+							<?php
 
+                
+                $link = get_field('video2_link',6);
+
+              if (strpos($link, 'youtube') > 0) 
+              {
+                 
+                $video_id = explode("?v=", $link); // For videos like http://www.youtube.com/watch?v=...
+                if (empty($video_id[1])){ $video_id = explode("/v/", $link); }// For videos like http://www.youtube.com/watch/v/..
+
+                $video_id = explode("&", $video_id[1]); // Deleting any other params
+                $video_id = $video_id[0];
+                //https://www.googleapis.com/youtube/v3/videos?id=7lCDEYXw3mM&key=YOUR_API_KEY&part=snippet,contentDetails,statistics,status
+                $api = "https://www.googleapis.com/youtube/v3/videos?id=".$video_id."&key=AIzaSyDS3-2p4XKps18w9ulX6oVJACIUv-0xydY%20&part=snippet,contentDetails,statistics,status";
+                $json_output = file_get_contents($api);
+                $json = json_decode($json_output, true);
+
+                $thumbnail;
+                $items = $json['items'];
+                foreach ($items as $val) {
+					         $title = $val['snippet']['title'];
+                  $thumbnail = $val['snippet']['thumbnails']['medium']['url'];
+                  }
+              }
+
+              elseif (strpos($link, 'vimeo') > 0) {
+              
+                $video_id = explode(".com/", $link); // For videos like http://www.youtube.com/watch?v=...
+                
+                if (empty($video_id[1])){ $video_id = explode("/v/", $link); }// For videos like http://www.youtube.com/watch/v/..
+
+                $video_id = explode("&", $video_id[1]); // Deleting any other params
+                $video_id = $video_id[0];
+
+                $api = "http://vimeo.com/api/v2/video/".$video_id.".json";
+                $hash = json_decode(file_get_contents($api));
+
+                //$hash = json_decode(file_get_contents("http://vimeo.com/api/v2/video/113057859.json"));
+                $title = $hash[0]->title;
+                $thumbnail = $hash[0]->thumbnail_large;
+                   
+              }
+                ?>
+						<a class="html5lightbox" href="<?php echo the_field('video2_link',6); ?>">
+						<img src="<?php echo $thumbnail; ?>" style=" display: inline-block;">
+						</a>
+						</div>
+					</div>
 				</div>
                 
                 <!--========================= Video Slider =========================-->
@@ -190,4 +281,13 @@
         
     </div>
     </section>-->
+		<script>
+
+jQuery(document).ready(function(){
+jQuery(".menu-item-107").removeClass("current-menu-item");
+jQuery(".menu-item-109").removeClass("current-menu-item");
+});
+
+</script>
+
 <?php get_footer();?>
