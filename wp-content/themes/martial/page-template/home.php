@@ -30,7 +30,7 @@
     
     <section class="box-section">
         <div class="container" id="down">
-        <div class="row">
+        <div class="row" id="location">
             
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 <div class="red-box">
@@ -267,7 +267,7 @@
     <div class="container">
         <form role="form" class="form-inline">
             <div class="form-group"><label>Are You Ready?</label></div>
-            <div class="form-group"><a href="#">Get Started</a></div>
+            <div class="form-group"><a href="<?php echo site_url();?>/#location" id="lctn">Get Started</a></div>
         </form>
         
     </div>

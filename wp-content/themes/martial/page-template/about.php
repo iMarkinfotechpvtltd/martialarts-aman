@@ -186,7 +186,7 @@
                 <div class="about-widget-body">
                 <ul class="news-post">
 				<?php 
-						$args = array('post_type' => 'post','posts_per_page'=>6,'order' => 'DESC');
+						$args = array('post_type' => 'post','posts_per_page'=>3,'order' => 'DESC');
 						$loop = new WP_Query( $args );
 						while ( $loop->have_posts() ) : $loop->the_post();
 				?>
@@ -221,7 +221,7 @@
     <div class="container">
         <form role="form" class="form-inline">
             <!--div class="form-group"><label>Are You Ready?</label></div-->
-            <div class="form-group"><a href="">Find A Location Near You</a></div>
+            <div class="form-group"><a href="<?php echo site_url();?>/#location">Find A Location Near You</a></div>
         </form>
         
     </div>

@@ -21,11 +21,12 @@ while ( $loop->have_posts() ) : $loop->the_post();
             
                 <div class="img-holder col-lg-6 col-md-6 col-sm-6 col-xs-6"><img class=" loc-content-inner img-responsive" src="<?php echo z_taxonomy_image_url($term->term_id);?>" alt="location" /></div>
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">	
-                <a href="<?php the_permalink(); ?>"><h2 class="gen-heading"><?php echo  $term->name; ?></h2></a>
+                <a href="<?php the_permalink(); ?>" class="gen-heading"><?php echo  $term->name; ?></a>
+				<div class="loc-inner">
                 <?php the_field('address',$term); ?>
 				<p>Phone : <?php the_field('phone_number',$term); ?></p>
             </div>
-            
+            </div>
         </div>
 
 </section>
@@ -49,11 +50,12 @@ while ( $loop->have_posts() ) : $loop->the_post();
             
                 <div class="img-holder col-lg-6 col-md-6 col-sm-6 col-xs-6"><img class=" loc-content-inner img-responsive" src="<?php echo z_taxonomy_image_url($term->term_id);?>" alt="location" /></div>
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">	
-                <a href="<?php the_permalink(); ?>"><h2 class="gen-heading"><?php echo  $term->name; ?></h2></a>
+                <a href="<?php the_permalink(); ?>" class="gen-heading"><?php echo  $term->name; ?></a>
+				<div class="loc-inner">
                  <?php the_field('address',$term); ?>
 				<p>Phone : <?php the_field('phone',$term); ?></p>
             </div>
-            
+            </div>
         </div>
 
 </section>
@@ -77,11 +79,12 @@ while ( $loop->have_posts() ) : $loop->the_post();
             
                 <div class="img-holder col-lg-6 col-md-6 col-sm-6 col-xs-6"><img class=" loc-content-inner img-responsive" src="<?php echo z_taxonomy_image_url($term->term_id);?>" alt="location" /></div>
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">	
-                <a href="<?php the_permalink(); ?>"><h2 class="gen-heading"><?php echo  $term->name; ?></h2></a>
+               <a href="<?php the_permalink(); ?>" class="gen-heading"><?php echo  $term->name; ?></a>
+			   <div class="loc-inner">
                  <?php the_field('address',$term); ?>
 				<p>Phone : <?php the_field('phone',$term); ?></p>
             </div>
-            
+            </div>
         </div>
 
 </section>
@@ -105,11 +108,12 @@ while ( $loop->have_posts() ) : $loop->the_post();
             
                 <div class="img-holder col-lg-6 col-md-6 col-sm-6 col-xs-6"><img class=" loc-content-inner img-responsive" src="<?php echo z_taxonomy_image_url($term->term_id);?>" alt="location" /></div>
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">	
-                <a href="<?php the_permalink(); ?>"><h2 class="gen-heading"><?php echo  $term->name; ?></h2></a>
+                <a href="<?php the_permalink(); ?>" class="gen-heading"><?php echo  $term->name; ?></a>
+				<div class="loc-inner">
                 <?php the_field('address',$term); ?>
 				<p>Phone : <?php the_field('phone',$term); ?></p>
             </div>
-            
+            </div>
         </div>
 
 </section>

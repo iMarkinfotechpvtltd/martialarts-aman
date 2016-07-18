@@ -428,7 +428,11 @@ function my_loginlogo() {
   echo '<style type="text/css">
     h1 a {
       background-image: url(' . get_template_directory_uri() . '/images/logo.png) !important;
-    }
+	  box-shadow:none !important;
+	   }
+	   h1 a:focus {
+	  box-shadow:none !important;
+	   }
   </style>';
 }
 add_action('login_head', 'my_loginlogo');

@@ -70,7 +70,7 @@ if($cat=="centreville"){
 
 <input type="hidden" name="meta_tooltip" value="" />
 </div>
-<div id="af-form-1130412055" class="af-form"><div id="af-header-1130412055" class="af-header"><div class="bodyText"><p>&nbsp;</p></div></div>
+<div id="af-form-1130412055" class="af-form"><div id="af-header-1130412055" class="af-header"><div class="bodyText"></div></div>
 <div id="af-body-1130412055" class="af-body af-standards">
 <div class="af-element form-group">
 <div class="af-textWrap">
@@ -94,7 +94,7 @@ if($cat=="centreville"){
 <div class="af-clear"></div>
 </div>-->
 </div>
-<div id="af-footer-1130412055" class="af-footer"><div class="bodyText"><p>&nbsp;</p></div></div>
+<div id="af-footer-1130412055" class="af-footer"><div class="bodyText"></div></div>
 </div>
 <!--<div style="display: none;"><img src="https://forms.aweber.com/form/displays.htm?id=jIzMDCyMTAysrA==" alt="" /></div>-->
 </form>
@@ -135,7 +135,7 @@ if($cat=="centreville"){
 
 <input type="hidden" name="meta_tooltip" value="" />
 </div>
-<div id="af-form-79124330" class="af-form"><div id="af-header-79124330" class="af-header"><div class="bodyText"><p>&nbsp;</p></div></div>
+<div id="af-form-79124330" class="af-form"><div id="af-header-79124330" class="af-header"><div class="bodyText"></div></div>
 <div id="af-body-79124330" class="af-body af-standards">
 <div class="af-element form-group">
 <div class="af-textWrap">
@@ -159,7 +159,7 @@ if($cat=="centreville"){
 <div class="af-clear"></div>
 </div>-->
 </div>
-<div id="af-footer-79124330" class="af-footer"><div class="bodyText"><p>&nbsp;</p></div></div>
+<div id="af-footer-79124330" class="af-footer"><div class="bodyText"></div></div>
 </div>
 <!--<div style="display: none;"><img src="https://forms.aweber.com/form/displays.htm?id=7JyMTCzMzAw=" alt="" /></div>-->
 </form>
@@ -201,7 +201,7 @@ if($cat=="centreville"){
 
 <input type="hidden" name="meta_tooltip" value="" />
 </div>
-<div id="af-form-1570880355" class="af-form"><div id="af-header-1570880355" class="af-header"><div class="bodyText"><p>&nbsp;</p></div></div>
+<div id="af-form-1570880355" class="af-form"><div id="af-header-1570880355" class="af-header"><div class="bodyText"></div></div>
 <div id="af-body-1570880355" class="af-body af-standards">
 <div class="af-element form-group">
 <div class="af-textWrap">
@@ -225,7 +225,7 @@ if($cat=="centreville"){
 <div class="af-clear"></div>
 </div>-->
 </div>
-<div id="af-footer-1570880355" class="af-footer"><div class="bodyText"><p>&nbsp;</p></div></div>
+<div id="af-footer-1570880355" class="af-footer"><div class="bodyText"></div></div>
 </div>
 <!--<div style="display: none;"><img src="https://forms.aweber.com/form/displays.htm?id=jKzsDBwcDMysrA==" alt="" /></div>-->
 </form>
@@ -267,7 +267,7 @@ if($cat=="centreville"){
 
 <input type="hidden" name="meta_tooltip" value="" />
 </div>
-<div id="af-form-685129758" class="af-form"><div id="af-header-685129758" class="af-header"><div class="bodyText"><p>&nbsp;</p></div></div>
+<div id="af-form-685129758" class="af-form"><div id="af-header-685129758" class="af-header"><div class="bodyText"></div></div>
 <div id="af-body-685129758" class="af-body af-standards">
 <div class="af-element form-group">
 <div class="af-textWrap">
@@ -291,7 +291,7 @@ if($cat=="centreville"){
 <div class="af-clear"></div>
 </div>-->
 </div>
-<div id="af-footer-685129758" class="af-footer"><div class="bodyText"><p>&nbsp;</p></div></div>
+<div id="af-footer-685129758" class="af-footer"><div class="bodyText"></div></div>
 </div>
 <!--<div style="display: none;"><img src="https://forms.aweber.com/form/displays.htm?id=bBysjEyc7Kwc" alt="" /></div>-->
 </form>
@@ -332,7 +332,7 @@ if($cat=="centreville"){
 
 <input type="hidden" name="meta_tooltip" value="" />
 </div>
-<div id="af-form-215374590" class="af-form"><div id="af-header-215374590" class="af-header"><div class="bodyText"><p>&nbsp;</p></div></div>
+<div id="af-form-215374590" class="af-form"><div id="af-header-215374590" class="af-header"><div class="bodyText"></div></div>
 <div id="af-body-215374590" class="af-body af-standards">
 <div class="af-element form-group">
 <div class="af-textWrap">
@@ -356,7 +356,7 @@ if($cat=="centreville"){
 <div class="af-clear"></div>
 </div>-->
 </div>
-<div id="af-footer-215374590" class="af-footer"><div class="bodyText"><p>&nbsp;</p></div></div>
+<div id="af-footer-215374590" class="af-footer"><div class="bodyText"></div></div>
 </div>
 <!--<div style="display: none;"><img src="https://forms.aweber.com/form/displays.htm?id=TIyszOwsrJwM" alt="" /></div>-->
 </form>
@@ -397,7 +397,7 @@ if($cat=="centreville"){
 
 <input type="hidden" name="meta_tooltip" value="" />
 </div>
-<div id="af-form-932867534" class="af-form"><div id="af-header-932867534" class="af-header"><div class="bodyText"><p>&nbsp;</p></div></div>
+<div id="af-form-932867534" class="af-form"><div id="af-header-932867534" class="af-header"><div class="bodyText"></div></div>
 <div id="af-body-932867534" class="af-body af-standards">
 <div class="af-element form-group">
 <div class="af-textWrap">
@@ -421,7 +421,7 @@ if($cat=="centreville"){
 <div class="af-clear"></div>
 </div>-->
 </div>
-<div id="af-footer-932867534" class="af-footer"><div class="bodyText"><p>&nbsp;</p></div></div>
+<div id="af-footer-932867534" class="af-footer"><div class="bodyText"></div></div>
 </div>
 <!--<div style="display: none;"><img src="https://forms.aweber.com/form/displays.htm?id=nMxMHGzsrMws" alt="" /></div>-->
 </form>
@@ -476,7 +476,7 @@ if($cat=="centreville"){
 
 <input type="hidden" name="meta_tooltip" value="" />
 </div>
-<div id="af-form-566080935" class="af-form"><div id="af-header-566080935" class="af-header"><div class="bodyText"><p>&nbsp;</p></div></div>
+<div id="af-form-566080935" class="af-form"><div id="af-header-566080935" class="af-header"><div class="bodyText"></div></div>
 <div id="af-body-566080935" class="af-body af-standards">
 <div class="af-element form-group">
 <div class="af-textWrap">
@@ -500,7 +500,7 @@ if($cat=="centreville"){
 <div class="af-clear"></div>
 </div>-->
 </div>
-<div id="af-footer-566080935" class="af-footer"><div class="bodyText"><p>&nbsp;</p></div></div>
+<div id="af-footer-566080935" class="af-footer"><div class="bodyText"></div></div>
 </div>
 <!--<div style="display: none;"><img src="https://forms.aweber.com/form/displays.htm?id=rGxsDBwMnMys" alt="" /></div>-->
 </form>
@@ -540,7 +540,7 @@ if($cat=="centreville"){
 
 <input type="hidden" name="meta_tooltip" value="" />
 </div>
-<div id="af-form-1418545164" class="af-form"><div id="af-header-1418545164" class="af-header"><div class="bodyText"><p>&nbsp;</p></div></div>
+<div id="af-form-1418545164" class="af-form"><div id="af-header-1418545164" class="af-header"><div class="bodyText"></div></div>
 <div id="af-body-1418545164" class="af-body af-standards">
 <div class="af-element form-group">
 <div class="af-textWrap">
@@ -564,7 +564,7 @@ if($cat=="centreville"){
 <div class="af-clear"></div>
 </div>-->
 </div>
-<div id="af-footer-1418545164" class="af-footer"><div class="bodyText"><p>&nbsp;</p></div></div>
+<div id="af-footer-1418545164" class="af-footer"><div class="bodyText"></div></div>
 </div>
 <!--<div style="display: none;"><img src="https://forms.aweber.com/form/displays.htm?id=jCyMHKwsrIxsLA==" alt="" /></div>-->
 </form>
@@ -782,7 +782,7 @@ if($cat=="centreville"){
 
 <input type="hidden" name="meta_tooltip" value="" />
 </div>
-<div id="af-form-1130412055" class="af-form"><div id="af-header-1130412055" class="af-header"><div class="bodyText"><p>&nbsp;</p></div></div>
+<div id="af-form-1130412055" class="af-form"><div id="af-header-1130412055" class="af-header"><div class="bodyText"></div></div>
 <div id="af-body-1130412055" class="af-body af-standards">
 <div class="af-element form-group">
 <div class="af-textWrap">
@@ -806,7 +806,7 @@ if($cat=="centreville"){
 <div class="af-clear"></div>
 </div>-->
 </div>
-<div id="af-footer-1130412055" class="af-footer"><div class="bodyText"><p>&nbsp;</p></div></div>
+<div id="af-footer-1130412055" class="af-footer"><div class="bodyText"></div></div>
 </div>
 <!--<div style="display: none;"><img src="https://forms.aweber.com/form/displays.htm?id=jIzMDCyMTAysrA==" alt="" /></div>-->
 </form>
@@ -847,7 +847,7 @@ if($cat=="centreville"){
 
 <input type="hidden" name="meta_tooltip" value="" />
 </div>
-<div id="af-form-79124330" class="af-form"><div id="af-header-79124330" class="af-header"><div class="bodyText"><p>&nbsp;</p></div></div>
+<div id="af-form-79124330" class="af-form"><div id="af-header-79124330" class="af-header"><div class="bodyText"></div></div>
 <div id="af-body-79124330" class="af-body af-standards">
 <div class="af-element form-group">
 <div class="af-textWrap">
@@ -871,7 +871,7 @@ if($cat=="centreville"){
 <div class="af-clear"></div>
 </div>-->
 </div>
-<div id="af-footer-79124330" class="af-footer"><div class="bodyText"><p>&nbsp;</p></div></div>
+<div id="af-footer-79124330" class="af-footer"><div class="bodyText"></div></div>
 </div>
 <!--<div style="display: none;"><img src="https://forms.aweber.com/form/displays.htm?id=7JyMTCzMzAw=" alt="" /></div>-->
 </form>
@@ -913,7 +913,7 @@ if($cat=="centreville"){
 
 <input type="hidden" name="meta_tooltip" value="" />
 </div>
-<div id="af-form-1570880355" class="af-form"><div id="af-header-1570880355" class="af-header"><div class="bodyText"><p>&nbsp;</p></div></div>
+<div id="af-form-1570880355" class="af-form"><div id="af-header-1570880355" class="af-header"><div class="bodyText"></div></div>
 <div id="af-body-1570880355" class="af-body af-standards">
 <div class="af-element form-group">
 <div class="af-textWrap">
@@ -937,7 +937,7 @@ if($cat=="centreville"){
 <div class="af-clear"></div>
 </div>-->
 </div>
-<div id="af-footer-1570880355" class="af-footer"><div class="bodyText"><p>&nbsp;</p></div></div>
+<div id="af-footer-1570880355" class="af-footer"><div class="bodyText"></div></div>
 </div>
 <!--<div style="display: none;"><img src="https://forms.aweber.com/form/displays.htm?id=jKzsDBwcDMysrA==" alt="" /></div>-->
 </form>
@@ -979,7 +979,7 @@ if($cat=="centreville"){
 
 <input type="hidden" name="meta_tooltip" value="" />
 </div>
-<div id="af-form-685129758" class="af-form"><div id="af-header-685129758" class="af-header"><div class="bodyText"><p>&nbsp;</p></div></div>
+<div id="af-form-685129758" class="af-form"><div id="af-header-685129758" class="af-header"><div class="bodyText"></div></div>
 <div id="af-body-685129758" class="af-body af-standards">
 <div class="af-element form-group">
 <div class="af-textWrap">
@@ -1003,7 +1003,7 @@ if($cat=="centreville"){
 <div class="af-clear"></div>
 </div>-->
 </div>
-<div id="af-footer-685129758" class="af-footer"><div class="bodyText"><p>&nbsp;</p></div></div>
+<div id="af-footer-685129758" class="af-footer"><div class="bodyText"></div></div>
 </div>
 <!--<div style="display: none;"><img src="https://forms.aweber.com/form/displays.htm?id=bBysjEyc7Kwc" alt="" /></div>-->
 </form>
@@ -1044,7 +1044,7 @@ if($cat=="centreville"){
 
 <input type="hidden" name="meta_tooltip" value="" />
 </div>
-<div id="af-form-215374590" class="af-form"><div id="af-header-215374590" class="af-header"><div class="bodyText"><p>&nbsp;</p></div></div>
+<div id="af-form-215374590" class="af-form"><div id="af-header-215374590" class="af-header"><div class="bodyText"></div></div>
 <div id="af-body-215374590" class="af-body af-standards">
 <div class="af-element form-group">
 <div class="af-textWrap">
@@ -1068,7 +1068,7 @@ if($cat=="centreville"){
 <div class="af-clear"></div>
 </div>-->
 </div>
-<div id="af-footer-215374590" class="af-footer"><div class="bodyText"><p>&nbsp;</p></div></div>
+<div id="af-footer-215374590" class="af-footer"><div class="bodyText"></div></div>
 </div>
 <!--<div style="display: none;"><img src="https://forms.aweber.com/form/displays.htm?id=TIyszOwsrJwM" alt="" /></div>-->
 </form>
@@ -1109,7 +1109,7 @@ if($cat=="centreville"){
 
 <input type="hidden" name="meta_tooltip" value="" />
 </div>
-<div id="af-form-932867534" class="af-form"><div id="af-header-932867534" class="af-header"><div class="bodyText"><p>&nbsp;</p></div></div>
+<div id="af-form-932867534" class="af-form"><div id="af-header-932867534" class="af-header"><div class="bodyText"></div></div>
 <div id="af-body-932867534" class="af-body af-standards">
 <div class="af-element form-group">
 <div class="af-textWrap">
@@ -1133,7 +1133,7 @@ if($cat=="centreville"){
 <div class="af-clear"></div>
 </div>-->
 </div>
-<div id="af-footer-932867534" class="af-footer"><div class="bodyText"><p>&nbsp;</p></div></div>
+<div id="af-footer-932867534" class="af-footer"><div class="bodyText"></div></div>
 </div>
 <!--<div style="display: none;"><img src="https://forms.aweber.com/form/displays.htm?id=nMxMHGzsrMws" alt="" /></div>-->
 </form>
@@ -1188,7 +1188,7 @@ if($cat=="centreville"){
 
 <input type="hidden" name="meta_tooltip" value="" />
 </div>
-<div id="af-form-566080935" class="af-form"><div id="af-header-566080935" class="af-header"><div class="bodyText"><p>&nbsp;</p></div></div>
+<div id="af-form-566080935" class="af-form"><div id="af-header-566080935" class="af-header"><div class="bodyText"></div></div>
 <div id="af-body-566080935" class="af-body af-standards">
 <div class="af-element form-group">
 <div class="af-textWrap">
@@ -1212,7 +1212,7 @@ if($cat=="centreville"){
 <div class="af-clear"></div>
 </div>-->
 </div>
-<div id="af-footer-566080935" class="af-footer"><div class="bodyText"><p>&nbsp;</p></div></div>
+<div id="af-footer-566080935" class="af-footer"><div class="bodyText"></div></div>
 </div>
 <!--<div style="display: none;"><img src="https://forms.aweber.com/form/displays.htm?id=rGxsDBwMnMys" alt="" /></div>-->
 </form>
@@ -1252,7 +1252,7 @@ if($cat=="centreville"){
 
 <input type="hidden" name="meta_tooltip" value="" />
 </div>
-<div id="af-form-1418545164" class="af-form"><div id="af-header-1418545164" class="af-header"><div class="bodyText"><p>&nbsp;</p></div></div>
+<div id="af-form-1418545164" class="af-form"><div id="af-header-1418545164" class="af-header"><div class="bodyText">f</div></div>
 <div id="af-body-1418545164" class="af-body af-standards">
 <div class="af-element form-group">
 <div class="af-textWrap">
@@ -1276,7 +1276,7 @@ if($cat=="centreville"){
 <div class="af-clear"></div>
 </div>-->
 </div>
-<div id="af-footer-1418545164" class="af-footer"><div class="bodyText"><p>&nbsp;</p></div></div>
+<div id="af-footer-1418545164" class="af-footer"><div class="bodyText"></div></div>
 </div>
 <!--<div style="display: none;"><img src="https://forms.aweber.com/form/displays.htm?id=jCyMHKwsrIxsLA==" alt="" /></div>-->
 </form>

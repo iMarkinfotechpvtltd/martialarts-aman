@@ -3,8 +3,8 @@
 *{
 	font-family: 'Raleway', sans-serif;
 	}
-a:focus, a:hover {
-    color: inherit;}
+a:focus, a:hover {color: inherit;}
+.btn.focus, .btn:focus, .btn:hover {outline: medium none navy; text-decoration: none;}
 body:before, body:after {
    content: none !important;
 }
@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6, p{ padding:0; margin:0;}
  -moz-transition: all .3s ease-in-out; -o-transition: all .3s ease-in-out; transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out;
  margin: 0 15px;}
 
-.nav > li > a:focus, .nav > li > a:hover, .nav .current-menu-item a{ background-color: transparent; color: #e40014;}
+.nav > li > a:focus, .nav > li > a:hover, .nav .current-menu-item a, .active{ background-color: transparent; color: #e40014 !important;}
 .navbar-header {
     height: 220px;
 }
@@ -45,6 +45,8 @@ h1, h2, h3, h4, h5, h6, p{ padding:0; margin:0;}
     display: none;
     right: -6px;
     top: 0;
+    color: #e40014;
+    -webkit-transition: all .3s ease-in-out; -moz-transition: all .3s ease-in-out; -o-transition: all .3s ease-in-out; transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out;
 }
 /*.nav .menu-search input {
     border: 0 none;
@@ -90,6 +92,7 @@ h1, h2, h3, h4, h5, h6, p{ padding:0; margin:0;}
   transition: all 0.3s ease-in-out 0s;
   width: 30px;
     max-width: inherit;
+    color: transparent;
 }
 
 /*.nav.navbar-nav.navbar-right > li:last-child {
@@ -112,6 +115,7 @@ h1, h2, h3, h4, h5, h6, p{ padding:0; margin:0;}
     cursor: text;
     outline: 0 none;
     width: 180px !important;
+    color: #000;
 }
 .nav .menu-search input + button { font-size: 20px; font-weight: 400; color:#7D7C7B;}
 .nav .menu-search input:focus + button {
@@ -697,7 +701,7 @@ footer .copy-rgt ul li:hover{
 .about-post {background-color: #f9f9f9; border-bottom: 1px solid #e0e0e0; padding: 65px 0;}
 .about-post h2 {color: #ed1c24; font-size: 54px; font-weight: 900; margin: 0 20px; max-width: 820px; text-transform: uppercase; line-height: 72px;}
 .about-post .a-post-content {display: inline-block; width: 100%; margin-top: 16px;}
-.about-post .a-post-content img {box-shadow: 0px 0px 1px #333; margin: 5px 20px 10px;}
+.about-post .a-post-content img {border:3px solid #fff; box-shadow: 0px 0px 1px #333; margin: 5px 20px 10px;}
 .about-post.odd .a-post-content img {float: left;}
 .about-post.even .a-post-content img {float: right;}
 .about-post .a-post-content p .p-intro{color: #010101; font-size: 20px; display: block;}
@@ -749,10 +753,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e0210', end
 
 .divide-half-l {display: inline-block; float: left; vertical-align: top; width: 49%;}
 .divide-half-r {display: inline-block; float: right; vertical-align: top; width: 50%;}
-.divide-half-r textarea{ width: 100%; resize: none; height: 256px !important; border-radius: 3px; border:2px solid #e6e6e6;}
-.abt-page-form form input{ height: 75px; border:2px solid #e6e6e6;}
+.divide-half-r textarea{ width: 100%; resize: none; height: 256px !important; border-radius: 3px; border:2px solid #e6e6e6; padding: 30px 15px;}
+.abt-page-form form input{background-color: transparent; border:2px solid #e6e6e6; height: 75px; padding: 15px;}
 .abt-page-form form { text-align: center; padding: 30px;}
-.abt-page-form form .btn{ font-size: 20px; font-weight: 700; max-width: 459px; padding: 20px; width: 100%; background-color: #ed1c24; color: #fff; display: inline-block; border: 2px solid #ed1c24;}
+.abt-page-form form .btn{ font-size: 20px; font-weight: 700; max-width: 459px; padding: 20px; width: 100%; background-color: #ed1c24; color: #fff; display: inline-block; border: 2px solid #ed1c24; -webkit-transition: all .3s ease-in-out; -moz-transition: all .3s ease-in-out; -o-transition: all .3s ease-in-out; transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out;}
 .form-group-btn{ display: inline-block; width: 100%;}
 .form-group-btn .btn:hover{ background-color: #fff; border-color: #ed1c24; color: #ed1c24; }
 .form-group-btn .btn:focus{ outline: none; }
@@ -773,6 +777,9 @@ div.wpcf7 img.ajax-loader {border: none; vertical-align: middle; margin-left: 4p
 /*============================================ After School Page ============================================*/
 .after-school{
     padding: 20px 0 66px;
+}
+.after-school .gen-heading {
+    display: table-cell;
 }
 .after-school .img-holder {
     float: left;
@@ -820,6 +827,7 @@ div.wpcf7 img.ajax-loader {border: none; vertical-align: middle; margin-left: 4p
     position: relative;
 }
 .school-reg-form form input {
+    background-color: #fff;
     border: 1px solid #bcbcbc !important;
     height: 65px;
     width: 336px !important;
@@ -863,6 +871,7 @@ div.wpcf7 img.ajax-loader {border: none; vertical-align: middle; margin-left: 4p
     display: block;
     font-weight: 700;
     margin-top: 18px;
+    font-size: 19px;
 }
 
 
@@ -873,6 +882,9 @@ div.wpcf7 img.ajax-loader {border: none; vertical-align: middle; margin-left: 4p
 
 .experience-section .img-holder {
     margin-top: -161px;
+}
+.experience-section .img-holder img{
+    max-width: inherit;
 }
 .experience-section p{
     color: #010101;
@@ -899,6 +911,7 @@ div.wpcf7 img.ajax-loader {border: none; vertical-align: middle; margin-left: 4p
     border-bottom: 1px solid #eaeaea;
     display: inline-block;
     padding: 20px 0;
+    width: 100%;
 }
 .points-section li:last-child{ border-bottom: 0;}
 .points-section li h3 {
@@ -932,10 +945,20 @@ div.wpcf7 img.ajax-loader {border: none; vertical-align: middle; margin-left: 4p
 
 
 .c-info-frm {list-style-type: none; margin: 15px auto; max-width: 720px; padding: 0; text-align: center;}
-.c-info-frm li{display: inline-block; font-size: 19px; color: #010101; margin: 20px;}
+.c-info-frm li{display: inline-block; font-size: 19px; color: #010101; margin: 20px; vertical-align: top;}
 .c-info-frm li:last-child{margin-left: 120px;}
 .c-info-frm li span{display: block; font-weight: 800; color: #e40014;}
 .c-info-frm li span i {color: #a7a2a2; margin-right: 5px; display: block; font-size: 22px;}
+.c-info-frm li p{margin: 0 auto;}
+
+
+.experience-section{padding: 50px 0 0;}
+.experience-section .img-holder {
+    margin-top: -116px;
+}
+.experience-section .img-holder img{
+    max-width: 310px;
+}
 
 /*============================================ After School Page ============================================*/
 
@@ -1159,6 +1182,40 @@ div.wpcf7 img.ajax-loader {border: none; vertical-align: middle; margin-left: 4p
   margin-top: 11px;
 }
 
+.srch-result {
+    margin: 10px auto 20px;
+    background-color: #fafafa;
+    padding: 15px;
+}
+.srch-result .small-heading {
+    display: inline-block;
+    line-height: 32px;
+    background: transparent;
+    color: #ed1c24;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 24px;
+    font-weight: 900;
+    width: auto;
+    text-align: left;
+}
+.srch-result a {
+    background-color: #ed1c24;
+    color: #fff;
+    margin: 10px 0;
+    width: 163px;
+    font-weight: 600;
+    font-size: 15px;
+    border: 2px solid #ed1c24;
+    padding: 6px 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+
+.form-inline #loading {background-color: rgba(255, 255, 255, 0.7); bottom: 0; display: inline-block; left: 0; margin: auto; position: absolute; right: 0; top: 0;}
+#loading > img {max-width: 30px; position: absolute; top: 50%; transform: translateY(-15px); -o-transform: translateY(-15px); -ms-transform: translateY(-15px); -moz-transform: translateY(-15px); -webkit-transform: translateY(-15px);}
 
 
 /*============================= Location Inner Page =============================*/
@@ -1175,12 +1232,21 @@ div.wpcf7 img.ajax-loader {border: none; vertical-align: middle; margin-left: 4p
 
 .location-inner{padding: 40px 0;}
 .srch-result {margin: 10px auto 20px;}
-.srch-result a {background-color: #ed1c24; color: #fff; margin: 10px 0; width: 193px; font-weight: 600; font-size: 18px; border: 2px solid #ed1c24; padding: 10px 20px; display: inline-block; text-align: center;}
+
+.srch-result h2{margin: 0 auto 30px;}
+.srch-result a {background-color: #ed1c24; color: #fff; margin: 0 0 10px 0; width: 193px; font-weight: 600; font-size: 18px; border: 2px solid #ed1c24; padding: 10px 20px; display: inline-block; text-align: center; border-radius: 3px;}
+.srch-result a{margin-top: 30px;}
+.srch-result a:hover{color: #ed1c24; background-color: #fff;}
 .srch-result .small-heading{display: inline-block; line-height: 40px; background:transparent; color: #ed1c24; margin: 0; padding: 0; border:0; font-size: 36px; font-weight: 900; width: auto; text-align: left;}
+.srch-result p{font-size: 18px;}
 /*============================================ Location Page ============================================*/
 
 /*============================================ News Page ============================================*/
 .news-p-intro{font-size: 20px; font-weight: 500; line-height: 36px;}
+.news-post-info > ul {
+  margin-left: 0;
+  padding-left: 0;
+}
 .news-post-info > ul li {
   border-left: 1px solid;
   display: inline-block;
@@ -1199,11 +1265,18 @@ div.wpcf7 img.ajax-loader {border: none; vertical-align: middle; margin-left: 4p
 
 .n-post .a-post-content p a{ color:#ed1c24}
 
-.even .news-p-intro {
+.even .news-p-intro, .even .news-post-info{
   display: block;
   padding-left: 15px;
 }
-.news-post-info{}
+
+.newz .about-post a{color: #e40014; display: inline-block; font-size: 17px;}
+.newz .about-post a:hover{color: #333;}
+.even .a-post-content a{margin-left: 15px;}
+.news-posts {
+  background-color: #f9f9f9;
+  padding: 30px 15px 0;
+}
 
 
 /*============================================ News Page ============================================*/
@@ -1334,7 +1407,19 @@ div.wpcf7 img.ajax-loader {border: none; vertical-align: middle; margin-left: 4p
     pointer-events: none;
 }
 /*================= Home Page Slider =================*/
-
+#html5-watermark{display: none !important;}
+#html5box-html5-lightbox::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+#html5-lightbox-box {
+  display: inline-block !important;
+  margin: 10px 0 !important;
+  max-width: 94% !important;
+  vertical-align: middle;
+}
 
 
 
@@ -1720,7 +1805,10 @@ footer .copy-rgt ul li a {
 .about-post .a-post-content p strong{ font-size: 18px;}
     
 .abt-page-form form input {height: 59px;}
-.divide-half-r textarea {height: 208px !important;}
+.divide-half-r textarea {height: 208px !important; padding: 20px 15px;}
+    
+    
+.about-post{padding: 25px 0;}    
     
 /*============================================ About Page ============================================*/   
     
@@ -1756,6 +1844,10 @@ footer .copy-rgt ul li a {
 .school-reg-form .gen-heading {
     width: 800px;
 }
+
+.best-decision {
+  padding: 50px 0 75px;
+}
 .best-decision p {
     color: #010101;
     font-size: 16px;
@@ -1763,6 +1855,7 @@ footer .copy-rgt ul li a {
     margin-bottom: 26px;
     margin-top: 11px;
 }
+.author {font-size: 16px;}
    .after-school .img-holder, .best-decision .img-holder{max-width: 500px;}
     
 .experience-section p {
@@ -1922,6 +2015,7 @@ footer .copy-rgt ul li a {
     width: auto;
     text-align: left;
 }
+    .srch-result p{font-size: 16px;}
 .srch-result a {
     background-color: #ed1c24;
     color: #fff;
@@ -1934,12 +2028,22 @@ footer .copy-rgt ul li a {
     display: inline-block;
     text-align: center;
 }
+.srch-result h2{margin: 0 auto 20px;}
+.srch-result a{margin-top: 20px;}
 /*============================= Location Inner Page =============================*/
 .inner-location {
   line-height: 45px !important;
 }
 /*============================= Location Inner Page =============================*/
     
-/*============================================ Location Page ============================================*/    
+/*============================================ Location Page ============================================*/   
+    
+/*============================================ News Page ============================================*/
+.newz .about-post {
+  padding: 5px 0 25px;
+}
+.newz .about-post a{color: #e40014; display: inline-block; font-size: 15px; padding-left: 5px;}
+/*============================================ News Page ============================================*/
+
     
 }

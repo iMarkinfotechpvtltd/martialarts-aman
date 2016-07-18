@@ -4,11 +4,11 @@
  */
 ?>
 <?php get_header(); ?>
-<section class="about">
+<section class="about newz">
     <div class="container">
     <div class="row">
         <div class="all-post col-lg-9 col-md-9 col-sm-12 col-xs-12">
-		<h2>LATEST NEWS</h2>
+            <div class="news-posts"><h2 class="gen-heading">LATEST NEWS</h2></div>
 		<?php 
 			$i=1;
 			$args = array('post_type' => 'post','posts_per_page'=>-1,'order' => 'DESC');
@@ -127,12 +127,12 @@
   <div class="carousel-inner" role="listbox">
   <?php 
 				$i=0;
-			$args = array('post_type' => 'success','posts_per_page'=>5,'order' => 'DESC');
+			$args = array('post_type' => 'success','posts_per_page'=>-1,'order' => 'DESC');
 			$loop = new WP_Query( $args );
 			while ( $loop->have_posts() ) : $loop->the_post();
 	?>
      <div class="item <?php if($i==0){echo'active';}else{} ?>">
-      <?php echo content('100');?>
+      <?php echo content('50');?>
 	  <span><?php the_field('name',$post->ID); ?></span>
     </div>
  <?php 
@@ -198,7 +198,7 @@
     <div class="container">
         <form role="form" class="form-inline">
             <!--div class="form-group"><label>Are You Ready?</label></div-->
-            <div class="form-group"><a href="">Find A Location Near You</a></div>
+            <div class="form-group"><a href="<?php echo site_url();?>/#location">Find A Location Near You</a></div>
         </form>
         
     </div>

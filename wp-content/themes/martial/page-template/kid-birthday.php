@@ -105,7 +105,7 @@ while ( have_posts() ) : the_post();
     <div class="container">
         <form role="form" class="form-inline">
             <div class="form-group"><label>Are You Ready?</label></div>
-            <div class="form-group"><a href="">Get Started</a></div>
+            <div class="form-group"><a href="<?php echo site_url();?>/#location">Get Started</a></div>
         </form>
         
     </div>

@@ -82,7 +82,7 @@
 					<input type="hidden" class="id-inner" value="<?php echo $location_id;?>">              
   <button type="submit" class="btn loc-btn">Search</button>
    <div id="loading" style="display: none"  align="center"> 
-               <img src="http://i.imgur.com/fAj1wi5.gif" id="loading_image">
+               <img src="http://i.imgur.com/BgN5Ssx.gif" id="loading_image">
                                    </div>
             </div> 
 <div class="result" style="display:none;">Select a valid location</div>
@@ -268,7 +268,7 @@ jQuery(document).ready(function(){
 	<script>
 
 jQuery(document).ready(function(){
-jQuery("#menu-item-109").addClass("current-menu-item");
+jQuery(".menu-item-109").addClass("current-menu-item");
 });
 
 </script>

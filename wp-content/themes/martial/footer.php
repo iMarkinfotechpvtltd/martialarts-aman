@@ -154,20 +154,68 @@ jQuery(function() {
 		</script>	
 <script>
 
-jQuery(document).ready(function(){
+// jQuery(document).ready(function(){
 
-	jQuery(".custom>li").each(function(){
+	// jQuery(".menu-item-107").each(function(){
 
-		jQuery(this).click(function(){
-		var abc= jQuery(this).attr("class");
-		jQuery("."+abc).addClass("cust");
-		jQuery().removeClass(".custom>li.current-menu-item");
-		});
+		// jQuery(this).click(function(){
+		// var abc= jQuery(this).attr("class");
+		// var data=abc.split(" ");
+		// alert("."+data[7]);
+		// return;
+		// jQuery(this).addClass("cust");
+		// jQuery().removeClass(".custom>li.current-menu-item");
+		// });
 
-	});
+	// });
 
-});
+// });
 
 </script>
+   <script>
+    jQuery(document).ready(function() {
+jQuery('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = jQuery(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+          jQuery("nav li a").removeClass("active");
+		  jQuery(".menu-item-106").removeClass("current-menu-item");
+		  jQuery(".banner-content>a").removeClass("active");
+		  jQuery("#lctn").removeClass("active");
+jQuery(this).addClass('active');
+        jQuery('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+
+
+});
+    
+    </script>
+	<script>
+jQuery(document).ready(function(){
+var hash = jQuery(location).attr('hash');
+if(hash=="#down")
+{
+
+jQuery(".menu-item-107>a").addClass("active");
+jQuery(".menu-item-106").removeClass("current-menu-item");
+}
+else if(hash=="#location")
+{
+
+jQuery(".menu-item-109>a").addClass("active");
+jQuery(".menu-item-106").removeClass("current-menu-item");
+}
+
+
+
+});
+</script>
+
 </body>
 </html>
