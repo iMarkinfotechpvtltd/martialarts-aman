@@ -581,6 +581,13 @@ if($cat=="centreville"){
 </section>
     
 <section class="kids-testimonial-sec b-4">
+<span class="kids-testimonial-img-b4">
+<?php 						
+					$image_id=get_post_meta($post->ID,"what_other_saying_image",true);	
+					$thumb = wp_get_attachment_image_src($image_id, 'bfre' );
+					?>	
+				<img src="<?php echo $thumb['0'];?>" alt="" class="img-responsive" />
+</span>
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -608,6 +615,13 @@ if($cat=="centreville"){
 </section>
     
     <section class="kids-sec-odd fitness">
+	<span class="fitness-b4">
+		<?php 						
+			$image_id=get_post_meta($post->ID,"what_your_child_will_get_image",true);	
+			$thumb = wp_get_attachment_image_src($image_id, 'bfr' );
+		?>	
+				<img src="<?php echo $thumb['0'];?>" alt="" class="img-responsive" />
+	</span>
         <div class="container">
             <div class="row">
                 <div class=" col-lg-7">
@@ -624,7 +638,7 @@ if($cat=="centreville"){
     <section class="kids-sec-even confidence">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                 <div class="img-holder">
 				<?php 						
 					$image_id=get_post_meta($post->ID,"more_confidense_image",true);	
@@ -632,7 +646,7 @@ if($cat=="centreville"){
 					?>	
 				<img src="<?php echo $thumb['0'];?>" alt="" class="img-responsive" /></div>
                 </div>
-                <div class="col-lg-8">
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                 <?php the_field('more_confidence',$post->ID); ?>
                 </div>
             
@@ -643,10 +657,10 @@ if($cat=="centreville"){
     <section class="kids-sec-odd lesson">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7">
+                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
                  <?php the_field('discipline',$post->ID); ?>
                 </div>
-                <div class="col-lg-offset-1 col-lg-4">
+                <div class="col-lg-offset-1 col-lg-4 col-md-4 col-sm-4 col-xs-12">
                     <div class="img-holder">
 					<?php 						
 					$image_id=get_post_meta($post->ID,"discipline_image",true);	
@@ -673,7 +687,7 @@ if($cat=="centreville"){
     <section class="kids-sec-odd environment">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                 <div class="img-holder">
 				<?php 						
 					$image_id=get_post_meta($post->ID,"supportive_environment_image",true);	
@@ -681,7 +695,7 @@ if($cat=="centreville"){
 					?>	
 				<img src="<?php echo $thumb['0'];?>" alt="" class="img-responsive" /></div>
                 </div>
-            <div class="col-lg-8">
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                <?php the_field('supportive_environment',$post->ID); ?>
             </div>
             </div>
@@ -690,6 +704,13 @@ if($cat=="centreville"){
     
     
 <section class="kids-testimonial-sec aftr">
+<span class="kids-testimonial-img-aftr">
+	<?php 						
+			$image_id=get_post_meta($post->ID,"other_parent_saying_image2",true);	
+			$thumb = wp_get_attachment_image_src($image_id, 'aftr' );
+		?>	
+				<img src="<?php echo $thumb['0'];?>" alt="" class="img-responsive" />
+	</span>
     <div class="container">
         <div class="row">
             <div class="col-lg-12">

@@ -799,3 +799,6 @@ add_image_size( 'proff', 278, 278,true);
 add_image_size( 'party', 458, 305,true);
 add_image_size( 'left', 223, 693,true);
 add_image_size( 'right', 228, 789,true);
+add_image_size( 'bfre', 234, 668,true);
+add_image_size( 'bfr', 600, 774,true);
+add_image_size( 'aftr', 267, 670,true);

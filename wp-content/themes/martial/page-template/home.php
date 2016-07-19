@@ -7,7 +7,7 @@
    <section class="banner">
         <div class="container">
         <div class="">
-            <div class="banner-content col-lg-6 col-md-6 col-sm-6 col-xs-6 ">
+            <div class="banner-content col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
 			<?php 
 				while ( have_posts() ) : the_post();
 				echo content('50');
@@ -17,7 +17,7 @@
                 
             </div>
             
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 kick-img">
                 <?php 
 				while ( have_posts() ) : the_post();
 				the_post_thumbnail('home');
@@ -32,7 +32,7 @@
         <div class="container" id="down">
         <div class="row" id="location">
             
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-red-box">
                 <div class="red-box">
                     <?php the_field('kids_martial_arts_content',6);?>
 					<?php 						
@@ -44,7 +44,7 @@
                 </div>
             </div>
             
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-red-box">
                 <div class="red-box">
                     <?php the_field('after_school_program_content',6);?>
 					<?php 						
@@ -58,7 +58,7 @@
             </div>
             
             <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-red-box">
                 <div class="red-box">
                      <?php the_field('summer_camp_content',6);?>
 					 <?php 						
@@ -70,7 +70,7 @@
                 </div>
             </div>
             
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-red-box">
                 <div class="red-box">
                     <?php the_field('adult_martial_arts_content',6);?>
 					 <?php 						
@@ -119,10 +119,10 @@
         
         <div class="container">
         <div class="row">
-            <div class="testimonial-main col-lg-offset-1 col-lg-5 col-md-offset-1 col-md-5 col-sm-6 col-xs-6">
+            <div class="testimonial-main col-lg-offset-1 col-lg-5 col-md-offset-1 col-md-5 col-sm-6 col-xs-12">
                 <?php the_field('testimonial_content',6);?>
             </div>
-            <div class="news-main col-lg-5 col-md-5 col-sm-6 col-xs-6">
+            <div class="news-main col-lg-5 col-md-5 col-sm-6 col-xs-12">
                 <h2>News</h2>
 				<ul>
 					<?php 
@@ -256,7 +256,7 @@
                 
                 <!--========================= Video Slider =========================-->
                 
-                <a href="">See All Success Stories <i aria-hidden="true" class="fa fa-long-arrow-right"></i></a>
+                <a href="" class="home-stories">See All Success Stories <i aria-hidden="true" class="fa fa-long-arrow-right"></i></a>
                 </div>
             </div>
             

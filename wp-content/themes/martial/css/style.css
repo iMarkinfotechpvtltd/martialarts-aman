@@ -792,6 +792,7 @@ div.wpcf7 img.ajax-loader {border: none; vertical-align: middle; margin-left: 4p
     font-weight: 900;
     line-height: 64px;
 }
+.adult-testimonials h2, .adult-p-sections h2 {color: #e40014; font-size: 50px; font-weight: 900; line-height: 64px;}
 .after-school p {
     color: #010101;
     font-size: 22px;
@@ -969,6 +970,10 @@ div.wpcf7 img.ajax-loader {border: none; vertical-align: middle; margin-left: 4p
 .kids-page-sec1 h2 {
     margin-top: 70px;
     max-width: 545px;
+    color: #e40014;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 64px;
 }
 .kids-page-sec1 h4 {
     color: #010101;
@@ -1015,7 +1020,7 @@ div.wpcf7 img.ajax-loader {border: none; vertical-align: middle; margin-left: 4p
     font-weight: 600;
     margin-top: 26px;
 }
-.b-4::before {
+/*.b-4::before {
     background-image: url("../images/sayin-bef-kidspage.png");
     background-repeat: no-repeat;
     content: "";
@@ -1024,10 +1029,26 @@ div.wpcf7 img.ajax-loader {border: none; vertical-align: middle; margin-left: 4p
     margin-top: -250px;
     position: absolute;
     width: 240px;
+}*/
+.kids-testimonial-img-b4{
+    content: "";
+    height: 680px;
+    left: 0;
+    margin-top: -250px;
+    position: absolute;
+    width: 240px;
 }
-.aftr::before {
+/*.aftr::before {
     background-image: url("../images/sayin-aft-kidspage.png");
     background-repeat: no-repeat;
+    bottom: 0;
+    content: "";
+    height: 670px;
+    position: absolute;
+    right: 0;
+    width: 267px;
+}*/
+.kids-testimonial-img-aftr{
     bottom: 0;
     content: "";
     height: 670px;
@@ -1047,19 +1068,28 @@ div.wpcf7 img.ajax-loader {border: none; vertical-align: middle; margin-left: 4p
     line-height: 72px;
     font-weight: 900;
 }
-.kid-sec-para {
+/*.kid-sec-para*/
+.kids-sec-odd p, .kids-sec-even p{
     color: #000;
     font-size: 19px;
     line-height: 36px;
     margin-bottom: 15px;
 }
-.kid-sec-para span{font-weight: 600;}
+/*.kid-sec-para span*/
+.kids-sec-odd p strong, .kids-sec-even p strong{font-weight: 600;}
 .fitness{
     padding: 70px 0;
 }
-.fitness::before {
+/*.fitness::before {
     background-image: url("../images/program-aft-kidspage.png");
     content: "";
+    height: 770px;
+    margin-top: -170px;
+    position: absolute;
+    right: 100px;
+    width: 600px;
+}*/
+.fitness-b4 {
     height: 770px;
     margin-top: -170px;
     position: absolute;
@@ -1152,6 +1182,14 @@ div.wpcf7 img.ajax-loader {border: none; vertical-align: middle; margin-left: 4p
 
 .last-kids::before {background-image: url("../images/last-form-kidspage.png"); background-size: cover; content: ""; height: 510px; left: 0;
     position: absolute; width: 223px; bottom: 30px;}
+
+
+.kids-sec-odd h3, .kids-sec-even h3 {
+    color: #ed1c24;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 72px;
+}
 /*============================================ Kids Page ============================================*/
 
 /*============================================ Location Page ============================================*/
@@ -1291,7 +1329,7 @@ div.wpcf7 img.ajax-loader {border: none; vertical-align: middle; margin-left: 4p
 .testimonials-adult p {color: #010101; font-size: 19px; line-height: 46px; font-style: italic; margin-bottom: 15px;}
 .testimonials-adult h2 {margin-bottom: 44px;}
 .adult-name {color: #e40014; font-size: 19px; font-weight: 600;}
-.adult-p-sections {padding: 116px 0 44px; position: relative; display: inline-block; width: 100%;}
+.adult-p-sections {padding: 116px 0 44px; position: relative; display: block; width: 100%;}
 .pos {position: absolute; z-index: 9;}
 .adult-p-sections .gen-heading {line-height: 74px;}
 .adult-p-sections h4 {font-size: 30px; margin: 30px 0 22px;}
@@ -1303,11 +1341,28 @@ div.wpcf7 img.ajax-loader {border: none; vertical-align: middle; margin-left: 4p
 }
 
 
-.pos.slf-defense {
+/*.pos.slf-defense {
   left: -225px;
   max-width: 387px;
   top: -177px;
+}*/
+
+.mental-strgth {
+    bottom: 0;
+    left: 67%;
+    max-width: 350px;
 }
+.make-frnds {
+  bottom: 0;
+  left: 10px;
+  max-width: 480px;
+}
+.pos.slf-defense {
+    bottom: 0;
+    left: 0;
+    max-width: 387px;
+}
+.prof-instructor{bottom:0; left:67%;}
 
 
 /*============================================ Adult Page ============================================*/
@@ -1901,24 +1956,33 @@ footer .copy-rgt ul li a {
 .kids-page-sec1 h2 {
     margin-top: 30px;
     max-width: 395px;
+    font-size: 40px;
+    line-height: 50px;
+    max-width: inherit;
 }
-.kids-page-sec1 h4 {
+/*.kids-page-sec1 h4 {
      font-size: 21px;
     line-height: 34px;
     margin-top: 20px;
+}*/
+.kids-page-sec1 h4 {
+  font-size: 20px;
+  line-height: 32px;
+  margin-top: 18px;
 }
+    
 .kids-page-sec1 p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 34px;
     margin-top: 22px;
 }
 
-.b-4::before {
+/*.b-4::before {
     background-size: cover;
      height: 570px;
     margin-top: -170px;
     width: 200px;
-}
+}*/
 .kids-testimonial-sec ul li{
     padding: 40px 80px;
     }
@@ -1934,16 +1998,23 @@ footer .copy-rgt ul li a {
     margin-top: 16px;
 }
 
-.fitness::before {
+/*.fitness::before {
     background-size: cover;
     height: 650px;
     margin-top: -170px;
     width: 500px;
+}*/
+.fitness-b4 {
+    height: 650px;
+    margin-top: -170px;
+    width: 500px;
 }
+    
 .fitness {
     padding: 50px 0;
 }
-.kid-sec-para {
+/*.kid-sec-para*/
+.kids-sec-odd p, .kids-sec-even p{
      font-size: 16px;
     line-height: 26px;
     margin-bottom: 10px;
@@ -1951,11 +2022,11 @@ footer .copy-rgt ul li a {
 .confidence .img-holder {
     margin-left: -60px;
 }
-.aftr::before {
+/*.aftr::before {
     background-size: cover;
     height: 490px;
      width: 197px;
-}
+}*/
 .lesson .img-holder {
     margin-top: -140px;
 }
@@ -1969,7 +2040,19 @@ footer .copy-rgt ul li a {
 .c-info-frm li:last-child{margin-left: 120px;}
 .c-info-frm li span{display: block; font-weight: 800; color: #e40014;}
 .c-info-frm li span i {color: #a7a2a2; margin-right: 5px; display: block; font-size: 22px;}   
+
+.kids-sec-odd h3, .kids-sec-even h3 {font-size: 30px; font-weight: 900; line-height: 56px;}
 /*============================================ Kids Page ============================================*/    
+    
+    
+/*============================================ Adult Page ============================================*/   
+.adult-testimonials h2, .adult-p-sections h2 {color: #e40014; font-size: 36px; font-weight: 900; line-height: 45px;}
+.testimonials-adult p {font-size: 16px; line-height: 30px;}
+    
+/*============================================ Adult Page ============================================*/   
+    
+    
+    
     
     
 /*============================================ Location Page ============================================*/
@@ -2047,3 +2130,322 @@ footer .copy-rgt ul li a {
 
     
 }
+@media (max-width: 1199px) {
+
+    
+
+/*== Toggle Length Extended ==*/
+.navbar-toggle .icon-bar{background-color:#e40014; }
+.navbar-header {height: 100px;}
+    
+.navbar-collapse.collapse {
+    display: none !important;
+}
+
+.nav.navbar-nav {
+    width: 100%;
+}
+    
+.nav.navbar-nav li {
+    float: none;
+}
+.navbar-nav > li > .dropdown-menu {
+    margin: 0;
+}
+    
+.navbar-nav > li > .dropdown-menu a {
+    font-size: 15px;
+}
+    
+.navbar-collapse.collapse.in {
+    display: block !important;
+}
+    
+.navbar-header .collapse, .navbar-toggle {
+    display: block !important;
+}
+    
+.navbar-header {
+    float: none;
+}
+
+
+
+
+/*================================= Styling Li =================================*/
+.navbar .navbar-brand img {
+  width: 120px;
+}
+.navbar-collapse {
+    background-color: rgba(100, 100, 100, 0.95);
+    /*max-width: 200px;*/
+    position: absolute;
+    right: 0;
+    width: 100%;
+    z-index: 9;
+}
+    
+.navbar-toggle {
+    z-index: 11;
+}
+    
+.navbar-nav li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+    
+.navbar-nav li:last-child {
+    border: medium none;
+}
+
+/*================================= Styling Li =================================*/
+
+
+
+    
+.dropdown-menu {
+    position: relative;
+    border: none;
+}
+    
+
+    
+.navbar-brand {
+    float: left;
+    height: auto;
+    padding: 0 15px;
+}
+
+    
+/*== Toggle Length Extended ==*/
+    
+    
+/*================================= Home Page =================================*/
+.banner-content {
+    padding: 102px 0 300px;
+}
+.banner h1 {
+    display: inline-block;
+    font-size: 45px;
+    line-height: 45px;
+}
+.banner h1 span {font-size: 34px;}
+
+.banner a {
+  font-size: 16px;
+  margin-top: 60px;
+  max-width: 390px;
+}
+.banner img {left: -80px; max-width: 550px; position: absolute; top: 0;}
+    
+
+.red-box h2 {font-size: 26px; padding-top: 32px;}
+.red-box p {font-size: 16px; margin-top: 60px; max-width: 250px;}
+.red-box img {max-width: 185px; right: 0; width: 100%;}
+
+
+.left-part img {margin-top: -40px; max-width: 360px;}
+
+    
+.foot-logo {bottom: 30px; left: 0; right: 0;}
+.copy-rgt ul{float: none;}
+.copy-rgt ul li {margin: 0 5px;}
+/*================================= Home Page =================================*/
+    
+/*================================= About Page =================================*/
+.about-post h2 {font-size: 36px; line-height: 38px;}
+.about-post .a-post-content img {max-width: 280px;}
+.about-post .a-post-content p {font-size: 14px; line-height: 26px;}
+.about-post .a-post-content p strong {font-size: 16px;}
+    
+.about-red-box {height: 364px; margin-bottom: 22px; position: relative; text-align: center;}
+.about-red-box h2 {font-size: 26px; margin: 0 10px; padding-top: 10px; text-align: left;}
+.about-red-box h2::after{bottom:-5px;}
+.about-red-box > img {bottom: 0; margin: 0 auto; max-width: 167px; position: relative; right: inherit; z-index: 2;}
+.about-red-box:nth-child(2) img, .about-red-box:nth-child(3) img {bottom: 74px; position: absolute; right: 0; max-width: 140px;}
+
+.about-red-box .about-side-hov a{text-align: left;}
+.abt-page-form {padding: 40px 0 20px;}
+    
+.about-widget-body .item p {font-size: 14px; line-height: 20px;}
+.news-post li a {font-size: 14px; line-height: 18px; padding: 15px;}
+.abt-page-form h1 {font-size: 36px;}
+
+.find{padding: 75px 0;}
+    
+/*================================= About Page =================================*/
+     
+/*================================= Kids Birthday Page =================================*/
+.party {padding: 90px 0; position: relative; text-align: center;}
+/*.party .img-responsive {border: 2px solid #ccc; margin: 10px auto; padding: 5px;}*/
+.party .img-responsive {border: 10px solid #ccc; box-shadow: 0 0 5px #555; margin: 10px auto; padding: 5px;}
+.people-views {padding: 68px 0; position: relative; text-align: center;}
+ .kid-b-b4, .kid-b-aftr {max-width: 160px;}
+.people-views p {font-size: 14px; line-height: 22px;}
+.people-views span {font-size: 16px;}
+    
+.price-form form {padding: 0 15px;}
+    
+.people-views h2 {margin-bottom: 37px;}
+.k-b-heading{position: relative; z-index: 9;}
+.k-b-content{position: relative; z-index: 9; background-color: rgba(255,255,255,.5); padding-top: 10px; padding-bottom: 10px;}
+
+/*================================= Kids Birthday Page =================================*/
+    
+/*================================= After School Page =================================*/
+ .point-content {
+  display: inline-block;
+  float: right;
+  width: 88%;
+}
+/*================================= After School Page =================================*/
+
+    
+/*================================= Adult Page =================================*/
+.adult-p-sections p {font-size: 16px; line-height: 32px; margin-bottom: 21px;}
+
+.wht-u-get {left: -190px; top: -153px;}
+.pos.slf-defense {bottom: 0; left: 0; max-width: 327px;}
+.make-frnds {bottom: 0; left: 10px; max-width: 340px;}
+
+.c-info-frm > li:first-child br {display: none;}
+/*================================= Adult Page =================================*/
+
+    
+    
+}
+
+
+@media (max-width: 991px) {
+/*================================= Home Page =================================*/    
+.banner img {left: -50px; max-width: 400px;}
+.banner h1 {font-size: 40px; line-height: 42px;}
+.banner h1 span {font-size: 27px; line-height: 10px;}
+.banner-content {padding: 60px 0 90px;}
+
+.box-section {margin-top: 0;}
+.red-box {margin-bottom: 25px;}
+.red-box p {font-size: 14px; margin-top: 30px; max-width: 170px;}
+.red-box img {max-width: 145px;}
+
+
+    
+    
+#wrapper_bu {height: 298px;}
+.holder_bu_center {width: 550px;}
+.holder_bu_awayR1 {left: 65%; top: 70%; width: 30%;}
+    
+footer ul li { margin: 35px 16px;}
+footer ul li a { font-size: 14px;}
+/*================================= Home Page =================================*/    
+    
+    
+    
+/*================================= About Page =================================*/    
+.about-sidebar {text-align: center;}
+.about-red-box {display: inline-block; margin: 15px; max-width: 250px; text-align: center; vertical-align: top; width: 45%;}
+/*================================= About Page =================================*/ 
+    
+     
+    
+}
+
+
+@media (max-width: 767px) {
+.kick-img, .red-box img{display: none;}
+
+.col-red-box {box-sizing: border-box; display: inline-block; max-width: 49%; vertical-align: top; width: 100%;}
+.red-box p{max-width: inherit; padding-right: 15px;}
+    
+    
+.testimonial-main {background-color: #ececec;}
+.testimonial-main h2, .news-main h2 {font-size: 36px; margin-left: 0; margin-top: 57px;}
+.testimonial-main p {font-size: 14px; line-height: 26px; margin-left: 0; margin-top: 30px;}
+.news-main {background-color: #e40014;}
+.news-main ul {padding-left: 0; margin-left: 0;}
+.left-part, .right-part{display: none;}
+#wrapper_bu {height: auto; background-color: transparent;}
+.holder_bu_awayR1 .abc a {pointer-events: initial;}
+
+.holder_bu {
+  left: inherit;
+  max-width: 320px;
+  position: relative !important;
+  width: 100% !important;
+}    
+.holder_bu .abc a::after {
+  bottom: 0;
+  color: #e40014;
+  content: "";
+  font-family: fontawesome;
+  font-size: 80px;
+  left: 0;
+  margin: auto !important;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-45px);
+}
+    
+.holder_bu_center .abc a::after {}
+    
+    
+footer ul li {margin: 20px 8px;} 
+footer ul li a {font-size: 13px;}
+.foot-logo img {max-width: 90px;}
+    
+.find.ready a {margin-left: 0;}
+.divide-half-l {float: none; width: 100%;}
+.divide-half-r {float: none; width: 100%;}
+    
+    
+    
+.info-price {margin:15px 0 !important;}
+.info-price li {display: inline-block; margin: 10px auto; max-width: 40%; vertical-align: top;}
+.info-price li:last-child {margin: 10px 10%;}
+    
+    
+    
+.all-post {text-align: center;}
+.news-p-intro{display: block;}
+.about-post.odd .a-post-content img, .about-post.even .a-post-content img {float: none; margin: 10px auto;}
+
+.inner-news-content .a-post-content img {float: none;}
+    
+    
+.kids-b h1 {font-size: 20px; line-height: 31px; padding: 50px 0;}
+.party {padding: 50px 0;}
+.kid-b-aftr, .kid-b-b4, .party-price::after{display: none;}
+.kid-b-odd h2, .kid-b-even h2 {font-size: 26px; line-height: 30px;}
+    
+    
+    
+.about-post .a-post-content {text-align: center;}
+.about-post .a-post-content p {padding: 0;}
+    
+.about-post .a-post-content img {margin: 5px auto 10px;}
+    
+}
+
+/*============================ Video Slider ============================*/
+@media (max-width:767px){.holder_bu{width:100% !important;}
+   
+#wrapper_bu {
+  float: left;
+  position: static;
+  text-align: center;
+  width: 100%;
+}
+.holder_bu {
+  max-width: 300px;
+  width: 100% !important;
+}
+.holder_bu_center, .holder_bu_awayR1, .holder_bu_awayL1 {
+  float: none;
+  margin: 10px auto !important;
+  position: static;
+  top: 0;
+}
+    .video_title_main{position: static;bottom:0;margin:15px 0;width:100%;}
+}
+/*============================ Video Slider ============================*/

@@ -627,6 +627,7 @@ if($cat=="centreville"){
         <div class="col-lg-9 col-md-8 col-sm-12 col-xs-12">
             <?php the_field('training_with_us_content',$post->ID);?>
         </div>
+    
         <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
             <div class="pos wht-u-get">
 			<?php 						
@@ -643,9 +644,9 @@ if($cat=="centreville"){
     
     
 <section class="adult-p-sections contrast-bg">
-    <div class="container">
-    <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+    <!--div class="container">
+    <div class="row"-->
+        <!--div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"-->
             <div class="pos slf-defense">
 			<?php 						
 					$image_id=get_post_meta($post->ID,"self_defense_image",true);	
@@ -653,8 +654,10 @@ if($cat=="centreville"){
 			?>	
 			<img src="<?php echo $thumb['0'];?>" alt="self"/>
 			</div>
-        </div>
-        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+        <!--/div-->
+    <div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-4 col-md-8 col-md-offset-4 col-sm-12 col-xs-12">
             <?php the_field('self_defense_content',$post->ID);?>
         </div>
     </div>
@@ -669,7 +672,9 @@ if($cat=="centreville"){
         <div class="col-lg-9 col-md-8 col-sm-12 col-xs-12">
              <?php the_field('mental_strength_content',$post->ID);?>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+    </div>
+    </div>
+        <!--div class="col-lg-3 col-md-4 col-sm-12 col-xs-12"-->
             <div class="pos mental-strgth">
 			<?php 						
 					$image_id=get_post_meta($post->ID,"mental_strength_image",true);	
@@ -677,17 +682,17 @@ if($cat=="centreville"){
 			?>	
 			<img src="<?php echo $thumb['0'];?>" alt="mental strength" class="" />
 			</div>
-        </div>
-    </div>
-    </div>
+        <!--/div-->
+    <!--/div>
+    </div-->
 </section>
     
     
     
 <section class="adult-p-sections contrast-bg">
-    <div class="container">
+    <!--div class="container">
     <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"-->
             <div class="pos make-frnds">
 			<?php 						
 					$image_id=get_post_meta($post->ID,"new_friends_image",true);	
@@ -695,8 +700,10 @@ if($cat=="centreville"){
 			?>	
 			<img src="<?php echo $thumb['0'];?>" alt="new friends" class="img-responsive" />
 			</div>
-        </div>
-        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+        <!--/div-->
+    <div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-4 col-md-8 col-md-offset-4 col-sm-12 col-xs-12">
             <?php the_field('new_friends_content',$post->ID);?>
         </div>
     </div>
@@ -711,7 +718,9 @@ if($cat=="centreville"){
         <div class="col-lg-9 col-md-8 col-sm-12 col-xs-12">
            <?php the_field('professional_instructors_content',$post->ID);?>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+        </div>
+    </div>    
+        <!--div class="col-lg-3 col-md-4 col-sm-12 col-xs-12"-->
             <div class="pos prof-instructor">
 			<?php 						
 					$image_id=get_post_meta($post->ID,"professional_instructors_image",true);	
@@ -719,9 +728,9 @@ if($cat=="centreville"){
 			?>	
 			<img src="<?php echo $thumb['0'];?>" alt="Professional" class="img-responsive" />
 			</div>
-        </div>
+        <!--/div>
     </div>    
-    </div>
+    </div-->
 </section>
     
     

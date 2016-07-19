@@ -27,7 +27,7 @@
                     </ul>
                 </span>
             
-               <?php echo content('150');?><a href="<?php the_permalink(); ?>">Read More</a>
+               <?php echo content('35');?><a href="<?php the_permalink(); ?>">Read More</a>
             </div>
             
         </div>
@@ -44,7 +44,7 @@
                     </ul>
                 </span>
             
-                <?php echo content('150'); ?><a href="<?php the_permalink(); ?>">Read More</a></p>
+                <?php echo content('35'); ?><a href="<?php the_permalink(); ?>">Read More</a></p>
             </div>
             
         </div>

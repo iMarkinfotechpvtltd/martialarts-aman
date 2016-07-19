@@ -36,10 +36,6 @@ while ( have_posts() ) : the_post();
     </section>
     
     <section class="kid-b-even people-views">
-    <div class="container">
-        <div class="row">
-        <h2><?php the_field('what_other_parents_are_saying_title',148); ?></h2>
-        </div>
         <span class="kid-b-b4">
 		<?php 						
 			$image_id=get_post_meta(148,"what_other_parents_are_saying_left_image",true);	
@@ -47,7 +43,13 @@ while ( have_posts() ) : the_post();
 		?>	
 		<img src="<?php echo $thumb['0'];?>" />
 		</span>
-    <div class="row">
+        
+    <div class="container">
+        <div class="row k-b-heading">
+        <h2><?php the_field('what_other_parents_are_saying_title',148); ?></h2>
+        </div>
+        
+    <div class="row k-b-content">
     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <?php the_field('saying1_content',148); ?>
         <span><?php the_field('saying1_name',148); ?></span>
@@ -62,14 +64,14 @@ while ( have_posts() ) : the_post();
        <span><?php the_field('saying3_name',148); ?></span>        
     </div>
     </div>
-	<span class="kid-b-aftr">
+    </div>
+        <span class="kid-b-aftr">
 	<?php 						
 			$image_id=get_post_meta(148,"what_other_parents_are_saying_right_image",true);	
 			$thumb = wp_get_attachment_image_src($image_id, 'right' );
 	?>	
 	<img src="<?php echo $thumb['0'];?>" />
 		</span>
-    </div>
     </section>
     
     <section class="kid-b-odd party-price">
