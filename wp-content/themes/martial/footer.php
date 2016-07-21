@@ -49,7 +49,7 @@
         <div class="container">
         <div class="row">
         <div class="col-lg-4">
-            <p>Copyright © <?php echo date('Y ');?> - Mountain Kim Martial Arts - All Rights Reserved</p>
+            <p>Copyright © <?php echo date('Y ');?> - Mountain Kim Martial Arts - All Rights Reserved.<br>Powered By: <a href="" target="_blank" class="imark">iMark <span>I</span>nfotech</a></p>
         </div>
         <div class="col-lg-4">
             <div class="foot-logo">
@@ -58,10 +58,10 @@
         </div>
         <div class="col-lg-offset-1 col-lg-3">
         <ul>
-            <li><a href="<?php echo get_option_tree('pinterest_url');?>"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
-            <li><a href="<?php echo get_option_tree('facebook_url');?>"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-            <li><a href="<?php echo get_option_tree('twitter_url');?>"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-            <li><a href="<?php echo get_option_tree('you_tube_url');?>"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            <li><a target="_blank" href="<?php echo get_option_tree('pinterest_url');?>"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+            <li><a target="_blank" href="<?php echo get_option_tree('facebook_url');?>"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a target="_blank" href="<?php echo get_option_tree('twitter_url');?>"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a target="_blank" href="<?php echo get_option_tree('you_tube_url');?>"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
         </ul>
         </div>
         </div>
