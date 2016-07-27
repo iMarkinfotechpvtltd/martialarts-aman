@@ -256,22 +256,22 @@
                 
                 <!--========================= Video Slider =========================-->
                 
-                <a href="" class="home-stories">See All Success Stories <i aria-hidden="true" class="fa fa-long-arrow-right"></i></a>
+                <a href="#" class="home-stories">See All Success Stories <i aria-hidden="true" class="fa fa-long-arrow-right"></i></a>
                 </div>
             </div>
             
         </div>
     </section>
      
-    <section class="find ready">
+    <!--<section class="find ready">
     <div class="container">
         <form role="form" class="form-inline">
             <div class="form-group"><label>Are You Ready?</label></div>
-            <div class="form-group"><a href="<?php echo site_url();?>/#location" id="lctn">Get Started</a></div>
+            <div class="form-group"><a href="<?php echo get_permalink(148); ?>" id="lctn">Get Started</a></div>
         </form>
         
     </div>
-    </section>
+    </section>-->
     <!--<section class="find">
     <div class="container">
         <form role="form" class="form-inline">

@@ -24,7 +24,7 @@ while ( $loop->have_posts() ) : $loop->the_post();
                 <a href="<?php the_permalink(); ?>" class="gen-heading"><?php echo  $term->name; ?></a>
 				<div class="loc-inner">
                 <?php the_field('address',$term); ?>
-				<p>Phone : <?php the_field('phone_number',$term); ?></p>
+				<p>Phone : <a href="tel:<?php the_field('phone_number',$term); ?>"><?php the_field('phone_number',$term); ?></a></p>
             </div>
             </div>
         </div>
@@ -53,7 +53,7 @@ while ( $loop->have_posts() ) : $loop->the_post();
                 <a href="<?php the_permalink(); ?>" class="gen-heading"><?php echo  $term->name; ?></a>
 				<div class="loc-inner">
                  <?php the_field('address',$term); ?>
-				<p>Phone : <?php the_field('phone',$term); ?></p>
+				<p>Phone : <a href="tel:<?php the_field('phone',$term); ?>"><?php the_field('phone',$term); ?></a></p>
             </div>
             </div>
         </div>
@@ -82,7 +82,7 @@ while ( $loop->have_posts() ) : $loop->the_post();
                <a href="<?php the_permalink(); ?>" class="gen-heading"><?php echo  $term->name; ?></a>
 			   <div class="loc-inner">
                  <?php the_field('address',$term); ?>
-				<p>Phone : <?php the_field('phone',$term); ?></p>
+				<p>Phone : <a href="tel:<?php the_field('phone',$term); ?>"><?php the_field('phone',$term); ?></a></p>
             </div>
             </div>
         </div>
@@ -111,7 +111,7 @@ while ( $loop->have_posts() ) : $loop->the_post();
                 <a href="<?php the_permalink(); ?>" class="gen-heading"><?php echo  $term->name; ?></a>
 				<div class="loc-inner">
                 <?php the_field('address',$term); ?>
-				<p>Phone : <?php the_field('phone',$term); ?></p>
+				<p>Phone : <a href="tel:<?php the_field('phone',$term); ?>"><?php the_field('phone',$term); ?></a></p>
             </div>
             </div>
         </div>

@@ -113,7 +113,7 @@
 	<div class="srch-result">
                 <h2><a href="<?php the_permalink(); ?>" class="small-heading"><?php echo  $term->name; ?></a></h2>
                 <?php the_field('address',$term); ?>
-				<p>Phone : <?php the_field('phone_number',$term); ?></p>
+				<p>Phone : <a href="tel:<?php the_field('phone_number',$term); ?>" class="search-tel"><?php the_field('phone_number',$term); ?></a></p>
 				<a href="<?php the_permalink(); ?>">View Location</a>
             </div></div>		
   <?php
@@ -136,7 +136,7 @@
 		<div class="srch-result">
                 <h2><a href="<?php the_permalink(); ?>" class="small-heading"><?php echo  $term->name; ?></a></h2>
                 <?php the_field('address',$term); ?>
-				<p>Phone : <?php the_field('phone',$term); ?></p>
+				<p>Phone : <a href="tel:<?php the_field('phone',$term); ?>" class="search-tel"><?php the_field('phone',$term); ?></a></p>
 				<a href="<?php the_permalink(); ?>">View Location</a>
             </div>
 			</div>
@@ -160,7 +160,7 @@
 	<div class="srch-result">
                 <h2><a href="<?php the_permalink(); ?>" class="small-heading"><?php echo  $term->name; ?></a></h2>
                <?php the_field('address',$term); ?>
-				<p>Phone : <?php the_field('phone',$term); ?></p>
+				<p>Phone : <a href="tel:<?php the_field('phone',$term); ?>" class="search-tel"><?php the_field('phone',$term); ?></a></p>
 				<a href="<?php the_permalink(); ?>">View Location</a>
             </div>
 			</div>
@@ -185,7 +185,7 @@
 	<div class="srch-result">
                 <h2><a href="<?php the_permalink(); ?>" class="small-heading"><?php echo  $term->name; ?></a></h2>
                <?php the_field('address',$term); ?>
-				<p>Phone : <?php the_field('phone',$term); ?></p>
+				<p>Phone : <a href="tel:<?php the_field('phone',$term); ?>" class="search-tel"><?php the_field('phone',$term); ?></a></p>
 				<a href="<?php the_permalink(); ?>">View Location</a>
             </div>	
 			</div>

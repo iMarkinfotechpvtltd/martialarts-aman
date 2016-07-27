@@ -79,23 +79,12 @@ while ( have_posts() ) : the_post();
         <div class="row">
         <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12"> 
            <?php the_field('see_birthday_party_prices_content',148); ?>
-            <ul class="info-price">
-                <li><span><i class="fa fa-home" aria-hidden="true"></i>Address:</span><?php the_field('address',148); ?></li>
-                <li><span><i class="fa fa-phone" aria-hidden="true"></i>Phone:</span><a href="tel:<?php the_field('phone',148); ?>" class="call-fun"> <?php the_field('phone',148); ?></a></li>
-            </ul>
+            <!--<ul class="info-price">
+                <li><span><i class="fa fa-home" aria-hidden="true"></i>Address:</span><?php //the_field('address',148); ?></li>
+                <li><span><i class="fa fa-phone" aria-hidden="true"></i>Phone:</span><a href="tel:<?php //the_field('phone',148); ?>" class="call-fun"> <?php //the_field('phone',148); ?></a></li>
+            </ul>-->
             <div class="price-form">
-                 <form role="form">
-  <div class="form-group">
-    <input type="text" class="form-control" placeholder="Name*">
-  </div>
-  <div class="form-group">
-    <input type="email" class="form-control" placeholder="Email*">
-  </div>
-  <div class="form-group">
-    <input type="phone" class="form-control" placeholder="Phone*">
-  </div>
-  <button type="submit" class="btn btn-default">Submit</button>
-</form>
+                <?php echo do_shortcode('[contact-form-7 id="241" title="Kid Birthday"]');?>
             </div>
         </div>
         </div>
