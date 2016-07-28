@@ -4980,6 +4980,9 @@ article .entry-summary p a:hover {
   margin: 0 auto;
   padding: 0;
  }
+ .about-post.inner-news-content article h2.entry-title {
+  line-height: 1.3;
+ }
  .about-post.inner-news-content article h2.entry-title a {
   font-size: 14px;
   line-height: 1;
