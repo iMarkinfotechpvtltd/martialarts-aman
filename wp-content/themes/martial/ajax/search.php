@@ -25,6 +25,7 @@ while ( $loop->have_posts() ) : $loop->the_post();
 				<div class="loc-inner">
                 <?php the_field('address',$term); ?>
 				<p>Phone : <a href="tel:<?php the_field('phone_number',$term); ?>"><?php the_field('phone_number',$term); ?></a></p>
+				<a href="<?php the_permalink(); ?>" class="srch-inn-rslt">View Location</a>
             </div>
             </div>
         </div>
@@ -54,6 +55,7 @@ while ( $loop->have_posts() ) : $loop->the_post();
 				<div class="loc-inner">
                  <?php the_field('address',$term); ?>
 				<p>Phone : <a href="tel:<?php the_field('phone',$term); ?>"><?php the_field('phone',$term); ?></a></p>
+				<a href="<?php the_permalink(); ?>" class="srch-inn-rslt">View Location</a>
             </div>
             </div>
         </div>
@@ -83,6 +85,7 @@ while ( $loop->have_posts() ) : $loop->the_post();
 			   <div class="loc-inner">
                  <?php the_field('address',$term); ?>
 				<p>Phone : <a href="tel:<?php the_field('phone',$term); ?>"><?php the_field('phone',$term); ?></a></p>
+				<a href="<?php the_permalink(); ?>" class="srch-inn-rslt">View Location</a>
             </div>
             </div>
         </div>
@@ -112,6 +115,7 @@ while ( $loop->have_posts() ) : $loop->the_post();
 				<div class="loc-inner">
                 <?php the_field('address',$term); ?>
 				<p>Phone : <a href="tel:<?php the_field('phone',$term); ?>"><?php the_field('phone',$term); ?></a></p>
+				<a href="<?php the_permalink(); ?>" class="srch-inn-rslt">View Location</a>
             </div>
             </div>
         </div>

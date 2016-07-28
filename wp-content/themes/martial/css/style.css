@@ -23,11 +23,28 @@ a:hover {
  outline: inherit;
 }
 
+p a {
+ text-decoration: none;
+}
+
+.school-reg-form .btn:focus {
+ outline: inherit;
+}
+
 .btn.focus,
 .btn:focus,
 .btn:hover {
  outline: medium none navy;
  text-decoration: none;
+ outline: inherit;
+}
+
+.wpcf7-not-valid {
+ border: 1px solid red;
+}
+
+.price-form form input.wpcf7-not-valid {
+ border-color: #f00 !important;
 }
 
 body:before,
@@ -65,7 +82,7 @@ p {
 .form-control:focus {
  border-color: #0d0d0d;
  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(13, 13, 13, 0.6);
- outline: 0 none;
+ outline: inherit;
 }
 
 .navbar .nav {
@@ -419,6 +436,27 @@ p {
  position: absolute;
  right: 15px;
  z-index: 2;
+}
+
+.best-decision.loc-content .srch-inn-rslt {
+ background-color: #ed1c24;
+ color: #fff;
+ margin: 10px 0;
+ width: 163px;
+ font-weight: 600;
+ font-size: 15px;
+ border: 2px solid #ed1c24;
+ padding: 6px 20px;
+ display: inline-block;
+ text-align: center;
+ border-radius: 3px;
+ -webkit-border-radius: 3px;
+ -moz-border-radius: 3px;
+}
+
+.best-decision.loc-content .srch-inn-rslt:hover {
+ color: #ed1c24;
+ background-color: #fff;
 }
 
 .why-us h1 {
@@ -1339,6 +1377,10 @@ footer .copy-rgt ul li:hover {
  padding: 15px;
 }
 
+.abt-page-form form input:focus {
+ outline: inherit;
+}
+
 .abt-page-form form {
  text-align: center;
  padding: 30px;
@@ -1372,8 +1414,9 @@ footer .copy-rgt ul li:hover {
  color: #ed1c24;
 }
 
-.form-group-btn .btn:focus {
- outline: none;
+.form-group-btn .btn:focus,
+input:focus {
+ outline: inherit;
 }
 
 .abt-location a {
@@ -1535,7 +1578,7 @@ footer .copy-rgt ul li:hover {
 
 .best-decision .img-holder {
  float: right;
- margin-left: 64px;
+ /**margin-left: 64px;**/
  margin-bottom: 15px;
 }
 
@@ -2038,6 +2081,7 @@ footer .copy-rgt ul li:hover {
 }
 
 .loc-form-holder select {
+ background: #fff;
  appearance: none;
  -o-appearance: none;
  -ms-appearance: none;
@@ -2068,9 +2112,10 @@ footer .copy-rgt ul li:hover {
  color: #e40014;
 }
 
-.loc-content .img-holder {
- margin-left: 59px;
-}
+
+/******.loc-content .img-holder {
+ 
+}*****/
 
 .loc-content p {
  color: #010101;
@@ -2153,6 +2198,15 @@ footer .copy-rgt ul li:hover {
 
 .location-inner {
  padding: 40px 0;
+}
+
+.location-inner .srch-result .search-tel {
+ background: transparent;
+ border: 0;
+ color: #333;
+ padding: 0;
+ width: auto;
+ margin: 0;
 }
 
 .srch-result {
@@ -2409,8 +2463,9 @@ footer .copy-rgt ul li:hover {
  padding: 5px;
  position: absolute;
  right: 0;
+ bottom: 1px;
  font-weight: 600;
- font-size: 15px;
+ font-size: 14px;
 }
 
 
@@ -2511,6 +2566,115 @@ footer .copy-rgt ul li:hover {
  margin: 10px 0 !important;
  max-width: 94% !important;
  vertical-align: middle;
+}
+
+
+/****** New changes *****/
+
+.about-post.inner-news-content article h2.entry-title {
+ font-size: 36px;
+ max-width: 100%;
+ margin: 0;
+ color: #e40014;
+ font-weight: 900;
+ text-align: center;
+}
+
+.about-post.inner-news-content article h2.entry-title a {
+ font-size: 36px;
+ max-width: 100%;
+ margin: 0;
+ color: #e40014;
+ font-weight: 900;
+}
+
+.about-post.inner-news-content .post-thumbnail img {
+ display: block;
+ width: 30%;
+ margin: 0 auto;
+}
+
+.about-post.inner-news-content .entry-summary {
+ width: 100%;
+ margin: 0;
+ padding: 0;
+}
+
+.about-post.inner-news-content .post-thumbnail {
+ display: block;
+ margin: 0;
+ padding-bottom: 10px;
+}
+
+.about-post.inner-news-content .page-header {
+ padding-bottom: 9px;
+ margin: 40px 0 20px;
+ border: 0;
+}
+
+article .entry-summary p a.more-link {
+ color: #e40014;
+ display: inline-block;
+ font-size: 15px;
+ text-decoration: none;
+ border: 0;
+ box-shadow: none;
+}
+
+article .entry-summary p a:hover {
+ color: #000;
+ text-decoration: none !important;
+}
+
+.about-post.inner-news-content article {
+ background: #f9f9f9;
+ padding: 10px;
+ border-bottom: 1px solid #000;
+}
+
+.about-post.inner-news-content article .entry-header {
+ margin: 0;
+ padding: 0;
+}
+
+.pagination {
+ display: block;
+ padding-left: 0;
+ margin: 20px 0;
+ border-radius: 4px;
+ text-align: center;
+ width: 30%;
+ margin: 10px auto;
+ float: none;
+}
+
+.nav-links .page-numbers.current {
+ color: #f00;
+ font-size: 17px;
+}
+
+.pagination .nav-links a.page-numbers {
+ font-size: 17px;
+}
+
+.pagination .prev,
+.pagination .next {
+ background-color: #000;
+ color: #fff;
+ display: inline-block;
+ height: 52px;
+ margin: 0;
+ overflow: hidden;
+ padding: 0;
+ position: absolute;
+ top: 0;
+ width: 52px;
+ z-index: 2;
+}
+
+.pagination .prev,
+.pagination .next:hover {
+ background: #f00;
 }
 
 @media (min-width: 1500px) {
@@ -3165,7 +3329,6 @@ footer .copy-rgt ul li:hover {
   text-transform: uppercase;
  }
  .location-form {
-  background-repeat: no-repeat;
   padding: 100px 0 67px;
  }
  .loc-content p {
@@ -3623,6 +3786,50 @@ footer .copy-rgt ul li:hover {
   margin-left: -80px;
   margin-top: 65px;
  }
+ .location-form .loc-form-holder .form-group {
+  float: left
+ }
+ .location-form .loc-form-holder .form-group .location {
+  float: left;
+  width: 390px;
+ }
+ .location-form .loc-form-holder .btn.loc-btn {
+  float: left;
+  margin-left: 4px;
+ }
+ .school-reg-form.last-kids.get-startd form::before {
+  left: 120px;
+  top: -130px;
+  height: 100px;
+  width: 70px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+ }
+ .about-post.inner-news-content article h2.entry-title {
+  font-size: 26px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+ }
+ .about-post.inner-news-content article h2.entry-title a {
+  font-size: 26px;
+  padding-bottom: 7px;
+  line-height: 1.3;
+ }
+ .about-post.inner-news-content .post-thumbnail img {
+  width: 35%;
+  margin: 0 auto;
+  padding: 0;
+ }
+ .pagination {
+  width: 50%;
+ }
+ .about.inner-news .about-post {
+  padding: 0;
+ }
+ .about inner-news {
+  padding: 0;
+ }
 }
 
 @media (max-width: 991px) {
@@ -3670,6 +3877,70 @@ footer .copy-rgt ul li:hover {
  /*================================= New Changes =================================*/
  .banner-content {
   padding: 20px 0 90px;
+ }
+ .adult-testimonials h2,
+ .adult-p-sections h2 {
+  color: #e40014;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 35px;
+ }
+ .adult-p-sections {
+  padding: 58px 0 44px;
+  position: relative;
+  display: block;
+  width: 100%;
+ }
+ .adult-p-sections h4 {
+  font-size: 21px;
+  margin: 20px 0 22px;
+ }
+ .wht-u-get img {
+  width: 100%;
+ }
+ .adult-p-sections .col-lg-9.col-md-8.col-sm-12.col-xs-12 {
+  width: 50%;
+ }
+ .pos.slf-defense img {
+  width: 70%;
+ }
+ .pos.slf-defense {
+  bottom: 0;
+  left: 0;
+  max-width: 327px;
+  position: static;
+  width: 50%;
+  margin: 0 auto;
+ }
+ .make-frnds {
+  bottom: 0;
+  left: 10px;
+  max-width: 340px;
+  position: static;
+ }
+ p-sections h2 {
+  color: #e40014;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 35px;
+ }
+ .wht-u-get {
+  left: 438px;
+  top: -349px;
+ }
+ .testimonials-adult {
+  border-bottom: 1px solid #dfdfdf;
+  padding: 27px 0;
+  text-align: center;
+ }
+ .testimonials-adult p {
+  font-size: 14px;
+  line-height: 30px;
+ }
+ .adult-testimonials {
+  padding-top: 3px;
+  display: inline-block;
+  width: 100%;
  }
  .banner h1 {
   font-size: 36px;
@@ -3743,7 +4014,7 @@ footer .copy-rgt ul li:hover {
   text-align: center;
  }
  .gen-heading {
-  font-size: 26px;
+  font-size: 22px;
  }
  .widget-rgtside-title {
   font-size: 18px;
@@ -3769,21 +4040,142 @@ footer .copy-rgt ul li:hover {
  .school-reg-form .btn {
   margin: 10px 5px 0 5px;
  }
- .kids-page-sec1 .img-holder img,
- .kids-sec-even.confidence .img-holder img,
- .kids-sec-odd.environment .img-holder img,
- .kids-sec-odd.lesson .img-holder img {}
+ .kids-page-sec1 .img-holder img {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+ }
  .school-reg-form {
   padding: 25px 0 0;
  }
  .kids-testimonial-sec {
-  padding: 41px 0 3px;
+  padding: 25px 0 3px;
  }
  .confidence .img-holder {
-  margin-top: 134px;
+  margin-top: 30px;
  }
  .lesson .img-holder {
   margin-top: 66px;
+ }
+ .defense {
+  padding: 30px 0 28px;
+  text-align: center;
+ }
+ .environment .img-holder {
+  margin-top: 0;
+ }
+ .environment {
+  padding: 16px 0 0;
+ }
+ .kids-sec-odd h3,
+ .kids-sec-even h3 {
+  font-size: 19px;
+  line-height: 31px;
+ }
+ .kids-testimonial-sec {
+  padding: 24px 0 3px;
+ }
+ .kids-sec-odd.fitness .fitness-b4 {
+  margin-top: 14px;
+  right: 41px;
+ }
+ .confidence h3 {
+  margin-top: 42px;
+ }
+ .school-reg-form .gen-heading {
+  width: 100%;
+ }
+ .get-startd form {
+  margin: 18px auto;
+ }
+ .kids-page-sec1 h2 {
+  max-width: 100%;
+  font-size: 24px;
+  text-align: center;
+ }
+ .kids-page-sec1 h2 br {
+  display: none;
+ }
+ .kids-page-sec1 h4 {
+  font-size: 17px;
+  line-height: 32px;
+  margin-top: 8px;
+ }
+ .kids-sec-odd.fitness .col-lg-7 {
+  width: 50%;
+ }
+ .kids-testimonial-sec span img {
+  width: 70%;
+ }
+ .kids-testimonial-img-aftr img {
+  margin-left: 77px;
+  margin-top: 201px;
+ }
+ .school-reg-form form::before {
+  left: 20px;
+  top: -70px;
+  height: 70px;
+  width: 50px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+ }
+ .school-reg-form.last-kids.get-startd form::before {
+  left: 20px;
+  top: -130px;
+  height: 70px;
+  width: 50px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+ }
+ .experience-section .img-holder {
+  text-align: center;
+ }
+ .best-decision .img-holder {
+  max-width: 428px;
+ }
+ .best-decision .gen-heading {
+  font-size: 19px;
+ }
+ .after-school .img-holder {
+  margin-right: 14px;
+ }
+ .experience-section {
+  padding: 50px 0 30px 0;
+ }
+ .points-section {
+  padding: 20px 0 0;
+ }
+ .after-school .gen-heading .gen-heading {
+  line-height: 34px;
+ }
+ .points-section li h3 {
+  font-size: 16px;
+  line-height: 47px;
+ }
+ .points-section li p {
+  font-size: 14px;
+  line-height: 25px;
+ }
+ .after-testimonial {
+  padding: 68px 0 37px;
+ }
+ .school-reg-form form {
+  margin: 12px auto;
+ }
+ .points-section h2 {
+  width: 100%;
+ }
+ .best-decision .gen-heading {
+  text-align: center;
+ }
+ .school-reg-form.get-startd form::before {
+  background-image: url("../images/after-school-arrow.png");
+  content: "";
+  height: 100px;
+  left: 20px;
+  position: absolute;
+  top: -159px;
+  width: 70px;
  }
  /*================================= Home Page =================================*/
  /*================================= About Page =================================*/
@@ -3900,7 +4292,6 @@ footer .copy-rgt ul li:hover {
   transform: translateY(-45px);
   width: 45px;
  }
- .holder_bu_center .abc a::after {}
  footer ul li {
   margin: 20px 8px;
  }
@@ -3979,12 +4370,79 @@ footer .copy-rgt ul li:hover {
  .about-post .a-post-content img {
   margin: 5px auto 10px;
  }
+ .lesson .img-holder {
+  margin-top: 0;
+ }
+ .find.ready .form-group {
+  margin-bottom: 0;
+ }
+ .find.ready a {
+  font-size: 15px;
+  margin: 0;
+  padding: 5px;
+  width: 220px !important;
+ }
+ .find {
+  padding: 40px 0;
+ }
+ .after-testimonial .testi-inner {
+  width: 100%;
+ }
  /*================================= New Changes =================================*/
  .find {
   display: block;
  }
+ .loc-content p {
+  line-height: 7px;
+ }
  .find form input[type="text"] {
   float: left;
+ }
+ .wht-u-get img {
+  display: none;
+ }
+ .prof-instructor {
+  bottom: 0;
+  left: 67%;
+  position: static;
+  width: 70%;
+  margin: 0 auto;
+ }
+ .adult-p-sections .col-lg-9.col-md-8.col-sm-12.col-xs-12 {
+  width: 100%;
+ }
+ .prof-instructor img {
+  width: 70%;
+ }
+ .get-startd p {
+  font-size: 16px;
+  margin: 19px auto 31px;
+ }
+ .mental-strgth img {
+  display: none;
+ }
+ .adult-testimonials h2,
+ .adult-p-sections h2 {
+  color: #e40014;
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 35px;
+ }
+ .testimonials-adult h2 {
+  margin-bottom: 19px;
+ }
+ .adult-p-sections {
+  padding: 39px 0 0px;
+  position: relative;
+  display: block;
+  width: 100%;
+ }
+ .adult-p-sections .col-lg-9.col-md-8.col-sm-12.col-xs-12 {
+  width: 100%;
+ }
+ .get-startd p {
+  font-size: 16px;
+  margin: 19px auto 31px;
  }
  .find .form-group {
   display: inline-block;
@@ -3996,7 +4454,7 @@ footer .copy-rgt ul li:hover {
   font-size: 14px;
  }
  .news-p-intro {
-  font-size: 18px;
+  font-size: 16px;
  }
  .people-views h2 {
   margin-bottom: 18px;
@@ -4043,15 +4501,130 @@ footer .copy-rgt ul li:hover {
   margin-top: 10px;
   max-width: 100%;
   font-size: 24px;
-  line-height: 30px;
+  line-height: 38px;
  }
  .kids-page-sec1 h4 {
   font-size: 16px;
-  line-height: 20px;
+  line-height: 23px;
   margin-top: 10px;
  }
  .school-reg-form {
   padding: 23px 0 25px;
+ }
+ .school-reg-form form input {
+  width: 80% !important;
+  float: none;
+  margin-right: 0;
+  margin: 5px auto;
+ }
+ .kids-testimonial-sec span,
+ .kids-sec-odd.fitness .fitness-b4 {
+  display: none;
+ }
+ .confidence .img-holder img,
+ .lesson .img-holder,
+ .environment .img-holder {
+  width: 50%;
+  text-align: center;
+  float: none;
+  margin: 0px auto;
+ }
+ .gen-heading h2 {
+  font-size: 19px;
+  line-height: 30px;
+ }
+ .confidence .img-holder {
+  margin-top: 0;
+  margin-left: 0px;
+ }
+ .confidence h3 {
+  margin-top: 8px;
+ }
+ .kids-testimonial-sec ul li {
+  padding: 21px 0;
+ }
+ .gen-heading {
+  line-height: 30px;
+ }
+ .school-reg-form form::before {
+  display: none;
+ }
+ .location-form .loc-form-holder .btn.loc-btn {
+  margin: 3px auto;
+  float: none;
+ }
+ .location-inner {
+  padding: 0;
+ }
+ .location-form {
+  padding: 0px 0 0;
+ }
+ .srch-result .small-heading {
+  line-height: 28px;
+  font-size: 18px;
+ }
+ .srch-result h2 {
+  margin: 0 auto 8px;
+ }
+ .loc-form-head {
+  font-size: 20px;
+ }
+ .loc-form-holder {
+  text-align: center;
+ }
+ .best-decision .img-holder {
+  max-width: 100%;
+  width: 100%;
+  text-align: center;
+  float: none;
+  margin: 0;
+ }
+ .best-decision .img-holder img {
+  max-width: 489px;
+  width: 50%;
+  margin: 0 auto;
+ }
+ .best-decision {
+  padding: 30px;
+ }
+ .best-decision .gen-heading {
+  font-size: 16px;
+ }
+ .after-school .img-holder img {
+  width: 50%;
+  margin: 0 auto;
+ }
+ .after-school {
+  padding: 20px 0 36px;
+ }
+ .experience-section .img-holder {
+  margin-top: -102px;
+  margin-bottom: 10px;
+ }
+ .experience-section .img-holder img {
+  max-width: 240px;
+ }
+ .points-section .point-icons {
+  float: none;
+  text-align: center;
+  width: 96px;
+  margin: 0 auto;
+ }
+ .points-section li h3 {
+  text-align: center;
+ }
+ .kids-testimonial-sec.b-4 ul {
+  margin: 0;
+  padding: 0;
+ }
+ .loc-form-holder select {
+  font-size: 14px;
+ }
+ .about-post.inner-news-content article h2.entry-title {
+  font-size: 22px;
+ }
+ .about-post.inner-news-content article h2.entry-title a {
+  font-size: 22px;
  }
  /*================================= New Changes =================================*/
  .find form input[type="text"] {
@@ -4108,12 +4681,101 @@ footer .copy-rgt ul li:hover {
   margin: 0.2em 0.1em 1em;
   padding: 0.2em 1em;
  }
+ .c-info-frm li {
+  display: block;
+ }
+ .c-info-frm li:last-child {
+  margin-left: 0;
+ }
+ .school-reg-form {
+  padding: 23px 0 0;
+ }
+ .kids-page-sec1 h2 .gen-heading {
+  font-size: 18px;
+ }
+ .kids-sec-odd.fitness .col-lg-7 {
+  width: 100%;
+ }
+ .school-reg-form form input {
+  font-size: 14px;
+ }
+ .points-section ul {
+  margin-left: 0;
+ }
+ .point-content {
+  float: none;
+  width: 100%;
+ }
+ .best-decision p {
+  font-size: 14px;
+ }
+ .kids-testimonial-sec.aftr .col-lg-12 ul {
+  margin-left: 0;
+ }
+ .result {
+  bottom: 3px;
+  font-size: 14px;
+ }
+ .loc-btn {
+  height: 43px;
+  margin-left: 0;
+  width: 165px;
+  font-size: 16px;
+ }
+ .srch-result a {
+  width: 146px;
+  font-size: 14px;
+ }
+ .school-reg-form.kids-p-from1 .gen-heading {
+  font-size: 19px;
+ }
+ .school-reg-form .btn {
+  margin: 10px 5px 0 5px;
+ }
+ .red-box {
+  height: 235px;
+ }
+ .news-main li::before {
+  font-size: 22px;
+  left: 4px;
+  top: -4px;
+ }
+ .abt-page-form form input {
+  height: 48px;
+ }
+ .abt-page-form form .btn {
+  font-size: 16px;
+  max-width: 161px;
+  padding-bottom: 0;
+  padding-top: 0;
+ }
+ .school-reg-form form input {
+  padding: 0 10px;
+ }
+ .confidence .img-holder {
+  padding-top: 10px;
+ }
+ .location-inner {
+  padding: 0;
+  text-align: center;
+ }
+ .best-decision .img-holder img {
+  margin-bottom: 10px;
+ }
+ .about-post.inner-news-content .post-thumbnail img {
+  width: 45%;
+  margin: 0 auto;
+  padding: 0;
+ }
 }
 
 @media (max-width: 479px) {
  .banner h1 {
   font-size: 30px;
   line-height: 32px;
+ }
+ p {
+  font-size: 14px;
  }
  .banner h1 span {
   font-size: 20px;
@@ -4216,7 +4878,7 @@ footer .copy-rgt ul li:hover {
  }
  .find.ready .form-group {
   display: block;
-  margin-bottom: 0;
+  margin-bottom: 8px;
  }
  .find.ready a {
   margin-left: 0;
@@ -4224,5 +4886,102 @@ footer .copy-rgt ul li:hover {
  }
  .find {
   padding: 31px 0 20px 0;
+ }
+ .gen-heading {
+  font-size: 19px;
+ }
+ .school-reg-form form input {
+  width: 100% !important;
+ }
+ .loc-form-head {
+  font-size: 14px;
+ }
+ .loc-btn {
+  font-size: 14px;
+  width: auto;
+  height: auto;
+ }
+ .after-testimonial .testi-inner {
+  padding-bottom: 15px;
+ }
+ .after-school .img-holder img {
+  width: 100%;
+ }
+ .best-decision .img-holder img {
+  width: 100%;
+ }
+ .best-decision {
+  padding: 30px 30px 50px 30px;
+ }
+ .points-section h2 {
+  margin-bottom: 0;
+ }
+ .school-reg-form .btn {
+  font-size: 17px;
+  height: 46px;
+  width: 110px;
+ }
+ .result {
+  bottom: 1px;
+ }
+ .kids-sec-odd.fitness .gen-heading {
+  font-size: 20px;
+ }
+ .adult-testimonials h2,
+ .adult-p-sections h2 {
+  color: #e40014;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 35px;
+ }
+ .kids-page-sec1 .img-holder img {
+  width: 100%;
+ }
+ .kids-page-sec1 h4 {
+  font-size: 14px;
+ }
+ .kids-page-sec1 p {
+  font-size: 14px;
+  line-height: 34px;
+  margin-top: 22px;
+ }
+ .school-reg-form.kids-p-from1 h3 {
+  font-size: 14px;
+ }
+ .best-decision .img-holder img {
+  margin-bottom: 10px;
+ }
+ .location-form .loc-form-holder .form-group .location {
+  float: left;
+  width: 100%;
+ }
+ .loc-form-holder select {
+  font-size: 14px;
+ }
+ .loc-btn {
+  font-size: 14px;
+  width: 42%;
+  height: auto;
+ }
+ .loc-content p {
+  line-height: 3px;
+ }
+ .best-decision.loc-content .srch-inn-rslt {
+  width: 139px;
+  font-size: 14px;
+ }
+ .srch-result .small-heading {
+  line-height: 28px;
+  font-size: 16px;
+  text-align: center;
+ }
+ .about-post.inner-news-content .post-thumbnail img {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+ }
+ .about-post.inner-news-content article h2.entry-title a {
+  font-size: 14px;
+  line-height: 1;
  }
 }

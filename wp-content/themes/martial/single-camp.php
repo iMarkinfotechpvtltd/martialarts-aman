@@ -596,6 +596,13 @@ if($cat=="centreville"){
 </section>
     
 <section class="kids-testimonial-sec b-4">
+<span class="kids-testimonial-img-b4">
+<?php 						
+					$image_id=get_post_meta($post->ID,"what_other_parent_are_saying_image",true);	
+					$thumb = wp_get_attachment_image_src($image_id, 'bfre' );
+					?>	
+				<img src="<?php echo $thumb['0'];?>" alt="" class="img-responsive" />
+</span>
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -623,6 +630,13 @@ if($cat=="centreville"){
 </section>
     
     <section class="kids-sec-odd fitness">
+	<span class="fitness-b4">
+		<?php 						
+			$image_id=get_post_meta($post->ID,"what_your_child_will_get_in_our_program_image",true);	
+			$thumb = wp_get_attachment_image_src($image_id, 'bfr' );
+		?>	
+				<img src="<?php echo $thumb['0'];?>" alt="" class="img-responsive" />
+	</span>
         <div class="container">
             <div class="row">
                 <div class=" col-lg-7">
@@ -704,6 +718,13 @@ if($cat=="centreville"){
     
     
 <section class="kids-testimonial-sec aftr">
+<span class="kids-testimonial-img-aftr">
+	<?php 						
+			$image_id=get_post_meta($post->ID,"other_parents_are_saying_image",true);	
+			$thumb = wp_get_attachment_image_src($image_id, 'aftr' );
+		?>	
+				<img src="<?php echo $thumb['0'];?>" alt="" class="img-responsive" />
+	</span>
     <div class="container">
         <div class="row">
             <div class="col-lg-12">

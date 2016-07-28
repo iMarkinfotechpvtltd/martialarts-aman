@@ -626,17 +626,17 @@ if($cat=="centreville"){
     <section class="after-testimonial">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 testi-inner">
         <?php the_field('testimonial_section1_content',$post->ID);?>
 		<span class="author"><?php the_field('testimonial_section1_name',$post->ID);?></span>
         </div>
             
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 testi-inner">
          <?php the_field('testimonial_section2_content',$post->ID);?>
 		 <span class="author"><?php the_field('testimonial_section2_name',$post->ID);?></span>
         </div>
             
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 testi-inner">
          <?php the_field('testimonial_section3_content',$post->ID);?>
 		 <span class="author"><?php the_field('testimonial_section3_name',$post->ID);?></span>
         </div>
@@ -713,17 +713,17 @@ if($cat=="centreville"){
      <section class="after-testimonial">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 testi-inner">
         <?php the_field('testimonial_section4_content',$post->ID);?>
 		<span class="author"><?php the_field('testimonial_section4_name',$post->ID);?></span>
         </div>
             
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 testi-inner">
         <?php the_field('testimonial_section5_content',$post->ID);?>
 		<span class="author"><?php the_field('testimonial_section5_name',$post->ID);?></span>
         </div>
             
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 testi-inner">
          <?php the_field('testimonial_section6_content',$post->ID);?>
 		 <span class="author"><?php the_field('testimonial_section6_name',$post->ID);?></span>
         </div>
