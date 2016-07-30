@@ -33,22 +33,7 @@ while ( have_posts() ) : the_post();
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h2 class="gen-heading">Get our class schedule, prices, and
-web special.</h2>
-                <!--<form class="form-inline" role="form">
-                    <div class="form-group">
-    <input type="text" class="form-control" placeholder="Name">
-                    </div>
-                    
-                    <div class="form-group">
-    <input type="email" class="form-control" placeholder="Email">
-                    </div>
-                    
-                    <div class="form-group">
-    <input type="phone" class="form-control" placeholder="Phone">
-                    </div>
-  <button type="submit" class="btn">Submit</button>
-</form>-->
+                <h2 class="gen-heading"><?php the_field('form_title',$post->ID);?></h2>
 <?php
 $category_detail=get_the_terms($post->ID, 'camp_category');	
 $cat= $category_detail[0]->slug;

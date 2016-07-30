@@ -132,6 +132,7 @@ p {
  -o-transition: all .3s ease-in-out;
  transition: all .3s ease-in-out;
  -ms-transition: all .3s ease-in-out;
+ border: 1px solid red;
 }
 
 
@@ -173,7 +174,7 @@ p {
  cursor: pointer;
  height: 40px;
  max-width: inherit;
- padding: 0;
+ padding-right: 28px;
  position: absolute;
  right: 0;
  top: 0;
@@ -213,6 +214,7 @@ p {
  font-size: 20px;
  font-weight: 400;
  color: #7D7C7B;
+ z-index: 9999;
 }
 
 .nav .menu-search input:focus + button {
@@ -2572,25 +2574,27 @@ input:focus {
 /****** New changes *****/
 
 .about-post.inner-news-content article h2.entry-title {
- font-size: 36px;
  max-width: 100%;
- margin: 0;
- color: #e40014;
- font-weight: 900;
  text-align: center;
+ line-height: 41px;
+ padding-bottom: 13px;
 }
 
 .about-post.inner-news-content article h2.entry-title a {
- font-size: 36px;
+ font-size: 27px;
  max-width: 100%;
  margin: 0;
  color: #e40014;
  font-weight: 900;
+}
+
+.about-post.inner-news-content article a {
+ width: 300px;
+ max-width: 100%;
 }
 
 .about-post.inner-news-content .post-thumbnail img {
  display: block;
- width: 30%;
  margin: 0 auto;
 }
 
@@ -2601,24 +2605,28 @@ input:focus {
 }
 
 .about-post.inner-news-content .post-thumbnail {
- display: block;
+ display: inline-block;
  margin: 0;
  padding-bottom: 10px;
 }
 
 .about-post.inner-news-content .page-header {
+ border: 0 none;
+ margin: 0 0 20px;
  padding-bottom: 9px;
- margin: 40px 0 20px;
- border: 0;
+ padding-top: 0;
+ text-align: center;
 }
 
 article .entry-summary p a.more-link {
  color: #e40014;
- display: inline-block;
+ display: block;
  font-size: 15px;
  text-decoration: none;
  border: 0;
  box-shadow: none;
+ text-align: center;
+ width: 100%;
 }
 
 article .entry-summary p a:hover {
@@ -2628,8 +2636,12 @@ article .entry-summary p a:hover {
 
 .about-post.inner-news-content article {
  background: #f9f9f9;
- padding: 10px;
- border-bottom: 1px solid #000;
+ padding: 20px;
+ text-align: center;
+}
+
+.about-post.inner-news-content article+article {
+ border-top: 1px solid #ccc;
 }
 
 .about-post.inner-news-content article .entry-header {
@@ -2637,6 +2649,8 @@ article .entry-summary p a:hover {
  padding: 0;
 }
 
+
+/*
 .pagination {
  display: block;
  padding-left: 0;
@@ -2646,6 +2660,7 @@ article .entry-summary p a:hover {
  width: 30%;
  margin: 10px auto;
  float: none;
+ border: 0;
 }
 
 .nav-links .page-numbers.current {
@@ -2657,24 +2672,182 @@ article .entry-summary p a:hover {
  font-size: 17px;
 }
 
+.pagination .prev.page-numbers {
+ background: #000;
+ position: absolute;
+ left: 0;
+}
+
+.pagination::before,
+.pagination::after {
+ left: 0;
+}
+
+.nav-links::after {
+ left: 0;
+}
+
+.pagination .nav-links {
+ padding-right: -6px;
+ position: relative;
+}
+
 .pagination .prev,
 .pagination .next {
  background-color: #000;
  color: #fff;
  display: inline-block;
- height: 52px;
+ height: 45px;
  margin: 0;
  overflow: hidden;
  padding: 0;
  position: absolute;
  top: 0;
- width: 52px;
+ width: 47px;
  z-index: 2;
+ border: 1px solid green;
 }
 
-.pagination .prev,
+.pagination .prev:before,
+.pagination .next:before {
+ height: 45px;
+ width: 47px;
+ border: 1px solid red;
+}
+
+.pagination::before,
+.pagination::after {
+ height: 46px;
+ width: 48px;
+}
+
+.pagination .prev:hover,
 .pagination .next:hover {
  background: #f00;
+}
+*/
+
+
+/**** Pagination Start ****/
+
+.about-post .navigation.pagination {
+ font-size: 17px;
+ text-align: center;
+ width: 100%;
+ border: 0;
+}
+
+.about-post .pagination .page-numbers {
+ color: #2f2f2f;
+ vertical-align: middle;
+ margin: 0 13px 0 0;
+ padding: 0;
+}
+
+.about-post .pagination .page-numbers:last-child {
+ margin-right: 0;
+}
+
+.about-post .pagination .prev,
+.about-post .pagination .next {
+ background: transparent;
+ position: static;
+ vertical-align: middle;
+}
+
+.about-post .pagination .nav-links {
+ padding-right: 0;
+}
+
+.about-post .prev.page-numbers,
+.about-post .next.page-numbers {
+ font-size: 16px;
+ height: auto;
+ letter-spacing: 1px;
+ text-transform: capitalize;
+ width: auto;
+}
+
+.about-post .pagination .prev::before,
+.about-post .pagination .next::before,
+.about-post .pagination .nav-links::before,
+.pagination .nav-links::before,
+.about-post .pagination:before,
+.about-post .pagination:after {
+ display: none;
+}
+
+.about-post .pagination .current,
+.about-post .pagination a:hover,
+.about-post .pagination a:focus {
+ color: #e40014;
+}
+
+.no-results.not-found {
+ width: 40%;
+ margin: 0 auto;
+}
+
+.about.inner-news .search-form {
+ margin: 0;
+ max-width: 500px;
+ padding: 0 42px 0 0;
+ position: relative;
+}
+
+.about.inner-news label {
+ display: block;
+}
+
+.about.inner-news input.search-field[type="search"] {
+ border-radius: 2px 0 0 2px;
+ width: 100%;
+}
+
+.search-submit {
+ border-radius: 0 2px 2px 0;
+ bottom: 0;
+ overflow: hidden;
+ padding: 0;
+ position: absolute;
+ width: 42px;
+ height: 39px;
+}
+
+.about.inner-news {
+ padding-bottom: 80px;
+ border: 0;
+}
+
+.no-results.not-found .page-content p {
+ padding-bottom: 20px;
+}
+
+.no-results.not-found h1 {
+ padding-bottom: 15px;
+}
+
+.about.inner-news .about-post {
+ border: 0;
+}
+
+.page-title {
+ font-size: 30px;
+ padding-bottom: 10px;
+}
+
+.search-form {
+ padding-top: 10px;
+}
+
+.no-results.not-found .search-submit::before {
+ content: "\f400";
+ font-size: 24px;
+ left: 2px;
+ line-height: 42px;
+ position: relative;
+ width: 40px;
+ color: #fff;
 }
 
 @media (min-width: 1500px) {
@@ -3373,6 +3546,9 @@ article .entry-summary p a:hover {
  .srch-result a {
   margin-top: 20px;
  }
+ .about.inner-news .about-post {
+  padding: 0;
+ }
  /*============================= Location Inner Page =============================*/
  .inner-location {
   line-height: 45px !important;
@@ -3816,11 +3992,6 @@ article .entry-summary p a:hover {
   padding-bottom: 7px;
   line-height: 1.3;
  }
- .about-post.inner-news-content .post-thumbnail img {
-  width: 35%;
-  margin: 0 auto;
-  padding: 0;
- }
  .pagination {
   width: 50%;
  }
@@ -4177,6 +4348,29 @@ article .entry-summary p a:hover {
   top: -159px;
   width: 70px;
  }
+ .no-results.not-found .page-content {
+  padding-left: 0;
+ }
+ .about-post.inner-news-content article h2.entry-title a {
+  font-size: 23px;
+ }
+ .about-post.inner-news-content article h2.entry-title {
+  max-width: 100%;
+  text-align: center;
+  line-height: 31px;
+  padding-bottom: 13px;
+ }
+ .page-title {
+  font-size: 23px;
+  padding-bottom: 10px;
+ }
+ .no-results.not-found {
+  width: 75%;
+  margin: 0 auto;
+ }
+ .search-submit {
+  height: 40px;
+ }
  /*================================= Home Page =================================*/
  /*================================= About Page =================================*/
  .about-sidebar {
@@ -4387,6 +4581,10 @@ article .entry-summary p a:hover {
  }
  .after-testimonial .testi-inner {
   width: 100%;
+ }
+ .no-results.not-found h1 {
+  padding-left: 35px;
+  font-size: 25px;
  }
  /*================================= New Changes =================================*/
  .find {
@@ -4624,7 +4822,7 @@ article .entry-summary p a:hover {
   font-size: 22px;
  }
  .about-post.inner-news-content article h2.entry-title a {
-  font-size: 22px;
+  font-size: 20px;
  }
  /*================================= New Changes =================================*/
  .find form input[type="text"] {
@@ -4762,10 +4960,10 @@ article .entry-summary p a:hover {
  .best-decision .img-holder img {
   margin-bottom: 10px;
  }
- .about-post.inner-news-content .post-thumbnail img {
-  width: 45%;
+ .no-results.not-found {
+  width: 100%;
   margin: 0 auto;
-  padding: 0;
+  padding-top: 40px;
  }
 }
 
@@ -4986,5 +5184,16 @@ article .entry-summary p a:hover {
  .about-post.inner-news-content article h2.entry-title a {
   font-size: 14px;
   line-height: 1;
+ }
+ .pagination {
+  width: 100%;
+ }
+ .no-results.not-found {
+  width: 100%;
+  margin: 0 auto;
+ }
+ .no-results.not-found h1 {
+  padding-left: 33px;
+  font-size: 22px;
  }
 }
